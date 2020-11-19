@@ -33,5 +33,5 @@ jobs:
         env: # 环境变量
           STAGE: master #您的部署环境
           SERVERLESS_PLATFORM_VENDOR: tencent #serverless 境外默认为 aws，配置为腾讯
-          TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }} #您的腾讯云账号 sercret ID
-          TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }} #您的腾讯云账号 sercret key
+          TENCENT_SECRET_ID: AKIDaxFMI22ejslX1GQxFLOCD5k8F6g1NTaU #您的腾讯云账号 sercret ID
+          TENCENT_SECRET_KEY: tmRu8BbFeneZEqX0nHYcqsfgRyFEyK8i #您的腾讯云账号 sercret key
