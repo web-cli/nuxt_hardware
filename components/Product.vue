@@ -49,6 +49,7 @@ export default {
 .tab {
   margin-left: 20px;
   display: flex;
+  margin-top: 10px;
 }
 li.ant-menu-item,
 li.ant-menu-submenu.ant-menu-submenu-vertical,

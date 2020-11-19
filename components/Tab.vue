@@ -8,7 +8,9 @@
         <a-icon type="right-circle" />
       </div>
       <div v-for="(target, index) in tabList" v-cloak :key="index">
-        <img :src="target" alt="" />
+        <div>
+          <img :src="target" alt="" />
+        </div>
       </div>
     </a-carousel>
   </div>
@@ -59,5 +61,8 @@ export default {
 }
 .tab {
   margin-top: 100px;
+}
+img {
+  width: 100%;
 }
 </style>
