@@ -5,52 +5,40 @@ const layoutMockJson = [
     type: 'appstore',
     logo: require('@/assets/img/tab1-logo.png'),
     detail:
-      'McMaster-Carr是来自美国的一家五金工具以及配件出产商，主要出产以及销售各类五金产品，销售各种mcmaster中国代理五金紧固件，涵盖的领域十分广泛。我们公司主要销售不同材质高强度标准紧固件等，如圆柱销、螺丝、螺母、垫片类。',
+      'McMaster-Carr是来自美国的一家五金工具以及配件出产商，主要出产以及销售各类五金产品，销售各种mcmaster中国代理五金紧固件，涵盖的领域十分广泛。我司（深圳市北富联机电有限公司）主要销售不同材质高强度标准紧固件等，如圆柱销、螺丝、螺母、垫片等',
     productList: [
       {
-        img:
-          'https://www.mcmaster.com/mvA/Contents/gfx/ImageCache/921/92185A540p1-b01-digitall@200p_637015670818060874.png?ver=ImageNotFound',
-        name: '螺丝和螺栓',
+        img: require('@/assets/img/second/luosi-1.png'),
+        name: '内六角螺丝',
+        alt: '北富联的六角螺丝',
+        subList: {
+          title: '内六角螺丝',
+        },
       },
       {
-        img:
-          'https://www.mcmaster.com/mvA/Contents/gfx/ImageCache/913/91315a033-@200p_636960271905724730.png?ver=ImageNotFound',
-        name: '螺纹杆和螺柱',
+        img: require('@/assets/img/second/luosi-2.png'),
+        name: '圆头螺丝',
+        alt: '北富联圆头螺丝',
       },
       {
-        img:
-          'https://www.mcmaster.com/mvA/Contents/gfx/ImageCache/301/3018T17p1-e01g-digitall@200p_636977666635506158.png?ver=ImageNotFound',
-        name: '吊环螺栓',
+        img: require('@/assets/img/second/luosi-3.png'),
+        name: '六角头螺钉',
+        alt: '北富联的六角头螺钉',
       },
       {
-        img:
-          'https://www.mcmaster.com/mvA/Contents/gfx/ImageCache/304/3043t21p1-e01k-digital@200p_637215081715760985.png?ver=ImageNotFound',
-        name: 'U型螺栓',
+        img: require('@/assets/img/second/luosi-4.png'),
+        name: '平头螺丝',
+        alt: '北富联的平头螺丝',
       },
       {
-        img:
-          'https://www.mcmaster.com/mvA/Contents/gfx/ImageCache/954/95462A545p1-b01-digitall@200p_636713279327820000.png?ver=ImageNotFound',
-        name: '坚果类',
+        img: require('@/assets/img/second/luosi-5.png'),
+        name: '自攻螺钉（木螺钉和干式墙螺钉）',
+        alt: '北富联的自攻螺钉（木螺钉和干式墙螺钉',
       },
       {
-        img:
-          'https://www.mcmaster.com/mvA/Contents/gfx/ImageCache/901/90107A029p1-b01-digitall@200p_636923080856299297.png?ver=ImageNotFound',
-        name: '垫圈',
-      },
-      {
-        img:
-          'https://www.mcmaster.com/mvA/Contents/gfx/ImageCache/972/97235k612p1-j08-digitall@200p_636844321718685906.png?ver=ImageNotFound',
-        name: '垫片',
-      },
-      {
-        img:
-          'https://www.mcmaster.com/mvA/Contents/gfx/ImageCache/917/91732A734p1-b01-digitall@200p_636952445885354605.png?ver=ImageNotFound',
-        name: '螺纹和螺旋刀片',
-      },
-      {
-        img:
-          'https://www.mcmaster.com/mvA/Contents/gfx/ImageCache/925/92510a605-@200p_636927463779519866.png?ver=ImageNotFound',
-        name: '垫片和支座',
+        img: require('@/assets/img/second/xiao.jpg'),
+        name: '销',
+        alt: '北富联的销',
       },
     ],
   },
@@ -60,24 +48,27 @@ const layoutMockJson = [
     type: 'appstore',
     logo: require('@/assets/img/tab3-logo.png'),
     detail:
-      'Helicoil螺套是原产于美国的螺套品牌，主要用于螺纹加强及修复，能够为您的需求提供高强度的耐热耐磨的高精度螺纹。',
+      'Helicoil螺套是原产于美国的螺套品牌，主要用于螺纹加强及修复，能够为您的需求提供高强度的耐热耐磨的高精度螺纹.',
     productList: [
       {
         img: require('@/assets/img/tab2-img1.png'),
-        name: 'helicoil螺套1',
+        name: '螺套',
+        alt: 'helicoil螺套-northfull.com',
       },
       {
         img: require('@/assets/img/tab2-img2.png'),
-        name: 'helicoil螺套2',
+        name: '丝螺套',
+        alt: 'helicoil钢丝螺套-northfull',
       },
       {
         img: require('@/assets/img/tab2-img3.png'),
-        name: 'helicoil螺套3',
+        name: '北富联机电的helicoil',
+        alt: '北富联机电的helicoil螺套',
       },
     ],
   },
   {
-    title: '德国 BAUER 碟形弹簧',
+    title: 'BERG',
     key: '3',
     type: 'appstore',
     logo: require('@/assets/img/tab2-logo.png'),
@@ -166,161 +157,161 @@ const layoutMockJson = [
       },
     ],
   },
-  {
-    title: '意大利 Bordignon博鼎强力弹簧 ',
-    key: '4',
-    type: 'appstore',
-    detail:
-      'Bordignon博鼎强力弹簧,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-    productList: [
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品4对顶波簧1',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品4对顶波簧2',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品4对顶波簧3',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品4对顶波簧4',
-      },
-    ],
-  },
-  {
-    title: 'UBC轴承',
-    key: '5',
-    type: 'appstore',
-    detail:
-      'UBC轴承,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-    productList: [
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品5对顶波簧1',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品5对顶波簧2',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品5对顶波簧3',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品5对顶波簧4',
-      },
-    ],
-  },
-  {
-    title: 'AXPB直线导轨',
-    key: '6',
-    type: 'appstore',
-    detail:
-      'AXPB直线导轨,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-    productList: [
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品6对顶波簧1',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品6对顶波簧2',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品6对顶波簧3',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品6对顶波簧4',
-      },
-    ],
-  },
-  {
-    title: '丹麦HOLM密封产品',
-    key: '7',
-    type: 'appstore',
-    detail:
-      '丹麦HOLM密封产品,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-    productList: [
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品7对顶波簧1',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品7对顶波簧2',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品7对顶波簧3',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品7对顶波簧4',
-      },
-    ],
-  },
-  {
-    title: '主轴弹簧',
-    key: '8',
-    type: 'appstore',
-    detail:
-      '主轴弹簧,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-    productList: [
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品8对顶波簧1',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品8对顶波簧2',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品8对顶波簧3',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品8对顶波簧4',
-      },
-    ],
-  },
-  {
-    title: '弹性件',
-    key: '9',
-    type: 'appstore',
-    detail:
-      '弹性件,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-    productList: [
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品1对顶波簧1',
-      },
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品1对顶波簧2',
-      },
-    ],
-  },
-  {
-    title: '紧固件',
-    key: '10',
-    type: 'appstore',
-    detail:
-      '紧固件,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-    productList: [
-      {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品1对顶波簧1',
-      },
-    ],
-  },
+  // {
+  //   title: '意大利 Bordignon博鼎强力弹簧 ',
+  //   key: '4',
+  //   type: 'appstore',
+  //   detail:
+  //     'Bordignon博鼎强力弹簧,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
+  //   productList: [
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品4对顶波簧1',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品4对顶波簧2',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品4对顶波簧3',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品4对顶波簧4',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: 'UBC轴承',
+  //   key: '5',
+  //   type: 'appstore',
+  //   detail:
+  //     'UBC轴承,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
+  //   productList: [
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品5对顶波簧1',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品5对顶波簧2',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品5对顶波簧3',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品5对顶波簧4',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: 'AXPB直线导轨',
+  //   key: '6',
+  //   type: 'appstore',
+  //   detail:
+  //     'AXPB直线导轨,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
+  //   productList: [
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品6对顶波簧1',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品6对顶波簧2',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品6对顶波簧3',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品6对顶波簧4',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: '丹麦HOLM密封产品',
+  //   key: '7',
+  //   type: 'appstore',
+  //   detail:
+  //     '丹麦HOLM密封产品,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
+  //   productList: [
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品7对顶波簧1',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品7对顶波簧2',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品7对顶波簧3',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品7对顶波簧4',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: '主轴弹簧',
+  //   key: '8',
+  //   type: 'appstore',
+  //   detail:
+  //     '主轴弹簧,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
+  //   productList: [
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品8对顶波簧1',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品8对顶波簧2',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品8对顶波簧3',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品8对顶波簧4',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: '弹性件',
+  //   key: '9',
+  //   type: 'appstore',
+  //   detail:
+  //     '弹性件,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
+  //   productList: [
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品1对顶波簧1',
+  //     },
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品1对顶波簧2',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: '紧固件',
+  //   key: '10',
+  //   type: 'appstore',
+  //   detail:
+  //     '紧固件,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
+  //   productList: [
+  //     {
+  //       img: require('@/assets/img/product-img1.jpg'),
+  //       name: '产品1对顶波簧1',
+  //     },
+  //   ],
+  // },
 ]
 
 export { layoutMockJson }

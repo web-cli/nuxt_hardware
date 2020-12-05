@@ -79,6 +79,7 @@ export default {
   }
   .mt30 {
     margin-top: 30px;
+    padding-bottom: 20px;
   }
   .icon {
     font-size: 30px;

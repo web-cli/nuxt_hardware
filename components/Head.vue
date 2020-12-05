@@ -18,7 +18,9 @@
         </a-menu-item-group> -->
         </a-sub-menu>
         <a-menu-item v-for="target in tabList" :key="target.key">
-          <a-icon :type="target.type" />{{ target.title }}
+          <NuxtLink :to="{ name: target.link }">
+            <a-icon :type="target.type" />{{ target.title }}</NuxtLink
+          >
         </a-menu-item>
       </a-menu>
     </div>
@@ -32,32 +34,31 @@ const tabList = [
     title: '首页',
     key: 'home',
     type: 'appstore',
+    link: 'index',
   },
   {
     title: '公司简介 ',
     key: 'introduce',
     type: 'appstore',
+    link: 'about',
   },
   {
-    title: '企业动态',
+    title: '企业新闻',
     key: 'dynamic',
     type: 'appstore',
+    link: 'news',
   },
   {
     title: '联系我们',
     key: 'contact',
     type: 'phone',
-  },
-  {
-    title: '招贤纳士',
-    key: 'talent',
-    type: 'user-add',
+    link: 'contact',
   },
 ]
 export default {
   data() {
     return {
-      current: ['home'],
+      current: ['1'],
       tabList: Object.freeze(tabList),
       productDetail: Object.freeze(layoutMockJson),
     }

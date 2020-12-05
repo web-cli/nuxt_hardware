@@ -1,5 +1,5 @@
 export const state = () => ({
-  tabNative: 'home',
+  tabNative: '1',
 })
 export const mutations = {
   toggleTab(state, val) {
