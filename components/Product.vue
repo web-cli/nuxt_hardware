@@ -59,7 +59,7 @@
             <div class="more-title">
               {{ detail.title }}
             </div>
-            <p v-for="(item, index2) in detail.list">
+            <p v-for="(item, index2) in detail.list" :key="index2">
               <span>{{ index2 + 1 }}.</span> {{ item }}
             </p>
           </div>
