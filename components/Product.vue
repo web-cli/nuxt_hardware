@@ -28,11 +28,44 @@
           class="product-item"
           @click="toggleSub(target)"
         >
-          <img :src="target.img" alt="" />
+          <img :src="target.img" :alt="target.alt" />
           <p>{{ target.name }}</p>
         </div>
       </div>
-      <div v-show="isSub">999</div>
+      <div v-show="isSub">
+        <div class="detail">
+          <a-button type="primary" @click="isSub = false">
+            返回列表页
+          </a-button>
+          <h3>{{ subObj.title }}</h3>
+          <div
+            v-for="(target, index) in subObj.subList"
+            :key="index"
+            class="detail-item"
+          >
+            <img :src="target.img" :alt="target.alt" />
+            <div class="detail-right">
+              <p>{{ target.name }}</p>
+              <div class="desc">{{ target.desc }}</div>
+            </div>
+          </div>
+          <div
+            v-if="subObj.subList && subObj.subList.length === 0"
+            class="no-more"
+          >
+            暂无数据
+          </div>
+          <div v-for="detail in moreDetail" :key="detail.title" class="more">
+            <div class="more-title">
+              {{ detail.title }}
+            </div>
+            <p v-for="(item, index2) in detail.list">
+              <span>{{ index2 + 1 }}.</span> {{ item }}
+            </p>
+          </div>
+          <div class="tips">更多内容请咨询客服~</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -45,11 +78,12 @@ export default {
       tabList: Object.freeze(layoutMockJson),
       selectedList: [],
       isSub: false,
+      subObj: {},
+      moreDetail: [],
     }
   },
   computed: {
     selectedTarget() {
-      console.log(this.current[0], this.$store.state.tabNative)
       const item = this.tabList.find(
         (item) => item.key === this.$store.state.tabNative
       )
@@ -71,14 +105,25 @@ export default {
   },
   mounted() {
     // this.$store.commit('toggleTab', '1')
+    setTimeout(() => {
+      this.current =
+        this.$store.state.tabNative !== 'home'
+          ? [this.$store.state.tabNative]
+          : ['1']
+    }, 100)
   },
   methods: {
     selectTab({ key }) {
       this.$store.commit('toggleTab', key)
     },
     toggleSub(target) {
-      this.selectedList = target.subList
-      this.isSub = true
+      console.log(target)
+      if (target.hasDetai) {
+        this.isSub = true
+        this.subObj = target.expand
+        this.moreDetail = target.detailList || []
+        console.log(this.moreDetail)
+      }
     },
   },
 }
@@ -97,7 +142,12 @@ li.ant-menu-submenu.ant-menu-submenu-vertical,
 }
 .product {
   border: 1px solid @gray-color;
-  flex: 1;
+  scrollbar-width: none; // firefox
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  width: 70%;
   overflow: auto;
   margin: 20px 20px 20px 60px;
   height: 700px;
@@ -105,13 +155,14 @@ li.ant-menu-submenu.ant-menu-submenu-vertical,
     min-height: 120px;
     background: @gray-color;
     padding: 40px;
+    // display: inline-block;
     p {
       font-size: 28px;
       font-weight: 600;
     }
     div {
       text-indent: 2em;
-      max-width: 900px;
+      // max-width: 900px;
     }
   }
   &-list {
@@ -136,6 +187,54 @@ li.ant-menu-submenu.ant-menu-submenu-vertical,
         transform: scale(1.2);
         transition-duration: 0.08s;
       }
+    }
+  }
+  .detail {
+    margin: 20px 0 0 40px;
+    h3 {
+      font-weight: 600;
+      margin: 20px 0;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      border: 2px dotted #f2f2f2;
+      margin-top: 20px;
+      // padding-left: 40px;
+      // width: 100px;
+      height: 100px;
+      img {
+        width: 60px;
+        height: 60px;
+        margin: 0 40px;
+      }
+    }
+    &-right {
+      p {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .desc {
+        font-size: 13px;
+      }
+    }
+  }
+  .tips {
+    font-weight: 600;
+    text-align: center;
+    margin: 40px 0;
+  }
+  .more {
+    font-size: 13px;
+    margin-top: 30px;
+    line-height: 2;
+    &-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    span {
+      font-weight: 600;
+      font-size: 16px;
     }
   }
 }

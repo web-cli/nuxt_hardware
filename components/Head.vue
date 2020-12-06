@@ -9,7 +9,7 @@
           >
           <a-menu-item-group title="NorthFull 优质系列">
             <a-menu-item v-for="item in productDetail" :key="item.key">
-              {{ item.title }}
+              <NuxtLink to="/"> {{ item.title }}</NuxtLink>
             </a-menu-item>
           </a-menu-item-group>
           <!-- <a-menu-item-group title="Item 2">
@@ -65,6 +65,13 @@ export default {
   },
   methods: {
     selectTab({ key }) {
+      // 前三个目录不刷新
+      if (
+        ~['1', '2', '3'].indexOf(this.$store.state.tabNative) &&
+        key === 'home'
+      ) {
+        return
+      }
       this.$store.commit('toggleTab', key)
     },
   },
