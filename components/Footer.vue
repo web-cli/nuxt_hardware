@@ -23,6 +23,34 @@
       </div>
     </div>
     <div>
+      <div style="width: 300px; margin: 0 auto; padding: 0px 0">
+        <a
+          target="_blank"
+          href=" "
+          style="
+            display: inline-block;
+            text-decoration: none;
+            height: 20px;
+            line-height: 20px;
+          "
+        >
+          <img
+            src="@/assets/img/gongan.png"
+            style="float: left; width: 18px; height: 18px"
+          />
+          <p
+            style="
+              float: left;
+              height: 20px;
+              line-height: 20px;
+              margin: 0px 0px 0px 5px;
+              color: #939393;
+            "
+          >
+            粤公网安备 44030602005168号
+          </p></a
+        >
+      </div>
       <p>版权所有:{{ footerDetail.name }}</p>
     </div>
   </div>

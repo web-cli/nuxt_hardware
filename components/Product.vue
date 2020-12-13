@@ -204,8 +204,8 @@ li.ant-menu-submenu.ant-menu-submenu-vertical,
       // width: 100px;
       height: 100px;
       img {
-        width: 60px;
-        height: 60px;
+        max-width: 100px;
+        max-height: 100px;
         margin: 0 40px;
       }
     }
