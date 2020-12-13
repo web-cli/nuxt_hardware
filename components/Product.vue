@@ -177,8 +177,8 @@ li.ant-menu-submenu.ant-menu-submenu-vertical,
     flex-direction: column;
     border: 1px solid @gray-color;
     img {
-      height: 80px;
-      width: 80px;
+      max-height: 80px;
+      max-width: 80px;
       margin-bottom: 20px;
     }
     &:hover {
