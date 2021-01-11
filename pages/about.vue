@@ -19,7 +19,23 @@
 /**
  * @title 联系我们页面
  */
-export default {}
+export default {
+  data() {
+    return {}
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description2222',
+          name: 'description',
+          content: 'My custom description',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="less" scoped>

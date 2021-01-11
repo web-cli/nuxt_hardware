@@ -5,7 +5,7 @@
       <a-menu v-model="current" mode="horizontal" @select="selectTab">
         <a-sub-menu>
           <span slot="title" class="submenu-title-wrapper"
-            ><a-icon type="setting" />产品中心</span
+            ><a-icon type="setting" /> 产品中心</span
           >
           <a-menu-item-group title="NorthFull 优质系列">
             <a-menu-item v-for="item in productDetail" :key="item.key">
@@ -38,13 +38,13 @@ const tabList = [
   },
   {
     title: '公司简介 ',
-    key: 'introduce',
+    key: 'about',
     type: 'appstore',
     link: 'about',
   },
   {
     title: '企业新闻',
-    key: 'dynamic',
+    key: 'news',
     type: 'appstore',
     link: 'news',
   },
@@ -62,6 +62,12 @@ export default {
       tabList: Object.freeze(tabList),
       productDetail: Object.freeze(layoutMockJson),
     }
+  },
+  mounted() {
+    const TYPE = this.tabList.find((item) => item.key === this.$route.name)
+    console.log(TYPE, this.$route.name)
+    this.current = TYPE ? [TYPE.key] : ['1']
+    console.log(this.$route, 90)
   },
   methods: {
     selectTab({ key }) {

@@ -72,9 +72,15 @@
 <script>
 import { layoutMockJson } from '@/assets/js/layoutMockJson'
 export default {
+  props: {
+    productIndex: {
+      type: String,
+      default: '1',
+    },
+  },
   data() {
     return {
-      current: ['1'],
+      current: [this.productIndex],
       tabList: Object.freeze(layoutMockJson),
       selectedList: [],
       isSub: false,
@@ -95,6 +101,7 @@ export default {
       deep: true,
       handler(val, oldVal) {
         this.isSub = false
+        this.selectTab(this.tabList[+this.current - 1])
       },
     },
     '$store.state.tabNative': {
@@ -107,9 +114,10 @@ export default {
     // this.$store.commit('toggleTab', '1')
     setTimeout(() => {
       this.current =
-        this.$store.state.tabNative !== 'home'
+        this.$store.state.tabNative !== 'home' && this.productIndex === '1'
           ? [this.$store.state.tabNative]
-          : ['1']
+          : [this.productIndex]
+      console.log(this.current, this.productIndex)
     }, 100)
   },
   methods: {
