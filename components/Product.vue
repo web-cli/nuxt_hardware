@@ -123,6 +123,7 @@ export default {
   methods: {
     selectTab({ key }) {
       this.$store.commit('toggleTab', key)
+      // this.$router.push({ path: `/${this.tabList[+key - 1].url}` })
     },
     toggleSub(target) {
       console.log(target)
@@ -167,6 +168,10 @@ li.ant-menu-submenu.ant-menu-submenu-vertical,
     p {
       font-size: 28px;
       font-weight: 600;
+      img {
+        width: 175px;
+        height: 68px;
+      }
     }
     div {
       text-indent: 2em;

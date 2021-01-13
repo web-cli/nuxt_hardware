@@ -63,11 +63,15 @@ export default {
       productDetail: Object.freeze(layoutMockJson),
     }
   },
+  watch: {
+    '$store.state.tabNative'(val) {
+      // 你需要执行的代码
+      this.current = [val]
+    },
+  },
   mounted() {
     const TYPE = this.tabList.find((item) => item.key === this.$route.name)
-    console.log(TYPE, this.$route.name)
     this.current = TYPE ? [TYPE.key] : ['1']
-    console.log(this.$route, 90)
   },
   methods: {
     selectTab({ key }) {

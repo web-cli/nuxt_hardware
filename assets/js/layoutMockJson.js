@@ -3,6 +3,7 @@ const layoutMockJson = [
     title: 'McMASTER-CARR',
     key: '1',
     type: 'appstore',
+    url: 'mcmastercarr',
     logo: require('@/assets/img/tab1-logo.png'),
     detail:
       'McMaster-Carr是来自美国的一家五金工具以及配件出产商，主要出产以及销售各类五金产品，销售各种mcmaster中国代理五金紧固件，涵盖的领域十分广泛。我司（深圳市北富联机电有限公司）主要销售不同材质高强度标准紧固件等，如圆柱销、螺丝、螺母、垫片等',
@@ -500,6 +501,7 @@ const layoutMockJson = [
     title: 'Helicoil',
     key: '2',
     type: 'appstore',
+    url: 'helicoil',
     logo: require('@/assets/img/tab3-logo.png'),
     detail:
       'Helicoil螺套是原产于美国的螺套品牌，主要用于螺纹加强及修复，能够为您的需求提供高强度的耐热耐磨的高精度螺纹.',
@@ -612,6 +614,7 @@ const layoutMockJson = [
     title: 'BERG',
     key: '3',
     type: 'appstore',
+    url: 'berg',
     logo: require('@/assets/img/tab2-logo.png'),
     detail:
       'Berg是全球微型精密机械零件的领先制造商。我们公司主要销售Berg任何材质的圆柱销。圆柱销属于定位销，用于固定零件之间的相对位置。它是组合加工和装配时候的重要辅助零件',
@@ -893,6 +896,291 @@ const layoutMockJson = [
       // },
     ],
   },
+  // {
+  //   title: 'recoli',
+  //   key: '4',
+  //   type: 'appstore',
+  //   logo: require('@/assets/img/tab2-logo.png'),
+  //   detail:
+  //     '',
+  //   productList: [
+  //     {
+  //       img: require('@/assets/img/second/recoil1.png'),
+  //       name: '螺套',
+  //       alt: '北富联的螺钉',
+  //       hasDetai: true, // 是否有详情
+  //       expand: {
+  //         title: '螺钉系列',
+  //         subList: [
+  //           {
+  //             img: require('@/assets/img/second/berg1.jpg'),
+  //             name: '螺钉',
+  //             alt: 'BERG螺钉-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       img: require('@/assets/img/second/berg2.jpg'),
+  //       name: '螺母',
+  //       alt: '北富联的螺母',
+  //       hasDetai: true, // 是否有详情
+  //       expand: {
+  //         title: '螺母系列',
+  //         subList: [
+  //           {
+  //             img: require('@/assets/img/second/berg2.jpg'),
+  //             name: '螺母',
+  //             alt: 'BERG螺母-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       img: require('@/assets/img/second/berg3.jpg'),
+  //       name: '弹簧垫',
+  //       alt: '北富联的弹簧垫',
+  //       hasDetai: true, // 是否有详情
+  //       expand: {
+  //         title: '弹簧垫系列',
+  //         subList: [
+  //           {
+  //             img: require('@/assets/img/second/berg3.jpg'),
+  //             name: '弹簧垫',
+  //             alt: 'BERG弹簧垫-northfull.com',
+  //             desc:
+  //               'M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       img: require('@/assets/img/second/berg4.jpg'),
+  //       name: '挡圈 ',
+  //       alt: '北富联的挡圈 ',
+  //       hasDetai: true, // 是否有详情
+  //       expand: {
+  //         title: '挡圈 系列',
+  //         subList: [
+  //           {
+  //             img: require('@/assets/img/second/berg4.jpg'),
+  //             name: '挡圈 ',
+  //             alt: 'BERG挡圈-northfull.com',
+  //             desc:
+  //               '公制：M2.5 ~ M1000;美制: 0.125"~ 10";材质：合金钢   65Mn, AISI 410, AISI 420,不锈钢   AISI 302, AISI 316, PH 15-7, PH17-7',
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       img: require('@/assets/img/second/berg5.jpg'),
+  //       name: '拉铆螺母',
+  //       alt: '北富联的拉铆螺母',
+  //       hasDetai: true, // 是否有详情
+  //       expand: {
+  //         title: '拉铆螺母系列',
+  //         subList: [
+  //           {
+  //             img: require('@/assets/img/second/berg5.jpg'),
+  //             name: '拉铆螺母',
+  //             alt: 'BERG拉铆螺母-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       img: require('@/assets/img/second/berg6.jpg'),
+  //       name: '铆钉',
+  //       alt: '北富联的铆钉',
+  //       hasDetai: true, // 是否有详情
+  //       expand: {
+  //         title: '铆钉系列',
+  //         subList: [
+  //           {
+  //             img: require('@/assets/img/second/berg6.jpg'),
+  //             name: '铆钉',
+  //             alt: 'BERG铆钉-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //           {
+  //             img: require('@/assets/img/second/berg6-0.jpg'),
+  //             name: '实心铆钉',
+  //             alt: 'BERG实心铆钉-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       img: require('@/assets/img/second/berg7.jpg'),
+  //       name: '螺套',
+  //       alt: '北富联的螺套',
+  //       hasDetai: true, // 是否有详情
+  //       expand: {
+  //         title: '螺套系列',
+  //         subList: [
+  //           {
+  //             img: require('@/assets/img/second/berg7.jpg'),
+  //             name: '螺套',
+  //             alt: 'BERG螺套-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //           {
+  //             img: require('@/assets/img/second/berg7-0.jpg'),
+  //             name: '自攻螺套',
+  //             alt: 'BERG自攻螺套-northfull.com',
+  //             desc: '无',
+  //           },
+  //           {
+  //             img: require('@/assets/img/second/berg7-1.jpg'),
+  //             name: '插销螺套',
+  //             alt: 'BERG插销螺套-northfull.com',
+  //             desc: '无',
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       img: require('@/assets/img/second/berg8.jpg'),
+  //       name: '定位销',
+  //       alt: '北富联的定位销',
+  //       hasDetai: true, // 是否有详情
+  //       expand: {
+  //         title: '定位销系列',
+  //         subList: [
+  //           {
+  //             img: require('@/assets/img/second/berg8.jpg'),
+  //             name: '定位销',
+  //             alt: 'BERG定位销-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //           {
+  //             img: require('@/assets/img/second/berg8-0.jpg'),
+  //             name: '弹簧销',
+  //             alt: 'BERG弹簧销-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //           {
+  //             img: require('@/assets/img/second/berg9.jpg'),
+  //             name: '圆柱销',
+  //             alt: 'BERG圆柱销-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       img: require('@/assets/img/second/berg9.jpg'),
+  //       name: '其他',
+  //       alt: '北富联的其他',
+  //       hasDetai: true, // 是否有详情
+  //       expand: {
+  //         title: '其他系列',
+  //         subList: [
+  //           {
+  //             img: require('@/assets/img/second/berg9.jpg'),
+  //             name: '其他',
+  //             alt: 'BERG其他-northfull.com',
+  //             desc:
+  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     // {
+  //     //   img: require('@/assets/img/luoding.jpg'),
+  //     //   name: '螺钉',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/luoding2.jpg'),
+  //     //   name: '紧定螺钉',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/luoding3.jpg'),
+  //     //   name: '内六角螺钉',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/luoding4.jpg'),
+  //     //   name: '轴肩螺钉',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/luomu.jpg'),
+  //     //   name: '螺母',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/dianquan.jpg'),
+  //     //   name: '齿形垫',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/dianquan2.jpg'),
+  //     //   name: '弹簧垫',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/dianquan3.jpg'),
+  //     //   name: '平垫',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/dangquan.jpg'),
+  //     //   name: '挡圈',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/laliu.jpg'),
+  //     //   name: '拉铆螺母',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/laliu2.jpg'),
+  //     //   name: '拉铆螺柱',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/liuding.jpg'),
+  //     //   name: '抽芯铆钉',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/liuding2.jpg'),
+  //     //   name: '实心铆钉',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/luotao.jpg'),
+  //     //   name: '插销螺套',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/luotao2.jpg'),
+  //     //   name: '螺套',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/luotao3.jpg'),
+  //     //   name: '自攻螺套',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/dingweixiao.jpg'),
+  //     //   name: '弹簧销',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/dingweixiao2.jpg'),
+  //     //   name: '圆柱销',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/qita.jpg'),
+  //     //   name: '吊环',
+  //     // },
+  //     // {
+  //     //   img: require('@/assets/img/qita2.jpg'),
+  //     //   name: '内六角扳手',
+  //     // },
+  //   ],
+  // },
   // {
   //   title: '意大利 Bordignon博鼎强力弹簧 ',
   //   key: '4',
