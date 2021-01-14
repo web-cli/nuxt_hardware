@@ -1,57 +1,37 @@
 <template>
-  <div v-cloak class="container">
-    <div>
-      <Product product-index="3"></Product>
-    </div>
+  <div class="contact">
+    <Product product-index="3"></Product>
   </div>
 </template>
 
 <script>
+/**
+ * @title berg页面
+ */
 export default {
-  computed: {
-    tabNative() {
-      return this.$store.state.tabNative
-    },
+  data() {
+    return {}
+  },
+  head() {
+    return {
+      title: 'berg定位销-berg中国代理-berg销-工业高精密紧固件供应商-美国berg',
+      meta: [
+        {
+          hid: 'berg-description',
+          name: 'description',
+          content:
+            '深圳市北富联机电有限公司是工业高精密紧固件的供应商，主要代理美国品牌mcmaster,Berg,berg定位销,berg中国代理,berg销,Berg总代理，以最快的交期，优质的服务，优良的质量和合理的价格，成为您最值得信赖的供应商.',
+        },
+        {
+          hid: 'berg-keywords',
+          name: 'keywords',
+          content:
+            'berg定位销,berg中国代理,berg销,工业高精密紧固件供应商,美国berg精密配件,紧固件供应商,高精密紧固件,机电紧固件,北富联机电,深圳北berg定位销,berg中国代理,berg销,工业高精密紧固件供应商,美国berg精密配件,紧固件供应商,高精密紧固件,机电紧固件,北富联机电,深圳北',
+        },
+      ],
+    }
   },
 }
 </script>
 
-<style lang="less" scoped>
-.tab-title {
-  height: 80px;
-  width: 256px;
-  margin-left: 30px;
-  background: #1890ff;
-  .flex-center();
-  color: #ffffff;
-  font-size: 32px;
-}
-.titl2 {
-  color: @theme-color;
-}
-.container {
-  margin: 0 auto;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style lang="less" scoped></style>

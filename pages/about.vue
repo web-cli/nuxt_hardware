@@ -25,7 +25,7 @@ export default {
   },
   head() {
     return {
-      title: this.title,
+      title: '深圳北富联-公司简介',
       meta: [
         {
           hid: 'description2222',

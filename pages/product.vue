@@ -1,7 +1,7 @@
 <template>
   <div v-cloak class="container">
     <div>
-      <Product></Product>
+      <Product product-index="1"></Product>
     </div>
   </div>
 </template>

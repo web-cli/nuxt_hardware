@@ -32,9 +32,9 @@ import { layoutMockJson } from '@/assets/js/layoutMockJson'
 const tabList = [
   {
     title: '首页',
-    key: 'home',
+    key: 'mcmastercarr',
     type: 'appstore',
-    link: 'index',
+    link: 'mcmastercarr',
   },
   {
     title: '公司简介 ',
@@ -76,12 +76,12 @@ export default {
   methods: {
     selectTab({ key }) {
       // 前三个目录不刷新
-      if (
-        ~['1', '2', '3'].indexOf(this.$store.state.tabNative) &&
-        key === 'home'
-      ) {
-        return
-      }
+      // if (
+      //   ~['1', '2', '3'].indexOf(this.$store.state.tabNative) &&
+      //   key === 'home'
+      // ) {
+      //   return
+      // }
       this.$store.commit('toggleTab', key)
     },
   },
