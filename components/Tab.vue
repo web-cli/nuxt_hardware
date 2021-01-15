@@ -1,6 +1,6 @@
 <template>
   <div v-cloak class="tab" style="width: 100%">
-    <a-carousel arrows :autoplay="true" style="width: 100%">
+    <!-- <a-carousel arrows :autoplay="true" style="width: 100%">
       <div slot="prevArrow" class="custom-slick-arrow left-icon">
         <a-icon type="left-circle" />
       </div>
@@ -12,7 +12,7 @@
           <img :src="target" alt="" />
         </div>
       </div>
-    </a-carousel>
+    </a-carousel> -->
   </div>
 </template>
 <script>
