@@ -3,6 +3,7 @@ export default {
   head: {
     title:
       'mcmaster-carr中国代理-berg定位销-helicoil螺套-工业高精密紧固件-北富联机电有限公司',
+    script: [{ src: '/js/user.js' }, { src: '/js/baidu.js' }],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
