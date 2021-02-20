@@ -1,11 +1,32 @@
 <template>
   <div v-cloak>
     <Head></Head>
+    <!-- <Test></Test> -->
     <Tab></Tab>
     <Nuxt />
     <Footer></Footer>
   </div>
 </template>
+
+<script lang="javascript">
+import {seo} from '@/static/js/common'
+export default {
+  data () {
+    return {}
+  },
+  mounted () {
+    seo()
+    // 统计脚本
+    var _hmt = _hmt || [];
+    (function () {
+      const hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?72df00f71260cd01bb2b8b9dd44ef549";
+      const s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  },
+}
+</script>
 
 <style>
 html {

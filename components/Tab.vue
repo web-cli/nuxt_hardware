@@ -1,18 +1,18 @@
 <template>
   <div v-cloak class="tab" style="width: 100%">
-    <!-- <a-carousel arrows :autoplay="true" style="width: 100%">
+    <a-carousel arrows :autoplay="true" style="width: 100%">
       <div slot="prevArrow" class="custom-slick-arrow left-icon">
         <a-icon type="left-circle" />
       </div>
       <div slot="nextArrow" class="custom-slick-arrow" style="right: 50px">
         <a-icon type="right-circle" />
       </div>
-      <div v-for="(target, index) in tabList" v-cloak :key="index">
-        <div>
+      <div v-for="(target, index) in tabList" :key="index">
+        <div v-if="isShow" class="inner">
           <img :src="target" alt="" />
         </div>
       </div>
-    </a-carousel> -->
+    </a-carousel>
   </div>
 </template>
 <script>
@@ -23,7 +23,11 @@ export default {
         require('@/assets/img/banner2.jpg'),
         require('@/assets/img/banner5.jpg'),
       ]),
+      isShow: false,
     }
+  },
+  mounted() {
+    this.isShow = true
   },
 }
 </script>
@@ -31,7 +35,7 @@ export default {
 /* For demo */
 .ant-carousel >>> .slick-slide {
   text-align: center;
-  height: 160px;
+  height: 237px;
   line-height: 160px;
   background: #364d79;
   overflow: hidden;
@@ -64,5 +68,11 @@ export default {
 }
 img {
   width: 100%;
+  /* height: 160px; */
+}
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
