@@ -1,5 +1,5 @@
 <template>
-  <div v-cloak class="tab" style="width: 100%">
+  <div v-cloak class="tab">
     <a-carousel arrows :autoplay="true" style="width: 100%">
       <div slot="prevArrow" class="custom-slick-arrow left-icon">
         <a-icon type="left-circle" />
@@ -8,8 +8,10 @@
         <a-icon type="right-circle" />
       </div>
       <div v-for="(target, index) in tabList" :key="index">
-        <div v-if="isShow" class="inner">
-          <img :src="target" alt="" />
+        <div v-show="isShow" class="inner">
+          <nuxt-link :to="{ name: target.link }">
+            <img :src="target.img" alt="" />
+          </nuxt-link>
         </div>
       </div>
     </a-carousel>
@@ -19,14 +21,57 @@
 export default {
   data() {
     return {
-      tabList: Object.freeze([
-        require('@/assets/img/banner2.jpg'),
-        require('@/assets/img/banner5.jpg'),
-      ]),
+      carouselObj: {
+        index: [
+          {
+            img: require('@/assets/img/third/banner/home_1.jpg'),
+            link: 'index',
+          },
+          {
+            img: require('@/assets/img/third/banner/home_2.jpg'),
+            link: 'about',
+          },
+        ],
+        product: [
+          {
+            img: require('@/assets/img/third/banner/banner_product.png'),
+            link: '',
+          },
+        ],
+        about: [
+          {
+            img: require('@/assets/img/third/banner/home_2.jpg'),
+            link: '',
+          },
+        ],
+        news: [
+          {
+            img: require('@/assets/img/third/banner/banner_news.png'),
+            link: '',
+          },
+        ],
+        contact: [
+          {
+            img: require('@/assets/img/third/banner/banner_concat.png'),
+            link: '',
+          },
+        ],
+      },
+      tabList: [],
       isShow: false,
     }
   },
+  watch: {
+    $route: {
+      handler(val) {
+        this.tabList = this.carouselObj[val.name]
+        console.log(1008, val)
+      },
+    },
+  },
   mounted() {
+    this.tabList = this.carouselObj[this.$route.name]
+    console.log(this.$route, 99)
     this.isShow = true
   },
 }
@@ -35,7 +80,7 @@ export default {
 /* For demo */
 .ant-carousel >>> .slick-slide {
   text-align: center;
-  height: 237px;
+  height: 450px;
   line-height: 160px;
   background: #364d79;
   overflow: hidden;
@@ -64,15 +109,21 @@ export default {
   z-index: 10;
 }
 .tab {
-  margin-top: 100px;
+  margin-top: 80px;
+  min-height: 100px;
 }
 img {
   width: 100%;
+  height: 450px;
+  /* height: 450px; */
   /* height: 160px; */
 }
 .inner {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  height: 450px;
+  width: 100%;
+  /* min-height: 100px; */
 }
 </style>

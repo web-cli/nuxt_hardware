@@ -1,6 +1,13 @@
 <template>
   <div class="contact">
-    <Product product-index="1"></Product>
+    <div class="theme-title title-pos">产品中心</div>
+    <div class="product-list">
+      <div v-for="item in productTypeList" :key="item.url" class="product-item">
+        <nuxt-link :to="{ name: item.url }">
+          <img :src="item.img" alt="" />
+        </nuxt-link>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -10,7 +17,38 @@
  */
 export default {
   data() {
-    return {}
+    return {
+      productTypeList: [
+        {
+          img: require('@/assets/img/third/product-type/mcmastercarr.png'),
+          url: 'mcmastercarr',
+        },
+        {
+          img: require('@/assets/img/third/product-type/kato.png'),
+          url: 'kato',
+        },
+        {
+          img: require('@/assets/img/third/product-type/ensat.png'),
+          url: 'ensat',
+        },
+        {
+          img: require('@/assets/img/third/product-type/helicoil.png'),
+          url: 'helicoil',
+        },
+        {
+          img: require('@/assets/img/third/product-type/recoil.png'),
+          url: 'recoil',
+        },
+        {
+          img: require('@/assets/img/third/product-type/berg.png'),
+          url: 'berg',
+        },
+        {
+          img: require('@/assets/img/third/product-type/qita1.png'),
+          url: 'qita1',
+        },
+      ],
+    }
   },
   head() {
     return {
@@ -33,4 +71,23 @@ export default {
 }
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.title-pos {
+  margin: 60px 0px;
+}
+.product-list {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  .product-item {
+    margin-bottom: 80px;
+  }
+  img {
+    width: 300px;
+    height: 120px;
+  }
+}
+</style>

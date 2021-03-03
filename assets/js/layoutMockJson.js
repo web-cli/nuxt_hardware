@@ -4,7 +4,7 @@ const layoutMockJson = [
     key: '1',
     type: 'appstore',
     url: 'mcmastercarr',
-    logo: require('@/assets/img/tab1-logo.png'),
+    logo: require('@/assets/img/third/product-type/mcmastercarr.png'),
     detail:
       'McMaster-Carr是来自美国的一家五金工具以及配件出产商，主要出产以及销售各类五金产品，销售各种mcmaster中国代理五金紧固件，涵盖的领域十分广泛。我司（深圳市北富联机电有限公司）主要销售不同材质高强度标准紧固件等，如圆柱销、螺丝、螺母、垫片等',
     productList: [

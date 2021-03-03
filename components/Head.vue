@@ -1,26 +1,35 @@
 <template>
   <div class="title">
-    <div class="name">北富联机电|NorthFull</div>
-    <div class="tab">
-      <a-menu v-model="current" mode="horizontal" @select="selectTab">
-        <a-sub-menu>
-          <span slot="title" class="submenu-title-wrapper"
-            ><a-icon type="setting" /> 产品中心</span
-          >
-          <a-menu-item-group title="NorthFull 优质系列">
-            <a-menu-item v-for="item in productDetail" :key="item.key">
-              <NuxtLink to="/"> {{ item.title }}</NuxtLink>
-            </a-menu-item>
-          </a-menu-item-group>
-          <!-- <a-menu-item-group title="Item 2">
-          <a-menu-item key="productList:3"> Option 3 </a-menu-item>
-          <a-menu-item key="productList:4"> Option 4 </a-menu-item>
-        </a-menu-item-group> -->
-        </a-sub-menu>
+    <div class="name"></div>
+    <div class="tab header">
+      <a-menu mode="horizontal" :selectable="false">
         <a-menu-item v-for="target in tabList" :key="target.key">
-          <NuxtLink :to="{ name: target.link }">
-            <a-icon :type="target.type" />{{ target.title }}</NuxtLink
-          >
+          <NuxtLink :to="{ name: target.link }" target="_self">
+            <div v-if="target.options && target.options.length > 0">
+              <a-dropdown placement="bottomCenter">
+                <div>
+                  <!-- <a-icon :type="target.type" /> -->
+                  <span>{{ target.title }}</span>
+                  <a-icon
+                    type="down"
+                    :style="{ fontSize: '17px' }"
+                    @click="(e) => e.preventDefault()"
+                  />
+                </div>
+                <a-menu slot="overlay">
+                  <a-menu-item v-for="item in target.options" :key="item.key">
+                    <NuxtLink :to="{ name: item.link }" target="_self">
+                      <span>{{ item.title }}</span>
+                    </NuxtLink>
+                  </a-menu-item>
+                </a-menu>
+              </a-dropdown>
+            </div>
+            <div v-else>
+              <!-- <a-icon :type="target.type" />  -->
+              <span>{{ target.title }}</span>
+            </div>
+          </NuxtLink>
         </a-menu-item>
       </a-menu>
     </div>
@@ -29,37 +38,12 @@
 
 <script>
 import { layoutMockJson } from '@/assets/js/layoutMockJson'
-const tabList = [
-  {
-    title: '首页',
-    key: 'mcmastercarr',
-    type: 'appstore',
-    link: 'mcmastercarr',
-  },
-  {
-    title: '公司简介 ',
-    key: 'about',
-    type: 'appstore',
-    link: 'about',
-  },
-  {
-    title: '企业新闻',
-    key: 'news',
-    type: 'appstore',
-    link: 'news',
-  },
-  {
-    title: '联系我们',
-    key: 'contact',
-    type: 'phone',
-    link: 'contact',
-  },
-]
+import { headerTab } from '@/assets/js/headerTab'
 export default {
   data() {
     return {
       current: ['1'],
-      tabList: Object.freeze(tabList),
+      tabList: Object.freeze(headerTab),
       productDetail: Object.freeze(layoutMockJson),
     }
   },
@@ -105,9 +89,25 @@ export default {
   .flex-center();
   .name {
     margin-right: 30px;
+    background: url('~@/assets/img/third/logo.png') no-repeat center / 100% 100%;
+    width: 300px;
+    height: 50px;
   }
 }
 .tab {
   .flex-center();
+  font-size: 24px;
+}
+
+.header {
+  span {
+    font-size: 17px;
+    color: #333333;
+  }
+}
+</style>
+<style lang="less">
+.ant-menu-horizontal {
+  border-bottom: 0px !important;
 }
 </style>
