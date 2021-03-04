@@ -8,14 +8,17 @@
         </nuxt-link>
       </div>
     </div>
+    <Solute></Solute>
   </div>
 </template>
 
 <script>
+import Solute from '~/components/Solute.vue'
 /**
  * @title mcmatercarr页面
  */
 export default {
+  components: { Solute },
   data() {
     return {
       productTypeList: [
@@ -68,8 +71,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.title-pos {
-  margin: 60px 0px;
+.contact {
 }
 .product-list {
   width: 1100px;
@@ -78,6 +80,7 @@ export default {
   align-items: center;
   margin: 0 auto;
   flex-wrap: wrap;
+  border-bottom: 2px solid #f2f2f2;
   .product-item {
     margin-bottom: 80px;
   }

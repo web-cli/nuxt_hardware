@@ -26,7 +26,7 @@ export default {
           'Helicoil螺套,helicoil螺纹护套,钢丝螺套,螺纹护套,自攻螺套，插销螺套,螺纹护套，mcmaster-carr,1084-6EN090,mcmastercarr中国,mcmastercarr代理,mcmastercarr,mcmastercarr经销商,mcmastercarr一级代理商,mcmastercarr官网,mcmaster中国官网,mcmaster-carr 中国总代理,mcmaster-carr标准件，berg定位销，berg中国代理,mcmastercarr螺栓，northfull,northfull.com,北富联机电,深圳北富联机电,深圳市北富联机电有限公司,北富联机电有限公司，McMaster亚洲代理',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/small_logo.png' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

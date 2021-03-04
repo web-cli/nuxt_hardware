@@ -38,6 +38,13 @@ export default {
             link: '',
           },
         ],
+        solute: [
+          {
+            img: require('@/assets/img/third/banner/banner_solute.png'),
+            link: '',
+          },
+        ],
+
         about: [
           {
             img: require('@/assets/img/third/banner/home_2.jpg'),
@@ -45,6 +52,12 @@ export default {
           },
         ],
         news: [
+          {
+            img: require('@/assets/img/third/banner/banner_news.png'),
+            link: '',
+          },
+        ],
+        'news-detail': [
           {
             img: require('@/assets/img/third/banner/banner_news.png'),
             link: '',

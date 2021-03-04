@@ -1,15 +1,34 @@
 <template>
   <div class="contact">
-    <div class="contact-title">深圳市北富联机电有限公司</div>
+    <div class="theme-title title-pos contact-title">
+      <!-- <img
+        :src="require('@/assets/img/third/small_logo.png')"
+        alt="北富联logo"
+        class="logo"
+      /> -->
+      -关于我们-
+    </div>
+    <div class="contact-desc">
+      深圳市北富联机电有限公司成立于广东深圳市宝安区，是工业高精密紧固件的供应商，主要代理美国品牌McMaster-carr，Berg，HeliCoil，Recoil螺纹护套等等。有着稳定的国外供应商，能快速完成交货任务。我们承诺：以最快的交期，优质的服务，优良的质量和合理的价格，成为你最值得信赖的供应商。如果你有其它的需求,请随时联系我们。
+    </div>
+    <div class="contact-desc">
+      <div><a-icon type="team" class="icon" /> Alyssa Leung</div>
+      <div><a-icon type="mail" class="icon" /> northfull@163.com</div>
+      <div><a-icon type="phone" class="icon" />0086-13570342539</div>
+      <div><a-icon type="qq" class="icon" />318203871</div>
+      <div class="tips">欢迎添加我的微信～期待你的到来</div>
+      <img src="@/assets/img/weixin.png" alt="深圳市北富联机电有限公司" />
+      <div class="tips2">备注：添加好友，请备明来历哦～</div>
+    </div>
+    <!-- <div class="contact-title">深圳市北富联机电有限公司</div>
     <div class="contact-detail">
       <p>手机：13570342539</p>
       <p>QQ：374853121</p>
       <p>企业邮箱：northfull@163.com</p>
-      <!-- <p>地址：深圳</p> -->
       <p>欢迎添加我的微信～期待你的到来</p>
-      <img src="@/assets/img/weixin.png" alt="深圳市北富联机电有限公司" />
+      
       <p class="tips">备注：添加好友，请备明来历哦～</p>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -22,24 +41,48 @@ export default {}
 
 <style lang="less" scoped>
 .contact {
-  background: #f7f7f7;
-  margin: 40px auto 40px auto;
-  border: 2px solid @gray-color;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  &-title {
-    font-weight: 600;
-    margin: 20px 0;
+  .contact-title {
+    // color: @blue-color;
   }
-  img {
-    width: 120px;
-    height: 120px;
+  .logo {
+    width: 30px;
+    height: 30px;
   }
-  .tips {
-    margin: 20px 0;
+  .contact-desc {
+    width: 1000px;
+    // box-shadow: 0 4px 10px #eaeaea;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 16px;
+    text-indent: 2rem;
+    margin-bottom: 30px;
+  }
+  .contact-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    div {
+      width: 400px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .icon {
+      margin-right: 20px;
+    }
+    .tips {
+      color: #999999;
+      font-size: 16px;
+    }
+    .tips2 {
+      color: #999999;
+      font-size: 12px;
+    }
   }
 }
 </style>

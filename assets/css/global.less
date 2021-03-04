@@ -1,6 +1,7 @@
 /** 变量 **/
 @theme-color: #A3C5FB;
 @gray-color: #f7f7f7;
+@blue-color:#1890ff;
 
 /** 混合 **/
 .flex-center {
@@ -17,8 +18,25 @@
 
 .theme-title {
   font-size: 28px;
-  color:#001578;
+  color: #001578;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+.title-pos {
+  margin: 60px 0px;
+}
+
+@keyframes turn {
+  from {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+  }
+
 }
