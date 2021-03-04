@@ -64,13 +64,14 @@ export default {
   watch: {
     $route: {
       handler(val) {
-        this.tabList = this.carouselObj[val.name]
+        this.tabList = this.carouselObj[val.name] || this.carouselObj.product
         console.log(1008, val)
       },
     },
   },
   mounted() {
-    this.tabList = this.carouselObj[this.$route.name]
+    this.tabList =
+      this.carouselObj[this.$route.name] || this.carouselObj.product
     console.log(this.$route, 99)
     this.isShow = true
   },
