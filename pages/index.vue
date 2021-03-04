@@ -43,10 +43,6 @@ export default {
           img: require('@/assets/img/third/product-type/berg.png'),
           url: 'berg',
         },
-        {
-          img: require('@/assets/img/third/product-type/qita1.png'),
-          url: 'qita1',
-        },
       ],
     }
   },

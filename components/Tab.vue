@@ -7,8 +7,8 @@
       <div slot="nextArrow" class="custom-slick-arrow" style="right: 50px">
         <a-icon type="right-circle" />
       </div>
-      <div v-for="(target, index) in tabList" :key="index">
-        <div v-show="isShow" class="inner">
+      <div v-for="(target, index) in tabList" :key="index" class="inner">
+        <div v-show="isShow">
           <nuxt-link :to="{ name: target.link }">
             <img :src="target.img" alt="" />
           </nuxt-link>
@@ -80,7 +80,7 @@ export default {
 /* For demo */
 .ant-carousel >>> .slick-slide {
   text-align: center;
-  height: 450px;
+  height: 350px;
   line-height: 160px;
   background: #364d79;
   overflow: hidden;
@@ -114,7 +114,7 @@ export default {
 }
 img {
   width: 100%;
-  height: 450px;
+  height: 350px;
   /* height: 450px; */
   /* height: 160px; */
 }
@@ -122,7 +122,7 @@ img {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  height: 450px;
+  height: 350px;
   width: 100%;
   /* min-height: 100px; */
 }
