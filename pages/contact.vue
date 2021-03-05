@@ -17,7 +17,9 @@
       <div><a-icon type="phone" class="icon" />0086-13570342539</div>
       <div><a-icon type="qq" class="icon" />318203871</div>
       <div class="tips">欢迎添加我的微信～期待你的到来</div>
-      <img src="@/assets/img/weixin.png" alt="深圳市北富联机电有限公司" />
+      <div>
+        <img src="@/assets/img/weixin.png" alt="深圳市北富联机电有限公司" />
+      </div>
       <div class="tips2">备注：添加好友，请备明来历哦～</div>
     </div>
     <!-- <div class="contact-title">深圳市北富联机电有限公司</div>
@@ -64,6 +66,7 @@ export default {}
     img {
       width: 200px;
       height: 200px;
+      margin-left: 20px;
     }
     div {
       width: 400px;
