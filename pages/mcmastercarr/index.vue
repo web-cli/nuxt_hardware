@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <Product product-index="1"></Product>
+    <Product></Product>
   </div>
 </template>
 

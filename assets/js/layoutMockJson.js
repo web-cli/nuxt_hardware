@@ -12,6 +12,7 @@ const layoutMockJson = [
         img: require('@/assets/img/second/luosi-1.png'),
         name: '内六角螺丝详情',
         alt: '北富联的六角螺丝',
+        key: '1',
         hasDetai: true, // 是否有详情
         expand: {
           title: '内六角螺丝系列',
@@ -105,6 +106,7 @@ const layoutMockJson = [
         name: '圆头螺丝',
         alt: '北富联圆头螺丝',
         hasDetai: true, // 是否有详情
+        key: '2',
         expand: {
           title: '圆头螺丝系列',
           subList: [
@@ -115,45 +117,51 @@ const layoutMockJson = [
               desc: '无',
             },
             {
-              img: require('@/assets/img/second/yuantou2.png'),
-              name: '十字螺丝',
-              alt: 'mcmaster十字螺丝-northfull.com',
-              desc: '无',
+              img: require('@/assets/img/third/2.0.png'),
+              name: '不锈钢螺丝',
+              alt: 'mcmaster不锈钢螺丝-northfull.com',
+              desc: '圆头不锈钢螺丝，由18-8不锈钢组成，具有很强化学腐蚀性作用',
             },
             {
-              img: require('@/assets/img/second/yuantou3.png'),
-              name: '开槽圆头螺丝',
-              alt: 'mcmaster开槽圆头螺丝-northfull.com',
-              desc: '无',
-            },
-            {
-              img: require('@/assets/img/second/yuantou4.png'),
-              name: '梅花圆头螺丝',
-              alt: 'mcmaster梅花圆头螺丝-northfull.com',
+              img: require('@/assets/img/third/2.1.png'),
+              name: '不锈钢装订桶螺钉',
+              alt: 'mcmaster不锈钢装订桶螺钉-northfull.com',
               desc:
-                '梅花圆头螺丝使用torx驱动器比其他的螺丝可以接触到更多的驱动器，使得您拧紧螺丝不会损坏凹槽。',
+                '将抢管与螺钉一起搭配，或者与其他类型的螺钉搭配以达到紧固件的作用，具有很强耐化学腐蚀性的效果。',
             },
             {
-              img: require('@/assets/img/second/yuantou5.png'),
-              name: '十字圆头螺丝',
-              alt: 'mcmaster十字圆头螺丝-northfull.com',
-              desc: '无',
+              img: require('@/assets/img/third/2.2.png'),
+              name: '316不锈钢圆头螺钉  ',
+              alt: 'mcmaster316不锈钢圆头螺钉  -northfull.com',
+              desc: '采用316不锈钢制作而成，具有超强的防化学腐蚀性作用。',
             },
             {
-              img: require('@/assets/img/second/yuantou6.png'),
+              img: require('@/assets/img/third/2.3.png'),
+              name: '装订桶用钢螺丝',
+              alt: 'mcmaster装订桶用钢螺丝-northfull.com',
+              desc: '该种螺丝比肩螺丝短，通常适用于薄材料中。',
+            },
+            {
+              img: require('@/assets/img/third/2.4.png'),
+              name: '梅花圆头螺丝 ',
+              alt: 'mcmaster梅花圆头螺丝   -northfull.com',
+              desc: '梅花圆头螺丝',
+            },
+            {
+              img: require('@/assets/img/third/2.5.png'),
               name: '密封圆头螺丝',
               alt: 'mcmaster密封圆头螺丝-northfull.com',
-              desc: '采用密封圆头，可防止泄露并密封污染物',
+              desc: '采用密封圆头，可防止泄露并密封污染物.',
             },
             {
-              img: require('@/assets/img/second/yuantou7.png'),
-              name: '排气圆头螺丝',
+              img: require('@/assets/img/third/2.6.png'),
+              name: '排气圆头螺丝 ',
               alt: 'mcmaster排气圆头螺丝-northfull.com',
               desc: '排气圆头螺丝可以很好的排出螺钉下面节流的气体和流体。',
             },
             {
-              img: require('@/assets/img/second/yuantou8.png'),
-              name: '左旋圆头螺丝',
+              img: require('@/assets/img/third/2.7.png'),
+              name: '左旋圆头螺丝 ',
               alt: 'mcmaster左旋圆头螺丝-northfull.com',
               desc: '左旋圆头螺钉一旦紧固，可防止因逆时针的运动而松动。',
             },
@@ -165,6 +173,7 @@ const layoutMockJson = [
         name: '六角头螺钉',
         alt: '北富联的六角头螺钉',
         hasDetai: true, // 是否有详情
+        key: '3',
         expand: {
           title: '六角头螺钉系列',
           subList: [
@@ -217,6 +226,7 @@ const layoutMockJson = [
         name: '平头螺丝',
         alt: '北富联的平头螺丝',
         hasDetai: true, // 是否有详情
+        key: '4',
         expand: {
           title: '平头螺丝系列',
           subList: [
@@ -265,9 +275,44 @@ const layoutMockJson = [
         name: '自攻螺钉（木螺钉和干式墙螺钉）',
         alt: '北富联的自攻螺钉（木螺钉和干式墙螺钉',
         hasDetai: true, // 是否有详情
+        key: '5',
         expand: {
           title: '自攻螺钉（木螺钉和干式墙螺钉）系列',
-          subList: [],
+          subList: [
+            {
+              img: require('@/assets/img/third/5.png'),
+              name: '钣金自攻螺丝 ',
+              alt: 'mcmaster钣金自攻螺丝-northfull.com',
+              desc:
+                '钣金螺丝固定厚度不超过0.200英寸，通常钣金自攻螺丝厚度大于0.260螺丝需要一个启动器孔',
+            },
+            {
+              img: require('@/assets/img/third/5.1.png'),
+              name: '金属制螺纹螺丝 ',
+              alt: 'mcmaster金属制螺纹螺丝-northfull.com',
+              desc: '带螺纹螺丝，具有很强的抗震装配。',
+            },
+            {
+              img: require('@/assets/img/third/5.2.png'),
+              name: '金属自攻螺丝 ',
+              alt: 'mcmaster金属自攻螺丝-northfull.com',
+              desc:
+                '自攻螺丝在旋转时钻出螺纹，和螺纹成型螺丝作对比，所需要的驱动扭动力较小，因此对材料的应力小很多。',
+            },
+            {
+              img: require('@/assets/img/third/5.4.png'),
+              name: '金属钻孔自攻螺丝 ',
+              alt: 'mcmaster金属钻孔自攻螺丝-northfull.com',
+              desc:
+                '钻孔螺钉可以自固定0.500英寸的金属，很大效率上节约了时间和经历成本。',
+            },
+            {
+              img: require('@/assets/img/third/5.3.png'),
+              name: '木螺丝 ',
+              alt: 'mcmaster木螺丝-northfull.com',
+              desc: '采取的材质和平常用的不一样',
+            },
+          ],
         },
       },
       {
@@ -275,6 +320,7 @@ const layoutMockJson = [
         name: '销',
         alt: '北富联的销',
         hasDetai: true, // 是否有详情
+        key: '6',
         expand: {
           title: '销系列',
           subList: [
@@ -301,15 +347,16 @@ const layoutMockJson = [
         ],
       },
       {
-        img: require('@/assets/img/second/berg1.jpg'),
+        img: require('@/assets/img/third/8.png'),
         name: '螺钉',
         alt: '北富联的螺钉',
+        key: '7',
         hasDetai: true, // 是否有详情
         expand: {
           title: '螺钉系列',
           subList: [
             {
-              img: require('@/assets/img/second/berg1.jpg'),
+              img: require('@/assets/img/third/8.png'),
               name: '螺钉',
               alt: 'BERG螺钉-northfull.com',
               desc:
@@ -322,6 +369,7 @@ const layoutMockJson = [
         img: require('@/assets/img/second/berg2.jpg'),
         name: '螺母',
         alt: '北富联的螺母',
+        key: '8',
         hasDetai: true, // 是否有详情
         expand: {
           title: '螺母系列',
@@ -337,9 +385,118 @@ const layoutMockJson = [
         },
       },
       {
+        img: require('@/assets/img/third/9.0.png'),
+        name: '螺纹杆&螺柱',
+        alt: '北富联的螺纹杆&螺柱',
+        key: '9',
+        hasDetai: true, // 是否有详情
+        expand: {
+          title: '螺纹杆&螺柱',
+          subList: [
+            {
+              img: require('@/assets/img/third/9.0.png'),
+              name: '八级螺纹杆 ',
+              alt: 'mcmaster八级螺纹杆-northfull.com',
+              desc: '高强度螺纹杆',
+            },
+            {
+              img: require('@/assets/img/third/9.1.png'),
+              name: '9、10级公制高强度螺纹杆 ',
+              alt: 'mcmaster9、10级公制高强度螺纹杆-northfull.com',
+              desc: '图中是9级、10级螺纹杆，比中强度杆坚固25%左右',
+            },
+            {
+              img: require('@/assets/img/third/9.2.png'),
+              name: 'B7级别-左螺纹中强度钢螺纹杆 ',
+              alt: 'mcmasterB7级别-左螺纹中强度钢螺纹杆-northfull.com',
+              desc: 'B7级别-左螺纹中强度钢螺纹杆',
+            },
+            {
+              img: require('@/assets/img/third/9.3.png'),
+              name: '公制低强度钢螺纹杆 ',
+              alt: 'mcmaster公制低强度钢螺纹杆-northfull.com',
+              desc:
+                '该螺纹杆的硬度大约是中强度螺纹杆的50%，主要用于轻型悬挂，安装和固定使用',
+            },
+            {
+              img: require('@/assets/img/third/9.4.png'),
+              name: '不锈钢螺纹杆 ',
+              alt: 'mcmaster不锈钢螺纹杆-northfull.com',
+              desc: '采用公制尺寸，具有良好的化学防腐性，不容易生锈。',
+            },
+            {
+              img: require('@/assets/img/third/9.5.png'),
+              name: '316超级防腐蚀性不锈钢螺纹杆 ',
+              alt: 'mcmaster316超级防腐蚀性不锈钢螺纹杆-northfull.com',
+              desc:
+                '采用316材质，更加耐腐蚀性，对化学药水和盐水具有很好的抗腐蚀的效果。',
+            },
+          ],
+        },
+      },
+      {
+        img: require('@/assets/img/third/00.png'),
+        name: '螺母',
+        alt: '北富联的螺母',
+        key: '10',
+        hasDetai: true, // 是否有详情
+        expand: {
+          title: '螺母系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/00.png'),
+              name: '中强度钢六角螺母 ',
+              alt: 'mcmaster中强度钢六角螺母-northfull.com',
+              desc: '5级六角螺母适用于大多数机械设备的紧固件。',
+            },
+            {
+              img: require('@/assets/img/third/01.png'),
+              name: '8级-中强度钢六角螺母',
+              alt: 'mcmaster8级-中强度钢六角螺母-northfull.com',
+              desc: '该六角螺母强度较高，常用于紧固大多数设备和机械。',
+            },
+            {
+              img: require('@/assets/img/third/03.png'),
+              name: '左螺纹中强度钢六角螺母',
+              alt: 'mcmaster左螺纹中强度钢六角螺母-northfull.com',
+              desc:
+                '该mcmaster-carr六角螺母向左旋转拧紧，一旦紧固后，可抵抗逆时针运动的松动。',
+            },
+            {
+              img: require('@/assets/img/third/01a.png'),
+              name: 'JIS中强度钢六角螺母 ',
+              alt: 'mcmasterJIS中强度钢六角螺母-northfull.com',
+              desc: 'mcmaster-carr这款六角螺母符合JIS（日本工业标准）B1181。',
+            },
+            {
+              img: require('@/assets/img/third/0ab.png'),
+              name: '10级高强度钢六角螺母 ',
+              alt: 'mcmaster10级高强度钢六角螺母-northfull.com',
+              desc:
+                '该McMaster-Carr螺母比中强度钢六角螺母坚固25%左右，受用型很高。',
+            },
+            {
+              img: require('@/assets/img/third/01c.png'),
+              name: '低强度钢六角螺母 ',
+              alt: 'mcmaster低强度钢六角螺母-northfull.com',
+              desc:
+                '这些mcmaster螺母强度是中强度钢六角螺丝的一半，常用于轻型紧固件应用中。',
+            },
+            {
+              img: require('@/assets/img/third/01d.png'),
+              name: '米尔规格低强度钢六角螺母',
+              alt: 'mcmaster米尔规格低强度钢六角螺母-northfull.com',
+              desc:
+                '这些mcmastercarr六角螺母采用高端的材料，结构符合军事标准。',
+            },
+          ],
+        },
+      },
+      {
         img: require('@/assets/img/second/berg3.jpg'),
         name: '弹簧垫',
         alt: '北富联的弹簧垫',
+        key: '11',
         hasDetai: true, // 是否有详情
         expand: {
           title: '弹簧垫系列',
@@ -358,6 +515,7 @@ const layoutMockJson = [
         img: require('@/assets/img/second/berg4.jpg'),
         name: '挡圈 ',
         alt: '北富联的挡圈 ',
+        key: '12',
         hasDetai: true, // 是否有详情
         expand: {
           title: '挡圈 系列',
@@ -373,82 +531,10 @@ const layoutMockJson = [
         },
       },
       {
-        img: require('@/assets/img/second/berg5.jpg'),
-        name: '拉铆螺母',
-        alt: '北富联的拉铆螺母',
-        hasDetai: true, // 是否有详情
-        expand: {
-          title: '拉铆螺母系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg5.jpg'),
-              name: '拉铆螺母',
-              alt: 'BERG拉铆螺母-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-          ],
-        },
-      },
-      {
-        img: require('@/assets/img/second/berg6.jpg'),
-        name: '铆钉',
-        alt: '北富联的铆钉',
-        hasDetai: true, // 是否有详情
-        expand: {
-          title: '铆钉系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg6.jpg'),
-              name: '铆钉',
-              alt: 'BERG铆钉-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-            {
-              img: require('@/assets/img/second/berg6-0.jpg'),
-              name: '实心铆钉',
-              alt: 'BERG实心铆钉-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-          ],
-        },
-      },
-      {
-        img: require('@/assets/img/second/berg7.jpg'),
-        name: '螺套',
-        alt: '北富联的螺套',
-        hasDetai: true, // 是否有详情
-        expand: {
-          title: '螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg7.jpg'),
-              name: '螺套',
-              alt: 'BERG螺套-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-            {
-              img: require('@/assets/img/second/berg7-0.jpg'),
-              name: '自攻螺套',
-              alt: 'BERG自攻螺套-northfull.com',
-              desc: '无',
-            },
-            {
-              img: require('@/assets/img/second/berg7-1.jpg'),
-              name: '插销螺套',
-              alt: 'BERG插销螺套-northfull.com',
-              desc: '无',
-            },
-          ],
-        },
-      },
-      {
         img: require('@/assets/img/second/berg8.jpg'),
         name: '定位销',
         alt: '北富联的定位销',
+        key: '13',
         hasDetai: true, // 是否有详情
         expand: {
           title: '定位销系列',
@@ -478,10 +564,87 @@ const layoutMockJson = [
         },
       },
       {
-        img: require('@/assets/img/second/berg9.jpg'),
+        img: require('@/assets/img/second/berg6.jpg'),
+        name: '铆钉',
+        alt: '北富联的铆钉',
+        key: '14',
+        hasDetai: true, // 是否有详情
+        expand: {
+          title: '铆钉系列',
+          subList: [
+            {
+              img: require('@/assets/img/second/berg6.jpg'),
+              name: '铆钉',
+              alt: 'BERG铆钉-northfull.com',
+              desc:
+                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+            },
+            {
+              img: require('@/assets/img/second/berg6-0.jpg'),
+              name: '实心铆钉',
+              alt: 'BERG实心铆钉-northfull.com',
+              desc:
+                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+            },
+          ],
+        },
+      },
+      {
+        img: require('@/assets/img/second/berg7.jpg'),
+        name: '螺套',
+        alt: '北富联的螺套',
+        hasDetai: true, // 是否有详情
+        key: '15',
+        expand: {
+          title: '螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/second/berg7.jpg'),
+              name: '螺套',
+              alt: 'BERG螺套-northfull.com',
+              desc:
+                '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+            },
+            {
+              img: require('@/assets/img/second/berg7-0.jpg'),
+              name: '自攻螺套',
+              alt: 'BERG自攻螺套-northfull.com',
+              desc: '无',
+            },
+            {
+              img: require('@/assets/img/second/berg7-1.jpg'),
+              name: '插销螺套',
+              alt: 'BERG插销螺套-northfull.com',
+              desc: '无',
+            },
+          ],
+        },
+      },
+      {
+        img: require('@/assets/img/third/10.png'),
+        name: '五金螺母紧固件',
+        alt: '北富联的拉铆螺母',
+        hasDetai: true, // 是否有详情
+        key: '16',
+        expand: {
+          title: '拉铆螺母系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/10.png'),
+              name: '拉铆螺母',
+              alt: 'BERG拉铆螺母-northfull.com',
+              desc:
+                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+            },
+          ],
+        },
+      },
+      {
+        img: require('@/assets/img/third/16.png'),
         name: '其他',
         alt: '北富联的其他',
         hasDetai: true, // 是否有详情
+        key: '17',
         expand: {
           title: '其他系列',
           subList: [
@@ -507,13 +670,22 @@ const layoutMockJson = [
       'Helicoil螺套是原产于美国的螺套品牌，主要用于螺纹加强及修复，能够为您的需求提供高强度的耐热耐磨的高精度螺纹.',
     productList: [
       {
-        img: require('@/assets/img/second/helicoil.jpg'),
-        name: '螺套',
-        alt: 'helicoil螺套-northfull.com',
+        img: require('@/assets/img/third/zigongluotao1.png'),
+        name: 'Helicoil自攻螺套',
+        alt: 'Helicoil自攻螺套-northfull.com',
         hasDetai: true, // 是否有详情
+        key: 1,
         expand: {
-          title: 'Helicoil 螺套系列',
-          subList: [],
+          title: 'Helicoil自攻螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/zigongluotao1.png'),
+              name: 'Helicoil自攻螺套',
+              alt: 'Helicoil自攻螺套-northfull.com',
+              desc:
+                'helicoil自攻螺套采用自攻镶嵌件，带一字槽和内外螺纹的自攻镶嵌，helicoil自攻螺纹受用较广。产品型号较多，M2-M30不等；材质有碳钢、不锈钢，硬度超强；多种自攻螺套镶嵌规格可选，更多内容尚未展示，有需要请联系我们北富联机电有限公司。',
+            },
+          ],
         },
         detailList: [
           {
@@ -541,13 +713,22 @@ const layoutMockJson = [
         ],
       },
       {
-        img: require('@/assets/img/second/helicoil1.jpg'),
-        name: '钢丝螺套',
-        alt: 'helicoil钢丝螺套-northfull',
+        img: require('@/assets/img/third/chaxiaoluotao.png'),
+        name: 'helicoil插销螺套',
+        alt: 'helicoil插销螺套-northfull.com',
         hasDetai: true, // 是否有详情
+        key: 2,
         expand: {
-          title: '钢丝螺套系列',
-          subList: [],
+          title: 'helicoil插销螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/chaxiaoluotao.png'),
+              name: 'helicoil插销螺套',
+              alt: 'helicoil插销螺套-northfull.com',
+              desc:
+                '插销螺套对腐蚀、丝滑的螺纹孔可以快速有效的修复，使用和安装都很简单。helicoil插销螺套与其他螺纹护套相对比，具有更强劲的坚固作用，特别是军工、铁路机车、航天等领域对于内螺纹强度较高的产品上。',
+            },
+          ],
         },
         detailList: [
           {
@@ -575,13 +756,22 @@ const layoutMockJson = [
         ],
       },
       {
-        img: require('@/assets/img/second/helicoil2.jpg'),
-        name: '北富联机电的helicoil螺套',
-        alt: '北富联机电的helicoil螺套',
+        img: require('@/assets/img/third/wuweiluotao.png'),
+        name: 'Helicoil无尾螺套',
+        alt: 'Helicoil无尾螺套-northfull.com',
         hasDetai: true, // 是否有详情
+        key: 3,
         expand: {
-          title: '北富联机电的helicoil螺套系列',
-          subList: [],
+          title: 'Helicoil无尾螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/wuweiluotao.png'),
+              name: 'Helicoil无尾螺套',
+              alt: 'Helicoil无尾螺套-northfull.com',
+              desc:
+                'helicoil无尾螺套是没有安装柄钢丝螺套，安装过程中没有方向性要求，安装非常方便。Helicoil无尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。 ',
+            },
+          ],
         },
         detailList: [
           {
@@ -607,12 +797,505 @@ const layoutMockJson = [
             ],
           },
         ],
+      },
+      {
+        img: require('@/assets/img/third/youweiluotao.png'),
+        name: 'Helicoil有尾螺套',
+        alt: 'Helicoil有尾螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 4,
+        expand: {
+          title: 'Helicoil有尾螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/youweiluotao.png'),
+              name: 'Helicoil有尾螺套',
+              alt: 'Helicoil有尾螺套-northfull.com',
+              desc:
+                'helicoil有尾螺套相对于无尾螺套是多了一条“尾巴”，helicoil有尾螺纹护套安装非常方便。Helicoil有尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'helicoil螺纹护套',
+        alt: 'helicoil螺纹护套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 5,
+        expand: {
+          title: 'helicoil螺纹护套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'helicoil螺纹护套',
+              alt: 'helicoil螺纹护套-northfull.com',
+              desc:
+                'helicoil螺纹护套适用于螺纹连接，具有结构性良好，方便使用的功能，螺套安装于螺孔或者螺母中，可以减轻螺纹牙因为受力不均匀和抵抗冲击震动的效果，很大程度提高了螺纹的使用寿命，减少螺纹的抗腐蚀性和磨损程度，helicoil螺套多应用于航空行业、国防行业、汽车工业、机电设备行业等',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'helicoil不锈钢螺套',
+        alt: 'helicoil不锈钢螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 6,
+        expand: {
+          title: 'helicoil不锈钢螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'helicoil不锈钢螺套',
+              alt: 'helicoil不锈钢螺套-northfull.com',
+              desc:
+                'helicoil螺纹护套采用不锈钢材质，可以抵抗化学防腐蚀性，不容易生锈。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'helicoil钢丝螺套',
+        alt: 'helicoil钢丝螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 7,
+        expand: {
+          title: 'helicoil钢丝螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'helicoil钢丝螺套',
+              alt: 'helicoil钢丝螺套-northfull.com',
+              desc:
+                '工业高精密紧固件Helicoil钢丝螺套广泛应用于航空和军事行业，可提供高强度的helicoil内置螺纹。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+    ],
+  },
+  {
+    title: 'Recoil',
+    key: '3',
+    type: 'appstore',
+    url: 'recoil',
+    logo: require('@/assets/img/third/product-type/recoil.png'),
+    detail:
+      'recoil螺纹护套具有多种型号，有碳钢、不锈钢等材质的recoil螺套，螺套具有很好的紧固作用，具有超强的硬度，更多recoil螺套请详细咨询客服。',
+    productList: [
+      {
+        img: require('@/assets/img/third/zigongluotao1.png'),
+        name: 'Recoil自攻螺套',
+        alt: 'Recoil自攻螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 1,
+        expand: {
+          title: 'Recoil自攻螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/zigongluotao1.png'),
+              name: 'Recoil自攻螺套',
+              alt: 'Recoil自攻螺套-northfull.com',
+              desc:
+                'Recoil自攻螺套采用自攻镶嵌件，带一字槽和内外螺纹的自攻镶嵌，Recoil自攻螺纹受用较广。产品型号较多，M2-M30不等；材质有碳钢、不锈钢，硬度超强；多种自攻螺套镶嵌规格可选，更多内容尚未展示，有需要请联系我们北富联机电有限公司。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/chaxiaoluotao.png'),
+        name: 'Recoil插销螺套',
+        alt: 'Recoil插销螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 2,
+        expand: {
+          title: 'Recoil插销螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/chaxiaoluotao.png'),
+              name: 'Recoil插销螺套',
+              alt: 'Recoil插销螺套-northfull.com',
+              desc:
+                '插销螺套对腐蚀、丝滑的螺纹孔可以快速有效的修复，使用和安装都很简单。Recoil插销螺套与其他螺纹护套相对比，具有更强劲的坚固作用，特别是军工、铁路机车、航天等领域对于内螺纹强度较高的产品上。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/wuweiluotao.png'),
+        name: 'Recoil无尾螺套',
+        alt: 'Recoil无尾螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 3,
+        expand: {
+          title: 'Recoil无尾螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/wuweiluotao.png'),
+              name: 'Recoil无尾螺套',
+              alt: 'Recoil无尾螺套-northfull.com',
+              desc:
+                'Recoil无尾螺套是没有安装柄钢丝螺套，安装过程中没有方向性要求，安装非常方便。Recoil无尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。 ',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/youweiluotao.png'),
+        name: 'Recoil有尾螺套',
+        alt: 'Recoil有尾螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 4,
+        expand: {
+          title: 'Recoil有尾螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/youweiluotao.png'),
+              name: 'Recoil有尾螺套',
+              alt: 'Recoil有尾螺套-northfull.com',
+              desc:
+                'Recoil有尾螺套相对于无尾螺套是多了一条“尾巴”，Recoil有尾螺纹护套安装非常方便。Recoil有尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'Recoil螺纹护套',
+        alt: 'Recoil螺纹护套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 5,
+        expand: {
+          title: 'Recoil螺纹护套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'Recoil螺纹护套',
+              alt: 'Recoil螺纹护套-northfull.com',
+              desc:
+                'Recoil螺纹护套适用于螺纹连接，具有结构性良好，方便使用的功能，螺套安装于螺孔或者螺母中，可以减轻螺纹牙因为受力不均匀和抵抗冲击震动的效果，很大程度提高了螺纹的使用寿命，减少螺纹的抗腐蚀性和磨损程度，helicoil螺套多应用于航空行业、国防行业、汽车工业、机电设备行业等',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'Recoil不锈钢螺套',
+        alt: 'Recoil不锈钢螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 6,
+        expand: {
+          title: 'Recoil不锈钢螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'Recoil不锈钢螺套',
+              alt: 'Recoil不锈钢螺套-northfull.com',
+              desc:
+                'Recoil螺纹护套采用不锈钢材质，可以抵抗化学防腐蚀性，不容易生锈。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'Recoil钢丝螺套',
+        alt: 'Recoil钢丝螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 7,
+        expand: {
+          title: 'Recoil钢丝螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'Recoil钢丝螺套',
+              alt: 'Recoil钢丝螺套-northfull.com',
+              desc:
+                '工业高精密紧固件Recoil钢丝螺套广泛应用于航空和军事行业，可提供高强度的Recoil内置螺纹。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+    ],
+  },
+  {
+    title: 'KATO',
+    key: '4',
+    type: 'appstore',
+    url: 'kato',
+    logo: require('@/assets/img/third/product-type/kato.png'),
+    detail:
+      'Kato工业五金紧固件固有多种自攻螺套、不锈钢螺套、无尾螺套、有尾螺套等，型号和材质较多，具体KATO精密五金紧固件请咨询深圳市北富联机电客服。',
+    productList: [
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'KATO钢丝螺套',
+        alt: 'KATO钢丝螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 7,
+        expand: {
+          title: 'KATO钢丝螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'KATO钢丝螺套',
+              alt: 'KATO钢丝螺套-northfull.com',
+              desc:
+                '工业高精密紧固件KATO钢丝螺套广泛应用于航空和军事行业，可提供高强度的KATO内置螺纹。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'KATO不锈钢螺套',
+        alt: 'KATO不锈钢螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 6,
+        expand: {
+          title: 'KATO不锈钢螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'KATO不锈钢螺套',
+              alt: 'KATO不锈钢螺套-northfull.com',
+              desc:
+                'KATO螺纹护套采用不锈钢材质，可以抵抗化学防腐蚀性，不容易生锈。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/wuweiluotao.png'),
+        name: 'KATO无尾螺套',
+        alt: 'KATO无尾螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 3,
+        expand: {
+          title: 'KATO无尾螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/wuweiluotao.png'),
+              name: 'KATO无尾螺套',
+              alt: 'KATO无尾螺套-northfull.com',
+              desc:
+                'KATO无尾螺套是没有安装柄钢丝螺套，安装过程中没有方向性要求，安装非常方便。KATO无尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。 ',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/youweiluotao.png'),
+        name: 'KATO有尾螺套',
+        alt: 'KATO有尾螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 4,
+        expand: {
+          title: 'KATO有尾螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/youweiluotao.png'),
+              name: 'KATO有尾螺套',
+              alt: 'KATO有尾螺套-northfull.com',
+              desc:
+                'KATO有尾螺套相对于无尾螺套是多了一条“尾巴”，KATO有尾螺纹护套安装非常方便。KATO有尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'KATO螺纹护套',
+        alt: 'KATO螺纹护套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 5,
+        expand: {
+          title: 'KATO螺纹护套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'KATO螺纹护套',
+              alt: 'KATO螺纹护套-northfull.com',
+              desc:
+                'KATO螺纹护套适用于螺纹连接，具有结构性良好，方便使用的功能，螺套安装于螺孔或者螺母中，可以减轻螺纹牙因为受力不均匀和抵抗冲击震动的效果，很大程度提高了螺纹的使用寿命，减少螺纹的抗腐蚀性和磨损程度，helicoil螺套多应用于航空行业、国防行业、汽车工业、机电设备行业等',
+            },
+          ],
+        },
+        detailList: [],
+      },
+    ],
+  },
+  {
+    title: 'Ensat',
+    key: '5',
+    type: 'appstore',
+    url: 'ensat',
+    logo: require('@/assets/img/third/product-type/ensat.png'),
+    detail:
+      'Ensat螺纹护套具有多种型号，有碳钢、不锈钢等材质的Ensat螺套，螺套具有很好的紧固作用，具有超强的硬度，更多Ensat螺套请详细咨询客服。',
+    productList: [
+      {
+        img: require('@/assets/img/third/zigongluotao1.png'),
+        name: 'Ensat自攻螺套',
+        alt: 'Ensat自攻螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 1,
+        expand: {
+          title: 'Ensat自攻螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/zigongluotao1.png'),
+              name: 'Ensat自攻螺套',
+              alt: 'Ensat自攻螺套-northfull.com',
+              desc:
+                'Ensat自攻螺套采用自攻镶嵌件，带一字槽和内外螺纹的自攻镶嵌，Ensat自攻螺纹受用较广。产品型号较多，M2-M30不等；材质有碳钢、不锈钢，硬度超强；多种自攻螺套镶嵌规格可选，更多内容尚未展示，有需要请联系我们北富联机电有限公司。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/chaxiaoluotao.png'),
+        name: 'Ensat插销螺套',
+        alt: 'Ensat插销螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 2,
+        expand: {
+          title: 'Ensat插销螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/chaxiaoluotao.png'),
+              name: 'Ensat插销螺套',
+              alt: 'Ensat插销螺套-northfull.com',
+              desc:
+                '插销螺套对腐蚀、丝滑的螺纹孔可以快速有效的修复，使用和安装都很简单。Ensat插销螺套与其他螺纹护套相对比，具有更强劲的坚固作用，特别是军工、铁路机车、航天等领域对于内螺纹强度较高的产品上。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/wuweiluotao.png'),
+        name: 'Ensat无尾螺套',
+        alt: 'Ensat无尾螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 3,
+        expand: {
+          title: 'Ensat无尾螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/wuweiluotao.png'),
+              name: 'Ensat无尾螺套',
+              alt: 'Ensat无尾螺套-northfull.com',
+              desc:
+                'Ensat无尾螺套是没有安装柄钢丝螺套，安装过程中没有方向性要求，安装非常方便。Ensat无尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。 ',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/youweiluotao.png'),
+        name: 'Ensat有尾螺套',
+        alt: 'Ensat有尾螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 4,
+        expand: {
+          title: 'Ensat有尾螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/youweiluotao.png'),
+              name: 'Ensat有尾螺套',
+              alt: 'Ensat有尾螺套-northfull.com',
+              desc:
+                'Ensat有尾螺套相对于无尾螺套是多了一条“尾巴”，Ensat有尾螺纹护套安装非常方便。Ensat有尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'Ensat螺纹护套',
+        alt: 'Ensat螺纹护套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 5,
+        expand: {
+          title: 'Ensat螺纹护套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'Ensat螺纹护套',
+              alt: 'Ensat螺纹护套-northfull.com',
+              desc:
+                'Ensat螺纹护套适用于螺纹连接，具有结构性良好，方便使用的功能，螺套安装于螺孔或者螺母中，可以减轻螺纹牙因为受力不均匀和抵抗冲击震动的效果，很大程度提高了螺纹的使用寿命，减少螺纹的抗腐蚀性和磨损程度，helicoil螺套多应用于航空行业、国防行业、汽车工业、机电设备行业等',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'Ensat不锈钢螺套',
+        alt: 'Ensat不锈钢螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 6,
+        expand: {
+          title: 'Ensat不锈钢螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'Ensat不锈钢螺套',
+              alt: 'Ensat不锈钢螺套-northfull.com',
+              desc:
+                'Ensat螺纹护套采用不锈钢材质，可以抵抗化学防腐蚀性，不容易生锈。',
+            },
+          ],
+        },
+        detailList: [],
+      },
+      {
+        img: require('@/assets/img/third/luowenhutao.png'),
+        name: 'Ensat钢丝螺套',
+        alt: 'Ensat钢丝螺套-northfull.com',
+        hasDetai: true, // 是否有详情
+        key: 7,
+        expand: {
+          title: 'Ensat钢丝螺套系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/luowenhutao.png'),
+              name: 'Ensat钢丝螺套',
+              alt: 'Ensat钢丝螺套-northfull.com',
+              desc:
+                '工业高精密紧固件Ensat钢丝螺套广泛应用于航空和军事行业，可提供高强度的Ensat内置螺纹。',
+            },
+          ],
+        },
+        detailList: [],
       },
     ],
   },
   {
     title: 'BERG',
-    key: '3',
+    key: '6',
     type: 'appstore',
     url: 'berg',
     logo: require('@/assets/img/tab2-logo.png'),
@@ -624,6 +1307,7 @@ const layoutMockJson = [
         name: '螺钉',
         alt: '北富联的螺钉',
         hasDetai: true, // 是否有详情
+        key: 1,
         expand: {
           title: '螺钉系列',
           subList: [
@@ -640,6 +1324,7 @@ const layoutMockJson = [
       {
         img: require('@/assets/img/second/berg2.jpg'),
         name: '螺母',
+        key: 2,
         alt: '北富联的螺母',
         hasDetai: true, // 是否有详情
         expand: {
@@ -660,6 +1345,7 @@ const layoutMockJson = [
         name: '弹簧垫',
         alt: '北富联的弹簧垫',
         hasDetai: true, // 是否有详情
+        key: 3,
         expand: {
           title: '弹簧垫系列',
           subList: [
@@ -677,6 +1363,7 @@ const layoutMockJson = [
         img: require('@/assets/img/second/berg4.jpg'),
         name: '挡圈 ',
         alt: '北富联的挡圈 ',
+        key: 4,
         hasDetai: true, // 是否有详情
         expand: {
           title: '挡圈 系列',
@@ -695,6 +1382,7 @@ const layoutMockJson = [
         img: require('@/assets/img/second/berg5.jpg'),
         name: '拉铆螺母',
         alt: '北富联的拉铆螺母',
+        key: 5,
         hasDetai: true, // 是否有详情
         expand: {
           title: '拉铆螺母系列',
@@ -713,6 +1401,7 @@ const layoutMockJson = [
         img: require('@/assets/img/second/berg6.jpg'),
         name: '铆钉',
         alt: '北富联的铆钉',
+        key: 6,
         hasDetai: true, // 是否有详情
         expand: {
           title: '铆钉系列',
@@ -738,6 +1427,7 @@ const layoutMockJson = [
         img: require('@/assets/img/second/berg7.jpg'),
         name: '螺套',
         alt: '北富联的螺套',
+        key: 7,
         hasDetai: true, // 是否有详情
         expand: {
           title: '螺套系列',
@@ -769,6 +1459,7 @@ const layoutMockJson = [
         name: '定位销',
         alt: '北富联的定位销',
         hasDetai: true, // 是否有详情
+        key: 8,
         expand: {
           title: '定位销系列',
           subList: [
@@ -814,528 +1505,8 @@ const layoutMockJson = [
           ],
         },
       },
-      // {
-      //   img: require('@/assets/img/luoding.jpg'),
-      //   name: '螺钉',
-      // },
-      // {
-      //   img: require('@/assets/img/luoding2.jpg'),
-      //   name: '紧定螺钉',
-      // },
-      // {
-      //   img: require('@/assets/img/luoding3.jpg'),
-      //   name: '内六角螺钉',
-      // },
-      // {
-      //   img: require('@/assets/img/luoding4.jpg'),
-      //   name: '轴肩螺钉',
-      // },
-      // {
-      //   img: require('@/assets/img/luomu.jpg'),
-      //   name: '螺母',
-      // },
-      // {
-      //   img: require('@/assets/img/dianquan.jpg'),
-      //   name: '齿形垫',
-      // },
-      // {
-      //   img: require('@/assets/img/dianquan2.jpg'),
-      //   name: '弹簧垫',
-      // },
-      // {
-      //   img: require('@/assets/img/dianquan3.jpg'),
-      //   name: '平垫',
-      // },
-      // {
-      //   img: require('@/assets/img/dangquan.jpg'),
-      //   name: '挡圈',
-      // },
-      // {
-      //   img: require('@/assets/img/laliu.jpg'),
-      //   name: '拉铆螺母',
-      // },
-      // {
-      //   img: require('@/assets/img/laliu2.jpg'),
-      //   name: '拉铆螺柱',
-      // },
-      // {
-      //   img: require('@/assets/img/liuding.jpg'),
-      //   name: '抽芯铆钉',
-      // },
-      // {
-      //   img: require('@/assets/img/liuding2.jpg'),
-      //   name: '实心铆钉',
-      // },
-      // {
-      //   img: require('@/assets/img/luotao.jpg'),
-      //   name: '插销螺套',
-      // },
-      // {
-      //   img: require('@/assets/img/luotao2.jpg'),
-      //   name: '螺套',
-      // },
-      // {
-      //   img: require('@/assets/img/luotao3.jpg'),
-      //   name: '自攻螺套',
-      // },
-      // {
-      //   img: require('@/assets/img/dingweixiao.jpg'),
-      //   name: '弹簧销',
-      // },
-      // {
-      //   img: require('@/assets/img/dingweixiao2.jpg'),
-      //   name: '圆柱销',
-      // },
-      // {
-      //   img: require('@/assets/img/qita.jpg'),
-      //   name: '吊环',
-      // },
-      // {
-      //   img: require('@/assets/img/qita2.jpg'),
-      //   name: '内六角扳手',
-      // },
     ],
   },
-  // {
-  //   title: 'recoli',
-  //   key: '4',
-  //   type: 'appstore',
-  //   logo: require('@/assets/img/tab2-logo.png'),
-  //   detail:
-  //     '',
-  //   productList: [
-  //     {
-  //       img: require('@/assets/img/second/recoil1.png'),
-  //       name: '螺套',
-  //       alt: '北富联的螺钉',
-  //       hasDetai: true, // 是否有详情
-  //       expand: {
-  //         title: '螺钉系列',
-  //         subList: [
-  //           {
-  //             img: require('@/assets/img/second/berg1.jpg'),
-  //             name: '螺钉',
-  //             alt: 'BERG螺钉-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       img: require('@/assets/img/second/berg2.jpg'),
-  //       name: '螺母',
-  //       alt: '北富联的螺母',
-  //       hasDetai: true, // 是否有详情
-  //       expand: {
-  //         title: '螺母系列',
-  //         subList: [
-  //           {
-  //             img: require('@/assets/img/second/berg2.jpg'),
-  //             name: '螺母',
-  //             alt: 'BERG螺母-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       img: require('@/assets/img/second/berg3.jpg'),
-  //       name: '弹簧垫',
-  //       alt: '北富联的弹簧垫',
-  //       hasDetai: true, // 是否有详情
-  //       expand: {
-  //         title: '弹簧垫系列',
-  //         subList: [
-  //           {
-  //             img: require('@/assets/img/second/berg3.jpg'),
-  //             name: '弹簧垫',
-  //             alt: 'BERG弹簧垫-northfull.com',
-  //             desc:
-  //               'M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       img: require('@/assets/img/second/berg4.jpg'),
-  //       name: '挡圈 ',
-  //       alt: '北富联的挡圈 ',
-  //       hasDetai: true, // 是否有详情
-  //       expand: {
-  //         title: '挡圈 系列',
-  //         subList: [
-  //           {
-  //             img: require('@/assets/img/second/berg4.jpg'),
-  //             name: '挡圈 ',
-  //             alt: 'BERG挡圈-northfull.com',
-  //             desc:
-  //               '公制：M2.5 ~ M1000;美制: 0.125"~ 10";材质：合金钢   65Mn, AISI 410, AISI 420,不锈钢   AISI 302, AISI 316, PH 15-7, PH17-7',
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       img: require('@/assets/img/second/berg5.jpg'),
-  //       name: '拉铆螺母',
-  //       alt: '北富联的拉铆螺母',
-  //       hasDetai: true, // 是否有详情
-  //       expand: {
-  //         title: '拉铆螺母系列',
-  //         subList: [
-  //           {
-  //             img: require('@/assets/img/second/berg5.jpg'),
-  //             name: '拉铆螺母',
-  //             alt: 'BERG拉铆螺母-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       img: require('@/assets/img/second/berg6.jpg'),
-  //       name: '铆钉',
-  //       alt: '北富联的铆钉',
-  //       hasDetai: true, // 是否有详情
-  //       expand: {
-  //         title: '铆钉系列',
-  //         subList: [
-  //           {
-  //             img: require('@/assets/img/second/berg6.jpg'),
-  //             name: '铆钉',
-  //             alt: 'BERG铆钉-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //           {
-  //             img: require('@/assets/img/second/berg6-0.jpg'),
-  //             name: '实心铆钉',
-  //             alt: 'BERG实心铆钉-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       img: require('@/assets/img/second/berg7.jpg'),
-  //       name: '螺套',
-  //       alt: '北富联的螺套',
-  //       hasDetai: true, // 是否有详情
-  //       expand: {
-  //         title: '螺套系列',
-  //         subList: [
-  //           {
-  //             img: require('@/assets/img/second/berg7.jpg'),
-  //             name: '螺套',
-  //             alt: 'BERG螺套-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //           {
-  //             img: require('@/assets/img/second/berg7-0.jpg'),
-  //             name: '自攻螺套',
-  //             alt: 'BERG自攻螺套-northfull.com',
-  //             desc: '无',
-  //           },
-  //           {
-  //             img: require('@/assets/img/second/berg7-1.jpg'),
-  //             name: '插销螺套',
-  //             alt: 'BERG插销螺套-northfull.com',
-  //             desc: '无',
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       img: require('@/assets/img/second/berg8.jpg'),
-  //       name: '定位销',
-  //       alt: '北富联的定位销',
-  //       hasDetai: true, // 是否有详情
-  //       expand: {
-  //         title: '定位销系列',
-  //         subList: [
-  //           {
-  //             img: require('@/assets/img/second/berg8.jpg'),
-  //             name: '定位销',
-  //             alt: 'BERG定位销-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //           {
-  //             img: require('@/assets/img/second/berg8-0.jpg'),
-  //             name: '弹簧销',
-  //             alt: 'BERG弹簧销-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //           {
-  //             img: require('@/assets/img/second/berg9.jpg'),
-  //             name: '圆柱销',
-  //             alt: 'BERG圆柱销-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       img: require('@/assets/img/second/berg9.jpg'),
-  //       name: '其他',
-  //       alt: '北富联的其他',
-  //       hasDetai: true, // 是否有详情
-  //       expand: {
-  //         title: '其他系列',
-  //         subList: [
-  //           {
-  //             img: require('@/assets/img/second/berg9.jpg'),
-  //             name: '其他',
-  //             alt: 'BERG其他-northfull.com',
-  //             desc:
-  //               '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     // {
-  //     //   img: require('@/assets/img/luoding.jpg'),
-  //     //   name: '螺钉',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/luoding2.jpg'),
-  //     //   name: '紧定螺钉',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/luoding3.jpg'),
-  //     //   name: '内六角螺钉',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/luoding4.jpg'),
-  //     //   name: '轴肩螺钉',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/luomu.jpg'),
-  //     //   name: '螺母',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/dianquan.jpg'),
-  //     //   name: '齿形垫',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/dianquan2.jpg'),
-  //     //   name: '弹簧垫',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/dianquan3.jpg'),
-  //     //   name: '平垫',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/dangquan.jpg'),
-  //     //   name: '挡圈',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/laliu.jpg'),
-  //     //   name: '拉铆螺母',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/laliu2.jpg'),
-  //     //   name: '拉铆螺柱',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/liuding.jpg'),
-  //     //   name: '抽芯铆钉',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/liuding2.jpg'),
-  //     //   name: '实心铆钉',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/luotao.jpg'),
-  //     //   name: '插销螺套',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/luotao2.jpg'),
-  //     //   name: '螺套',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/luotao3.jpg'),
-  //     //   name: '自攻螺套',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/dingweixiao.jpg'),
-  //     //   name: '弹簧销',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/dingweixiao2.jpg'),
-  //     //   name: '圆柱销',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/qita.jpg'),
-  //     //   name: '吊环',
-  //     // },
-  //     // {
-  //     //   img: require('@/assets/img/qita2.jpg'),
-  //     //   name: '内六角扳手',
-  //     // },
-  //   ],
-  // },
-  // {
-  //   title: '意大利 Bordignon博鼎强力弹簧 ',
-  //   key: '4',
-  //   type: 'appstore',
-  //   detail:
-  //     'Bordignon博鼎强力弹簧,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-  //   productList: [
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品4对顶波簧1',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品4对顶波簧2',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品4对顶波簧3',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品4对顶波簧4',
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: 'UBC轴承',
-  //   key: '5',
-  //   type: 'appstore',
-  //   detail:
-  //     'UBC轴承,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-  //   productList: [
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品5对顶波簧1',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品5对顶波簧2',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品5对顶波簧3',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品5对顶波簧4',
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: 'AXPB直线导轨',
-  //   key: '6',
-  //   type: 'appstore',
-  //   detail:
-  //     'AXPB直线导轨,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-  //   productList: [
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品6对顶波簧1',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品6对顶波簧2',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品6对顶波簧3',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品6对顶波簧4',
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: '丹麦HOLM密封产品',
-  //   key: '7',
-  //   type: 'appstore',
-  //   detail:
-  //     '丹麦HOLM密封产品,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-  //   productList: [
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品7对顶波簧1',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品7对顶波簧2',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品7对顶波簧3',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品7对顶波簧4',
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: '主轴弹簧',
-  //   key: '8',
-  //   type: 'appstore',
-  //   detail:
-  //     '主轴弹簧,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-  //   productList: [
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品8对顶波簧1',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品8对顶波簧2',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品8对顶波簧3',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品8对顶波簧4',
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: '弹性件',
-  //   key: '9',
-  //   type: 'appstore',
-  //   detail:
-  //     '弹性件,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-  //   productList: [
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品1对顶波簧1',
-  //     },
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品1对顶波簧2',
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: '紧固件',
-  //   key: '10',
-  //   type: 'appstore',
-  //   detail:
-  //     '紧固件,适于安装在其它弹簧无法瞒足，且空间受限的零件中。降低50%装配空间，同时减少了产品的重量和材料成本，降低整体的成本费用',
-  //   productList: [
-  //     {
-  //       img: require('@/assets/img/product-img1.jpg'),
-  //       name: '产品1对顶波簧1',
-  //     },
-  //   ],
-  // },
 ]
 
 export { layoutMockJson }

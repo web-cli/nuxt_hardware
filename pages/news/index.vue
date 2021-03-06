@@ -27,7 +27,7 @@ import { newList } from '@/assets/js/news'
 export default {
   data() {
     return {
-      newList,
+      newList: newList.reverse(),
     }
   },
 }

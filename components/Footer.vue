@@ -19,7 +19,7 @@
           }}
         </div>
         <div class="mtb20">企业邮箱：{{ footerDetail.email }}</div>
-        <div>添加微信好友 <img :src="footerDetail.weixinImg" alt="" /></div>
+        <div><img :src="footerDetail.weixinImg" alt="" /></div>
       </div>
     </div>
     <div>
@@ -51,7 +51,7 @@
           </p></a
         >
       </div>
-      <p>版权所有:{{ footerDetail.name }}</p>
+      <p class="bottom">版权所有:{{ footerDetail.name }}</p>
     </div>
   </div>
 </template>
@@ -84,13 +84,14 @@ export default {
     align-items: flex-start;
     justify-content: center;
   }
+
   img {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
   }
   h1 {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     margin-top: 40px;
   }
@@ -110,7 +111,7 @@ export default {
     padding-bottom: 20px;
   }
   .icon {
-    font-size: 30px;
+    font-size: 24px;
   }
   .icons-list {
     &.anticon {
@@ -120,6 +121,9 @@ export default {
   }
   .mtb20 {
     margin: 20px 0;
+  }
+  div {
+    line-height: 1.8;
   }
 }
 </style>
