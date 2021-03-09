@@ -63,7 +63,7 @@ export default {
   data() {
     return {
       footerDetail: Object.freeze({
-        phone: '13570342539',
+        phone: '131 8972 9968',
         email: 'northfull@163.com',
         name: '深圳市北富联机电有限公司',
         weixinImg: require('@/assets/img/weixin.png'),

@@ -14,7 +14,7 @@
     <div class="contact-desc">
       <div><a-icon type="team" class="icon" /> Alyssa Leung</div>
       <div><a-icon type="mail" class="icon" /> northfull@163.com</div>
-      <div><a-icon type="phone" class="icon" />0086-13570342539</div>
+      <div><a-icon type="phone" class="icon" />131 8972 9968</div>
       <div><a-icon type="qq" class="icon" />318203871</div>
       <div class="tips">欢迎添加我的微信～期待你的到来</div>
       <div>
