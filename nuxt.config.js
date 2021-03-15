@@ -2,7 +2,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title:
-      'mcmaster-carr中国代理-berg定位销-helicoil螺套-工业高精密紧固件-北富联机电有限公司',
+      'mcmaster-carr中国代理_McMasterCarr螺丝螺母总代理_berg定位销_helicoil螺套_工业高精密紧固件_深圳市北富联机电有限公司官网',
     script: [{ src: '//js.users.51.la/21052033.js' }],
     meta: [
       { charset: 'utf-8' },

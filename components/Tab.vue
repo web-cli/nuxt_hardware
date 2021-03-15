@@ -47,7 +47,7 @@ export default {
 
         about: [
           {
-            img: require('@/assets/img/third/banner/home_2.jpg'),
+            img: require('@/assets/img/third/banner/banner_detail.jpg'),
             link: '',
           },
         ],

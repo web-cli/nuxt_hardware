@@ -1,26 +1,29 @@
 <template>
   <div class="about">
-    <div class="theme-title title-pos contact-title">
-      <p>北富联机电</p>
-      <img :src="require('@/assets/img/third/about-title.png')" alt="" />
-    </div>
-    <div class="about-content">
-      <div>
-        <img :src="require('@/assets/img/third/nf_logo.png')" alt="" />
+    <div class="top">
+      <div class="theme-title title-pos contact-title">
+        <p>北富联机电</p>
+        <img :src="require('@/assets/img/third/about-title.png')" alt="" />
       </div>
+      <div class="about-content">
+        <div>
+          <img :src="require('@/assets/img/third/nf_logo.png')" alt="" />
+        </div>
 
-      <div class="right">
-        <p>
-          深圳市北富联机电有限公司（www.northfull.com）是一家工业高精密紧固件销售、服务为一体的专业公司，为客户提供高品质五金紧固件工业服务商！
-        </p>
-        <p>
-          北富联机电提供ISO国际、美国米制ANSI（M）、ASME（M）、ASTM（M）、JIS日本、DIN德国、EN欧盟、GB中国、BS英国（M）、AS（M）澳大利亚的系列标准件。主要代理McMASER-CARR、Helicoil螺套、BERG定位销、RECOIL螺纹护套及配套机电工具等。
-        </p>
-        <p>
-          本公司以“用心服务，客户为核心”为宗旨，坚持以用户的要求为中心，提供高效服务，为客户解决问题。北富联机电是您值得信赖的合作伙伴！
-        </p>
+        <div class="right">
+          <p>
+            深圳市北富联机电有限公司（www.northfull.com）是一家工业高精密紧固件销售、服务为一体的专业公司，为客户提供高品质五金紧固件工业服务商！
+          </p>
+          <p>
+            北富联机电提供ISO国际、美国米制ANSI（M）、ASME（M）、ASTM（M）、JIS日本、DIN德国、EN欧盟、GB中国、BS英国（M）、AS（M）澳大利亚的系列标准件。主要代理McMASER-CARR、Helicoil螺套、BERG定位销、RECOIL螺纹护套及配套机电工具等。
+          </p>
+          <p>
+            本公司以“用心服务，客户为核心”为宗旨，坚持以用户的要求为中心，提供高效服务，为客户解决问题。北富联机电是您值得信赖的合作伙伴！
+          </p>
+        </div>
       </div>
     </div>
+
     <div class="about-content2">
       <div class="theme-title title2">为什么选择我们</div>
       <div class="contact-desc">
@@ -76,6 +79,8 @@ export default {
 
 <style lang="less" scoped>
 .about {
+  // z-index: 999;
+  // margin-top: -400px;
   p {
     margin-bottom: 0px;
   }
@@ -148,5 +153,14 @@ export default {
       height: 142px;
     }
   }
+}
+.contact-title {
+}
+.top {
+  background: #ffffff;
+  // position: absolute;
+  // height: 600px;
+  // margin-top: -300px;
+  z-index: 999;
 }
 </style>
