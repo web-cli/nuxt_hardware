@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <div class="banner" />
     <div class="top">
       <div class="theme-title title-pos contact-title">
         <p>北富联机电</p>
@@ -162,5 +163,18 @@ export default {
   // height: 600px;
   // margin-top: -300px;
   z-index: 999;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 60%;
+  height: 600px;
+  border-radius: 20px;
+  // border: 1px solid red;
+  margin: -140px auto 100px auto;
+}
+.banner {
+  z-index: -1;
+  width: 100%;
+  background: url('~@/assets/img/third/banner/banner_detail.jpg');
+  height: 400px;
 }
 </style>

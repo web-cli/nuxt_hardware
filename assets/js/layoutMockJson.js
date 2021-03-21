@@ -1303,207 +1303,150 @@ const layoutMockJson = [
       'Berg是全球微型精密机械零件的领先制造商。我们公司主要销售Berg任何材质的圆柱销。圆柱销属于定位销，用于固定零件之间的相对位置。它是组合加工和装配时候的重要辅助零件',
     productList: [
       {
-        img: require('@/assets/img/second/berg1.jpg'),
-        name: '螺钉',
-        alt: '北富联的螺钉',
+        img: require('@/assets/img/third/berg1.png'),
+        name: '定位销',
+        alt: '北富联机电berg定位销高精密紧固件',
         hasDetai: true, // 是否有详情
         key: 1,
-        expand: {
-          title: '螺钉系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg1.jpg'),
-              name: '螺钉',
-              alt: 'BERG螺钉-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-          ],
-        },
-      },
-      {
-        img: require('@/assets/img/second/berg2.jpg'),
-        name: '螺母',
-        key: 2,
-        alt: '北富联的螺母',
-        hasDetai: true, // 是否有详情
-        expand: {
-          title: '螺母系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg2.jpg'),
-              name: '螺母',
-              alt: 'BERG螺母-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-          ],
-        },
-      },
-      {
-        img: require('@/assets/img/second/berg3.jpg'),
-        name: '弹簧垫',
-        alt: '北富联的弹簧垫',
-        hasDetai: true, // 是否有详情
-        key: 3,
-        expand: {
-          title: '弹簧垫系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg3.jpg'),
-              name: '弹簧垫',
-              alt: 'BERG弹簧垫-northfull.com',
-              desc:
-                'M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-          ],
-        },
-      },
-      {
-        img: require('@/assets/img/second/berg4.jpg'),
-        name: '挡圈 ',
-        alt: '北富联的挡圈 ',
-        key: 4,
-        hasDetai: true, // 是否有详情
-        expand: {
-          title: '挡圈 系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg4.jpg'),
-              name: '挡圈 ',
-              alt: 'BERG挡圈-northfull.com',
-              desc:
-                '公制：M2.5 ~ M1000;美制: 0.125"~ 10";材质：合金钢   65Mn, AISI 410, AISI 420,不锈钢   AISI 302, AISI 316, PH 15-7, PH17-7',
-            },
-          ],
-        },
-      },
-      {
-        img: require('@/assets/img/second/berg5.jpg'),
-        name: '拉铆螺母',
-        alt: '北富联的拉铆螺母',
-        key: 5,
-        hasDetai: true, // 是否有详情
-        expand: {
-          title: '拉铆螺母系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg5.jpg'),
-              name: '拉铆螺母',
-              alt: 'BERG拉铆螺母-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-          ],
-        },
-      },
-      {
-        img: require('@/assets/img/second/berg6.jpg'),
-        name: '铆钉',
-        alt: '北富联的铆钉',
-        key: 6,
-        hasDetai: true, // 是否有详情
-        expand: {
-          title: '铆钉系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg6.jpg'),
-              name: '铆钉',
-              alt: 'BERG铆钉-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-            {
-              img: require('@/assets/img/second/berg6-0.jpg'),
-              name: '实心铆钉',
-              alt: 'BERG实心铆钉-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42;美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-          ],
-        },
-      },
-      {
-        img: require('@/assets/img/second/berg7.jpg'),
-        name: '螺套',
-        alt: '北富联的螺套',
-        key: 7,
-        hasDetai: true, // 是否有详情
-        expand: {
-          title: '螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/second/berg7.jpg'),
-              name: '螺套',
-              alt: 'BERG螺套-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-            {
-              img: require('@/assets/img/second/berg7-0.jpg'),
-              name: '自攻螺套',
-              alt: 'BERG自攻螺套-northfull.com',
-              desc: '无',
-            },
-            {
-              img: require('@/assets/img/second/berg7-1.jpg'),
-              name: '插销螺套',
-              alt: 'BERG插销螺套-northfull.com',
-              desc: '无',
-            },
-          ],
-        },
-      },
-      {
-        img: require('@/assets/img/second/berg8.jpg'),
-        name: '定位销',
-        alt: '北富联的定位销',
-        hasDetai: true, // 是否有详情
-        key: 8,
         expand: {
           title: '定位销系列',
           subList: [
             {
-              img: require('@/assets/img/second/berg8.jpg'),
+              img: require('@/assets/img/third/berg1.png'),
               name: '定位销',
-              alt: 'BERG定位销-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-            {
-              img: require('@/assets/img/second/berg8-0.jpg'),
-              name: '弹簧销',
-              alt: 'BERG弹簧销-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
-            },
-            {
-              img: require('@/assets/img/second/berg9.jpg'),
-              name: '圆柱销',
-              alt: 'BERG圆柱销-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+              alt: '北富联机电berg定位销高精密紧固件',
+              desc: '无',
             },
           ],
         },
+        detailList: [
+          {
+            title: '详细介绍：',
+            list: [
+              '计量单位选择：英制、公制',
+              '类型：CLEVIS，COTTER/DOWEL，GROOVED，SPIRAL，TAPER，SPRING',
+              '材料：302不锈钢，303不锈钢，416不锈钢，420不锈钢，碳素钢;直径：0.031英寸-0.4999英寸',
+            ],
+          },
+        ],
       },
       {
-        img: require('@/assets/img/second/berg9.jpg'),
-        name: '其他',
-        alt: '北富联的其他',
+        img: require('@/assets/img/third/berg2.png'),
+        name: '轴承配件',
+        alt: 'northfull北富联的berg轴承配件、高端berg销',
         hasDetai: true, // 是否有详情
+        key: 2,
         expand: {
-          title: '其他系列',
+          title: '轴承配件系列',
           subList: [
             {
-              img: require('@/assets/img/second/berg9.jpg'),
-              name: '其他',
-              alt: 'BERG其他-northfull.com',
-              desc:
-                '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+              img: require('@/assets/img/third/berg2.png'),
+              name: '轴承配件',
+              alt: 'northfull北富联的berg轴承配件、高端berg销',
+              desc: 'northfull北富联的berg轴承配件、高端berg销',
             },
           ],
         },
+        detailList: [
+          {
+            title: '详细介绍：',
+            list: [
+              '计量单位选择：英制、公制',
+              '类型：轴承适配器、轴承座板、矩形柱、间距等',
+              '材料：铝阳极氧化、不锈钢、热处理不锈钢;轴径：1/8、3/16、1/4',
+            ],
+          },
+        ],
+      },
+      {
+        img: require('@/assets/img/third/berg3.png'),
+        name: '轮毂/集线器',
+        alt: '深圳北富联berg集线器。高精密紧固件berg轮毂',
+        hasDetai: true, // 是否有详情
+        key: 3,
+        expand: {
+          title: '轮毂/集线器系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/berg3.png'),
+              name: '轮毂/集线器',
+              alt: '深圳北富联berg集线器。高精密紧固件berg轮毂',
+              desc: '无',
+            },
+          ],
+        },
+        detailList: [
+          {
+            title: '详细介绍：',
+            list: [
+              '计量单位选择：英制、公制',
+              '类型：固定螺丝领，双齿轮轮廓，螺纹轴夹，轴夹等',
+              '材料：1214L钢，303不锈钢，416不锈钢，416不锈钢RC38-45，2024铝阳极氧化，软钢，低碳钢镀镉等；缸径：0.0779-1.25英寸',
+            ],
+          },
+        ],
+      },
+      {
+        img: require('@/assets/img/third/berg4.png'),
+        name: 'Berg-O型圈',
+        alt: '北富联机电Berg-O型圈',
+        hasDetai: true, // 是否有详情
+        key: 4,
+        expand: {
+          title: 'Berg-O型圈系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/berg4.png'),
+              name: 'Berg-O型圈',
+              alt: '北富联机电Berg-O型圈',
+              desc: '无',
+            },
+          ],
+        },
+        detailList: [
+          {
+            title: '详细介绍：',
+            list: [
+              '计量单位选择：英制、公制',
+              '类型：压缩，反背扭，压缩，扩大，扭力等',
+              '风格：反背景延伸，压缩，外球承接，实验性等',
+              '自由长度：1/4、7/20、3/8、4219/10000、1/2、5/8',
+              '线径：0.007-0.075英寸',
+              '线径：0.007-0.075英寸',
+            ],
+          },
+        ],
+      },
+      {
+        img: require('@/assets/img/third/berg5.png'),
+        name: 'BERG弹簧销',
+        alt: '深圳市北富联机电有限公司弹簧销，工业高精密弹簧',
+        hasDetai: true, // 是否有详情
+        key: 5,
+        expand: {
+          title: 'BERG弹簧销系列',
+          subList: [
+            {
+              img: require('@/assets/img/third/berg5.png'),
+              name: 'BERG弹簧销',
+              alt: '深圳市北富联机电有限公司弹簧销，工业高精密弹簧',
+              desc: '无',
+            },
+          ],
+        },
+        detailList: [
+          {
+            title: '详细介绍：',
+            list: [
+              '计量单位选择：英制、公制',
+              '类型：压缩，反背扭，压缩，扩大，扭力等',
+              '风格：反背景延伸，压缩，外球承接，实验性等',
+              '自由长度：1/4、7/20、3/8、4219/10000、1/2、5/8',
+              '线径：0.007-0.075英寸',
+              '线径：0.007-0.075英寸',
+            ],
+          },
+        ],
       },
     ],
   },
