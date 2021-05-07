@@ -16,13 +16,14 @@ jobs:
       - name: Build project
         run: yarn && yarn build
       - name: Deploy to Server
-        uses: appleboy/scp-action@master
+        uses: easingthemes/ssh-deploy@v2.1.5
         with: # 以下为参数
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USER }}
-          password: ${{ secrets.DEPLOY_PASSWORD }}
-          source: '.nuxt,static,package.json,nuxt.config.js'
+          REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
+          REMOTE_USER: ${{ secrets.DEPLOY_USER }}
+          SSH_PRIVATE_KEY: ${{ secrets.KEYS }}
+          SOURCE: './'
           TARGET: /site/temp
+          EXCLUDE: "/node_modules/"
 
       - name: Replace Prev Files
         uses: appleboy/ssh-action@master # 使用ssh链接服务器
