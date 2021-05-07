@@ -16,26 +16,26 @@ jobs:
       - name: Build project
         run: yarn && yarn build
       - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: appleboy/scp-action@master
         with: # 以下为参数
           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
           REMOTE_USER: ${{ secrets.DEPLOY_USER }}
           SSH_PRIVATE_KEY: ${{ secrets.KEYS }}
-          SOURCE: './'
+          SOURCE: './, !./node_modules'
           TARGET: /site/temp
-          EXCLUDE: "/node_modules/"
+          # EXCLUDE: "/node_modules/"
 
-      - name: Replace Prev Files
-        uses: appleboy/ssh-action@master # 使用ssh链接服务器
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USER }}
-          password: ${{ secrets.DEPLOY_PASSWORD }}
-          port: 22
-          script: | # 清除缓存
-            rm -rf /site/test
-            cp -r /site/temp /site/test
-            rm -rf /site/temp
-            cd /site/test
-            yarn
-            pm2 start
+      # - name: Replace Prev Files
+      #   uses: appleboy/ssh-action@master # 使用ssh链接服务器
+      #   with:
+      #     host: ${{ secrets.DEPLOY_HOST }}
+      #     username: ${{ secrets.DEPLOY_USER }}
+      #     password: ${{ secrets.DEPLOY_PASSWORD }}
+      #     port: 22
+      #     script: | # 清除缓存
+      #       rm -rf /site/test
+      #       cp -r /site/temp /site/test
+      #       rm -rf /site/temp
+      #       cd /site/test
+      #       yarn
+      #       pm2 start
