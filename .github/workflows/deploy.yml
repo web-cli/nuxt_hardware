@@ -7,22 +7,23 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup node 12
-        uses: actions/setup-node@v2
-        with:
-          node-version: 12.x
+      # - uses: actions/checkout@v2
+      # - name: Setup node 12
+      #   uses: actions/setup-node@v2
+      #   with:
+      #     node-version: 12.x
 
-      - name: Build project
-        run: yarn && yarn build
+      # - name: Build project
+      #   run: yarn && yarn build
       - name: Deploy to Server
         uses: appleboy/scp-action@master
         with: # 以下为参数
-          REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
-          REMOTE_USER: ${{ secrets.DEPLOY_USER }}
-          SSH_PRIVATE_KEY: ${{ secrets.KEYS }}
-          SOURCE: './, !./node_modules'
-          TARGET: /site/temp
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          password: ${{ secrets.DEPLOY_PASSWORD }}
+          port: 22
+          source: './'
+          target: /site/temp
           # EXCLUDE: "/node_modules/"
 
       # - name: Replace Prev Files
