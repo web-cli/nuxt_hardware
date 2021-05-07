@@ -25,7 +25,7 @@ jobs:
       #     source: './'
       #     target: /site/temp
           # EXCLUDE: "/node_modules/"
-
+# 
       - name: Sever Options
         uses: appleboy/ssh-action@master # 使用ssh链接服务器
         with:
