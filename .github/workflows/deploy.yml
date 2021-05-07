@@ -15,28 +15,27 @@ jobs:
 
       # - name: Build project
       #   run: yarn && yarn build
-      - name: Deploy to Server
-        uses: appleboy/scp-action@master
-        with: # 以下为参数
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USER }}
-          password: ${{ secrets.DEPLOY_PASSWORD }}
-          port: 22
-          source: './'
-          target: /site/temp
-          # EXCLUDE: "/node_modules/"
-
-      # - name: Replace Prev Files
-      #   uses: appleboy/ssh-action@master # 使用ssh链接服务器
-      #   with:
+      # - name: Deploy to Server
+      #   uses: appleboy/scp-action@master
+      #   with: # 以下为参数
       #     host: ${{ secrets.DEPLOY_HOST }}
       #     username: ${{ secrets.DEPLOY_USER }}
       #     password: ${{ secrets.DEPLOY_PASSWORD }}
       #     port: 22
-      #     script: | # 清除缓存
-      #       rm -rf /site/test
-      #       cp -r /site/temp /site/test
-      #       rm -rf /site/temp
-      #       cd /site/test
-      #       yarn
-      #       pm2 start
+      #     source: './'
+      #     target: /site/temp
+          # EXCLUDE: "/node_modules/"
+
+      - name: Sever Options
+        uses: appleboy/ssh-action@master # 使用ssh链接服务器
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          password: ${{ secrets.DEPLOY_PASSWORD }}
+          port: 22
+          script: | # 清除缓存
+            cd /site/nuxt_hardware
+            git pull
+            npm i 
+            npm run build 
+            pm2 start --npm start
