@@ -3,7 +3,7 @@
     <div class="theme-title title-pos mb20">-企业动态-</div>
     <div class="new-desc">
       深圳市北富联机电有限公司成立于广东深圳市宝安区，是工业高精密紧固件的供应商，主要代理美国品牌McMaster-carr，WMBerg，HeliCoil，Recoil螺纹护套等等。有着稳定的国外供应商，能快速完成交货任务。我们承诺：以最快的交期，优质的服务，优良的质量和合理的价格，成为你最值得信赖的供应商。如果你有其它的需求,请随时联系我。If
-      you have any other needs, please feel free to contact me。
+      you have any other needs, please feel free to contact me thx。
     </div>
     <div v-for="(item, index) in newList" :key="index" class="news-item">
       <nuxt-link :to="{ path: '/news/detail', query: { id: item.id } }">
