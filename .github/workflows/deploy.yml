@@ -24,7 +24,7 @@ jobs:
           USERNAME: ${{ secrets.DEPLOY_USER }}
           PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
           SOURCE: '.nuxt'
-          TARGET: /site/test/.nuxt
+          TARGET: /site/temp/.nuxt
      
       - name: upload static
         uses: hengkx/ssh-deploy@v1.0.1
@@ -33,7 +33,7 @@ jobs:
           USERNAME: ${{ secrets.DEPLOY_USER }}
           PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
           SOURCE: static
-          TARGET: /site/test/static
+          TARGET: /site/temp/static
 
 
       - name: upload nuxt.config.js & package.json
@@ -44,18 +44,18 @@ jobs:
           password: ${{ secrets.DEPLOY_PASSWORD }}
           port: 22
           source: 'nuxt.config.js,package.json'
-          target: /site/test
-# 
-      # - name: Sever Options
-      #   uses: appleboy/ssh-action@master # 使用ssh链接服务器
-      #   with:
-      #     host: ${{ secrets.DEPLOY_HOST }}
-      #     username: ${{ secrets.DEPLOY_USER }}
-      #     password: ${{ secrets.DEPLOY_PASSWORD }}
-      #     port: 22
-      #     script: | # 清除缓存
-      #       cd /site/nuxt_hardware
-      #       git pull
-      #       yarn
-      #       yarn run build 
-      #       pm2 start npm -- start
+          target: /site/temp
+
+      - name: Sever Options
+        uses: appleboy/ssh-action@master # 使用ssh链接服务器
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          password: ${{ secrets.DEPLOY_PASSWORD }}
+          port: 22
+          script: | # 清除缓存
+            cd /site/nuxt_hardware
+            rm -rf .nuxt nuxt.config.js package.json
+            mv /site/temp/* /site/nuxt_hardware
+            yarn
+            pm2 start npm -- start
