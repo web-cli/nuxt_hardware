@@ -58,4 +58,4 @@ jobs:
             rm -rf .nuxt nuxt.config.js package.json
             mv /site/temp/* /site/nuxt_hardware
             yarn
-            pm2 start npm -- start
+            pm2 start npm --name "leung_hardware" -- run start
