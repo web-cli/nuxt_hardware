@@ -36,6 +36,6 @@ jobs:
           script: | # 清除缓存
             cd /site/nuxt_hardware
             git pull
-            npm i 
-            npm run build 
+            yarn
+            yarn run build 
             pm2 start npm -- start
