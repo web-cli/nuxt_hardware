@@ -33,7 +33,7 @@ export const newList = [
   },
   {
     // jiacu 加粗 dabiaoti 修改字体 yanse 修改颜色 a1 增加间距
-    title: '全网最齐全的美国wmberg定位销型号2',
+    title: '全网最齐全的美国wmberg定位销型号23',
     id: 4,
     time: '2021-5-30',
     desc:
