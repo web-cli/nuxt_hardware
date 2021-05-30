@@ -6,11 +6,12 @@
     <div class="time">发布时间:{{ detailObj.time || '无' }}</div>
     <div
       v-for="(item, index) in detailObj.content"
-      :key="index"
+      :key="item.id"
       class="content"
+      v-html="item"
     >
-      {{ item }}
     </div>
+    <!-- <img src="../../assets/img/third/tab2-logo.png"  alt="" width="600" height="200"/> -->
   </div>
 </template>
 
