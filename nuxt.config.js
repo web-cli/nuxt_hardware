@@ -2,7 +2,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title:
-      'mcmaster-carr中国代理_McMasterCarr螺丝螺母总代理_berg定位销_helicoil螺套_工业高精密紧固件_深圳市北富联机电有限公司官网',
+      'mcmaster中国代理 _berg定位销_helicoil螺套_keensert螺纹护套_mcmastercarr螺丝_深圳市北富联机电有限公司',
     script: [{ src: '//js.users.51.la/21052033.js' }],
     meta: [
       { charset: 'utf-8' },
@@ -17,7 +17,7 @@ export default {
         hid: 'title',
         name: 'title',
         content:
-          'mcmaster-carr中国代理_McMasterCarr螺丝螺母总代理_berg定位销_helicoil螺套_工业高精密紧固件_深圳市北富联机电有限公司官网',
+          'mcmaster中国代理 _berg定位销_helicoil螺套_keensert螺纹护套_mcmastercarr螺丝_深圳市北富联机电有限公司',
       },
       {
         hid: 'keywords',
