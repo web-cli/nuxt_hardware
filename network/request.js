@@ -4,7 +4,7 @@ function request(config) {
 
   const instance = axios.create({
     // baseURL: 'http://101.201.199.139/web/api',
-    baseURL: 'http://localhost:3333/web/api' || '/web/api',
+    baseURL: 'http://129.204.140.71:3333/web/api' || '/web/api',
     timeout: 5000
   })
 
