@@ -6,13 +6,17 @@
       you have any other needs, please feel free to contact me 。
     </div>
     <div v-for="(item, index) in newList" :key="index" class="news-item">
-      <nuxt-link :to="{ path: '/news/detail', query: { id: item.id } }">
+      <nuxt-link :to="{ path: '/news/detail', query: { id: item.id || item._id} }">
         <div class="item-title">
           {{ item.title }}
-          <span>发布时间：{{ item.time }}</span>
+          <span>发布时间：{{ item.time || new Date(item.createdAt).toLocaleString()}}</span>
         </div>
         <div class="item-desc">
-          {{ item.desc }}
+          <div v-if="item.desc">
+              {{ item.desc }}
+          </div>
+          <div v-else v-html="item.subTitle"></div>
+        
         </div>
       </nuxt-link>
     </div>
@@ -21,15 +25,36 @@
 
 <script>
 import { newList } from '@/assets/js/news'
+import {
+  getAds,
+  getNews,
+  getHeros,
+  getVideos,
+  getGraphics
+} from '@/network/home'
 /**
  * @title 联系我们页面
  */
 export default {
-  data() {
+  data () {
     return {
       newList: newList.reverse(),
+      allNewList: []
     }
   },
+  methods: {
+    async getNews () {
+      const res = await getNews()
+      if (!res) return
+      this.allNewList = res.data.find(item=>item.name==="新闻").news_list.reverse();
+      this.newList=newList.reverse(),
+      this.newList.unshift(...this.allNewList)
+      console.log(this.allNewList,res.data, 999)
+    },
+  },
+  mounted () {
+    this.getNews()
+  }
 }
 </script>
 
