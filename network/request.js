@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { IS_DEV } from '@/assets/js/env'
 const url = 'http://localhost:3333/web/api'
 function request(config) {
   const instance = axios.create({
