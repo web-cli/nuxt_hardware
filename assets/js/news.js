@@ -33,21 +33,6 @@ export const newList = [
   },
   {
     // jiacu 加粗 dabiaoti 修改字体 yanse 修改颜色 a1 增加间距
-    title: '全网最齐全的美国wmberg定位销型号233',
-    id: 4,
-    time: '2021-5-30',
-    desc:
-      '深圳市北富联机电有限公司www.northfull.com主要代理berg紧固件和berg五金件。其中berg定位销/Berg圆柱销，有公制和英制两种，berg定位销材质为303不锈钢定位销，316不锈钢定位销和碳钢销三种类型。',
-    content: [
-      'W.M. Berg Inc成立于1967年，W.M.BERG是一家工业精密紧固件公司。wmberg产品超过60000个，wmberg类型包括轴承，皮带，齿轮，皮带轮弹簧，O型圈，berg定位销等。我们深圳市北富联机电有限公司www.northfull.com主要代理berg紧固件和berg五金件。其中berg定位销/Berg圆柱销，有公制和英制两种，berg定位销材质为303不锈钢定位销，316不锈钢定位销和碳钢销三种类型。',
-      '以下是全网最全的berg定位销型号的全部。欢迎询价，我们北富连机电公司货期快，交货迅速！是你合作伙伴的不二选择。',
-      `<img src="/_nuxt/assets/img/tab2-logo.png"  alt="提高SEO" width="600" height="200"/>我`,
-      'D1-1	碳钢		D12-8	303不锈钢		D14-6	303不锈钢		D17-20	303不锈钢 <a href="https://www.baidu.com" class="yanse">BAIDU</a> <span class="jiacu dabiaoti a1">家畜</font>',
-      '深圳北富联机电销售全部berg定位销类型，您可根据您的需求对我司进行咨询，实惠价格+优质服务+快速供货，快速给您提供各种定位销、销钉、销子。',
-    ],
-  },
-  {
-    // jiacu 加粗 dabiaoti 修改字体 yanse 修改颜色 a1 增加间距
     title: '深圳市北富联机电有限公司——五金紧固件供应商',
     id: 5,
     time: '2021-6-10',

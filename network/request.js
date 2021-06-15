@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { IS_DEV } from '@/assets/js/env'
+console.log(IS_DEV, 69)
 function request(config) {
   const instance = axios.create({
     // baseURL: 'http://101.201.199.139/web/api',

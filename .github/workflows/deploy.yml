@@ -38,4 +38,6 @@
 #             git pull
 #             yarn
 #             yarn run build 
+#             pm2 delete all
+#             systemctl restart nginx
 #             pm2 start npm -- run start
