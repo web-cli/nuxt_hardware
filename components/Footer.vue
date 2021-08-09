@@ -7,7 +7,7 @@
           深圳市北富联机电有限公司（www.northfull.com）是一家工业高精密紧固件销售、服务为一体的专业公司，为客户提供高品质五金紧固件工业服务商！
         </div>
         <div class="mt30">
-          北富联机电提供ISO国际、美国米制ANSI（M）、ASME（M）、ASTM（M）、JIS日本、DIN德国、EN欧盟、GB中国、BS英国（M）、AS（M）澳大利亚的系列标准件。主要代理McMASER-CARR、Helicoil螺套、BERG定位销、RECOIL螺纹护套及配套机电工具等。
+          北富联机电主要代理McMASTER-CARR、Helicoil螺套、Berg定位销、Keensert插销螺套、Recoil螺纹护套、Kato螺套、Ensat螺套及配套机电工具等。提供美国标准ANSI（M）、ASME（M）、ASTM（M）、ISO国际标准、DIN德国标准、JIS日本标准等。
           本公司以“用心服务，客户为核心”为宗旨，坚持以用户的要求为中心，提供高效服务，为客户解决问题。北富联机电是您值得信赖的合作伙伴！
         </div>
       </div>
