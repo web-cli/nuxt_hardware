@@ -46,7 +46,7 @@ export default {
 .solute {
   background: url('~@/assets/img/third/solutebg.png') no-repeat center / 100%
     100%;
-  height: 700px;
+  height: 600px;
   width: 100%;
   .solute-title {
     padding-top: 200px;

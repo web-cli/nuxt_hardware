@@ -889,6 +889,26 @@ const layoutMockJson = [
     detail:
       'recoil螺纹护套具有多种型号，有碳钢、不锈钢等材质的recoil螺套，螺套具有很好的紧固作用，具有超强的硬度，更多recoil螺套请详细咨询客服。',
     productList: [
+      // {
+      //   img: require('@/assets/img/third/KENSERTSLOGO.png'),
+      //   name: 'Keensert插销螺套',
+      //   alt: 'Keensert插销螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 0,
+      //   expand: {
+      //     title: 'Keensert插销螺套',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/KENSERTSLOGO.png'),
+      //         name: 'Keensert插销螺套',
+      //         alt: 'Keensert插销螺套-northfull.com',
+      //         desc:
+      //           'Keensert插销螺套主要由不锈钢1.4305 / AISI 303制成，KeensertS®螺纹嵌件是防止螺纹在机械或精密工程，航空和军用等领域被剥离的完美解决方案。',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
       {
         img: require('@/assets/img/third/zigongluotao1.png'),
         name: 'Recoil自攻螺套',

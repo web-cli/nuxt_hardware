@@ -7,16 +7,27 @@
     <Footer></Footer>
   </div>
 </template>
-
+<script>
+// eslint-disable-next-line no-undef
+LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
+// eslint-disable-next-line no-undef
+console.log(LA, 89999)
+</script>
 <script lang="javascript">
 import {seo} from '@/static/js/common'
 export default {
   data () {
     return {}
   },
+  methods:{
+    _initLA(){
+      window.LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
+    }
+  },
   mounted () {
     seo()
     // 统计脚本
+    // eslint-disable-next-line no-var
     var _hmt = _hmt || [];
     (function () {
       const hm = document.createElement("script");
@@ -24,6 +35,7 @@ export default {
       const s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
+    this._initLA()
   },
 }
 </script>

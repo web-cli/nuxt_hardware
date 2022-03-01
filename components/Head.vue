@@ -1,37 +1,45 @@
 <template>
-  <div class="title">
-    <div class="name"></div>
-    <div class="tab header">
-      <a-menu mode="horizontal" :selectable="false">
-        <a-menu-item v-for="target in tabList" :key="target.key">
-          <NuxtLink :to="{ name: target.link }" target="_self">
-            <div v-if="target.options && target.options.length > 0">
-              <a-dropdown placement="bottomCenter">
-                <div>
-                  <!-- <a-icon :type="target.type" /> -->
-                  <span>{{ target.title }}</span>
-                  <a-icon
-                    type="down"
-                    :style="{ fontSize: '17px' }"
-                    @click="(e) => e.preventDefault()"
-                  />
-                </div>
-                <a-menu slot="overlay">
-                  <a-menu-item v-for="item in target.options" :key="item.key">
-                    <NuxtLink :to="{ name: item.link }" target="_self">
-                      <span>{{ item.title }}</span>
-                    </NuxtLink>
-                  </a-menu-item>
-                </a-menu>
-              </a-dropdown>
-            </div>
-            <div v-else>
-              <!-- <a-icon :type="target.type" />  -->
-              <span>{{ target.title }}</span>
-            </div>
-          </NuxtLink>
-        </a-menu-item>
-      </a-menu>
+  <div class="top">
+    <div class="phone">
+      <a-icon type="phone" class="icon" width="32" height=" 32" />：{{
+        `131 8972 9968`
+      }}
+    </div>
+
+    <div class="title">
+      <div class="name"></div>
+      <div class="tab header">
+        <a-menu mode="horizontal" :selectable="false">
+          <a-menu-item v-for="target in tabList" :key="target.key">
+            <NuxtLink :to="{ name: target.link }" target="_self">
+              <div v-if="target.options && target.options.length > 0">
+                <a-dropdown placement="bottomCenter">
+                  <div>
+                    <!-- <a-icon :type="target.type" /> -->
+                    <span>{{ target.title }}</span>
+                    <a-icon
+                      type="down"
+                      :style="{ fontSize: '17px' }"
+                      @click="(e) => e.preventDefault()"
+                    />
+                  </div>
+                  <a-menu slot="overlay">
+                    <a-menu-item v-for="item in target.options" :key="item.key">
+                      <NuxtLink :to="{ name: item.link }" target="_self">
+                        <span>{{ item.title }}</span>
+                      </NuxtLink>
+                    </a-menu-item>
+                  </a-menu>
+                </a-dropdown>
+              </div>
+              <div v-else>
+                <!-- <a-icon :type="target.type" />  -->
+                <span>{{ target.title }}</span>
+              </div>
+            </NuxtLink>
+          </a-menu-item>
+        </a-menu>
+      </div>
     </div>
   </div>
 </template>
@@ -72,19 +80,34 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.title {
-  padding-top: 20px;
-  width: 100%;
-  height: 100px;
-  position: fixed;
+.phone {
+  font-size: 22px;
+  font-weight: bold;
   background: #ffffff;
+  text-align: center;
+  color: #001578;
+  // padding-top: 6px;
+  // color: #333333;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+  position: fixed;
   top: 0;
   z-index: 999;
   left: 0;
+  background: #ffffff;
+  box-shadow: 0 4px 10px #eaeaea;
+}
+.title {
+  height: 80px;
+
   text-align: center;
   color: @theme-color;
   font-size: 36px;
-  box-shadow: 0 4px 10px #eaeaea;
+
   width: 100%;
   .flex-center();
   .name {
