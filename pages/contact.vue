@@ -12,8 +12,8 @@
       深圳市北富联机电有限公司成立于广东深圳市宝安区，是工业高精密紧固件的供应商，主要代理美国品牌McMaster-carr，Berg，HeliCoil，Recoil螺纹护套等等。有着稳定的国外供应商，能快速完成交货任务。我们承诺：以最快的交期，优质的服务，优良的质量和合理的价格，成为你最值得信赖的供应商。如果你有其它的需求,请随时联系我们。
     </div>
     <div class="contact-desc">
-      <div><a-icon type="team" class="icon" /> Alyssa Leung</div>
-      <div><a-icon type="mail" class="icon" /> northfull@163.com</div>
+      <div><a-icon type="team" class="icon" /> Lisa Leung</div>
+      <div><a-icon type="mail" class="icon" /> northfull@foxmail.com</div>
       <div><a-icon type="phone" class="icon" />131 8972 9968</div>
       <div><a-icon type="qq" class="icon" />318203871</div>
       <div class="tips">欢迎添加我的微信～期待你的到来</div>
@@ -35,10 +35,56 @@
 </template>
 
 <script>
-/**
- * @title 联系我们页面
- */
-export default {}
+// eslint-disable-next-line no-undef
+LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
+// eslint-disable-next-line no-undef
+</script>
+<script>
+import { seo } from '@/static/js/common'
+export default {
+  computed: {
+    tabNative() {
+      return this.$store.state.tabNative
+    },
+  },
+  methods: {
+    _initLA() {
+      window.LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
+    },
+  },
+  mounted() {
+    seo()
+    // 统计脚本
+    // eslint-disable-next-line no-var
+    var _hmt = _hmt || []
+    ;(function () {
+      const hm = document.createElement('script')
+      hm.src = 'https://hm.baidu.com/hm.js?72df00f71260cd01bb2b8b9dd44ef549'
+      const s = document.getElementsByTagName('script')[0]
+      s.parentNode.insertBefore(hm, s)
+    })()
+    this._initLA()
+  },
+  head() {
+    return {
+      title: '联系北富联机电拨打13189729968,微信：beifulian',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'mcmaster五金,berg定位销,keensert插销螺套可拨打13189729968或微信WX:beifulian',
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            '北富联,深圳北富联机电,深圳市北富联机电有限公司,northfull,beifulian,13189729968,北富联机电微信',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="less" scoped>

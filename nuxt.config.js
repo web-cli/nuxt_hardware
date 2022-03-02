@@ -18,7 +18,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          '深圳市北富联机电有限公司(northfull.com)是一家工业高精密紧固件供应商,主营mcmaster-carr中国代理,helicoil螺套,berg定位销,mcmastercarr螺丝螺母,McMaster-Carr总代理,WMBERG,recoil螺纹螺套,Keensert插销螺套，mcmastercarr亚洲代理,helicoil螺纹护套,自攻螺套,标准紧固件,berg代理销售,能快速供货,满足高端五金紧固件需求.',
+          'mcmaster中国代理 ,berg定位销,helicoil螺套,keensert插销螺套，mcmastercarr螺丝,深圳市北富联机电有限公司,北富联,mcmaster,mcmaster carr官网,helicoil钢丝螺套,mcmaster内六角螺钉,麦克马斯特mcmaster, 高端五金件,kato自攻螺套,mcmaster亚洲代理,helicoil螺纹护套',
       },
       {
         hid: 'title',
@@ -30,7 +30,7 @@ export default {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'Helicoil螺套,Keensert插销螺套，helicoil螺纹护套,钢丝螺套,螺纹护套,自攻螺套，插销螺套,螺纹护套，mcmaster-carr,1084-6EN090,mcmastercarr中国,mcmastercarr代理,mcmastercarr,mcmastercarr经销商,mcmastercarr一级代理商,mcmastercarr官网,mcmaster中国官网,mcmaster-carr 中国总代理,mcmaster-carr标准件，berg定位销，berg中国代理,mcmastercarr螺栓，northfull,northfull.com,北富联机电,深圳北富联机电,深圳市北富联机电有限公司,北富联机电有限公司，McMaster亚洲代理',
+          'mcmaster中国代理 ,berg定位销,helicoil螺套,keensert插销螺套，mcmastercarr螺丝,深圳市北富联机电有限公司,北富联,mcmaster,mcmaster carr官网,helicoil钢丝螺套,mcmaster内六角螺钉,麦克马斯特mcmaster, 高端五金件,kato自攻螺套,mcmaster亚洲代理,helicoil螺纹护套',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/nf.png' }],

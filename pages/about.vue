@@ -56,21 +56,52 @@
 </template>
 
 <script>
-/**
- * @title 联系我们页面
- */
+// eslint-disable-next-line no-undef
+LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
+// eslint-disable-next-line no-undef
+</script>
+<script>
+import { seo } from '@/static/js/common'
 export default {
-  data() {
-    return {}
+  computed: {
+    tabNative() {
+      return this.$store.state.tabNative
+    },
+  },
+  methods: {
+    _initLA() {
+      window.LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
+    },
+  },
+  mounted() {
+    seo()
+    // 统计脚本
+    // eslint-disable-next-line no-var
+    var _hmt = _hmt || []
+    ;(function () {
+      const hm = document.createElement('script')
+      hm.src = 'https://hm.baidu.com/hm.js?72df00f71260cd01bb2b8b9dd44ef549'
+      const s = document.getElementsByTagName('script')[0]
+      s.parentNode.insertBefore(hm, s)
+    })()
+    this._initLA()
   },
   head() {
     return {
-      title: '深圳北富联-公司简介',
+      title:
+        '深圳市北富联机电有限公司www.northfull.com是一家工业高精密紧固件公司',
       meta: [
         {
-          hid: 'description2222',
+          hid: 'description',
           name: 'description',
-          content: 'My custom description',
+          content:
+            '深圳市北富联机电有限公司www.northfull.com是一家工业高精密紧固件公司',
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            '深圳市北富联机电有限公司www.northfull.com是一家工业高精密紧固件公司',
         },
       ],
     }

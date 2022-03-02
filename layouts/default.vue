@@ -11,7 +11,6 @@
 // eslint-disable-next-line no-undef
 LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
 // eslint-disable-next-line no-undef
-console.log(LA, 89999)
 </script>
 <script lang="javascript">
 import {seo} from '@/static/js/common'
