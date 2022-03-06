@@ -23,7 +23,6 @@ LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
 // eslint-disable-next-line no-undef
 </script>
 <script>
-import { seo } from '@/static/js/common'
 export default {
   data() {
     return {
@@ -55,24 +54,6 @@ export default {
     tabNative() {
       return this.$store.state.tabNative
     },
-  },
-  methods: {
-    _initLA() {
-      window.LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
-    },
-  },
-  mounted() {
-    seo()
-    // 统计脚本
-    // eslint-disable-next-line no-var
-    var _hmt = _hmt || []
-    ;(function () {
-      const hm = document.createElement('script')
-      hm.src = 'https://hm.baidu.com/hm.js?72df00f71260cd01bb2b8b9dd44ef549'
-      const s = document.getElementsByTagName('script')[0]
-      s.parentNode.insertBefore(hm, s)
-    })()
-    this._initLA()
   },
   head() {
     return {

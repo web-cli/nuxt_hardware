@@ -23,8 +23,19 @@ export default {
       window.LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
     }
   },
+  watch:{
+     $route: {
+        handler: function(val, oldVal){
+          setTimeout(()=>{
+           seo()
+           this._initLA()
+          },300)
+        },
+        // 深度观察监听
+        deep: true
+      }
+  },
   mounted () {
-    seo()
     // 统计脚本
     // eslint-disable-next-line no-var
     var _hmt = _hmt || [];
@@ -34,7 +45,6 @@ export default {
       const s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
-    this._initLA()
   },
 }
 </script>
