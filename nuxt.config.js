@@ -1,4 +1,10 @@
 export default {
+  server: {
+    // 配置Nuxt服务器
+    port: 3000, // default: 3000
+    host: '0.0.0.0', // default: localhost
+    timing: false,
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title:
@@ -62,7 +68,7 @@ export default {
   styleResources: {
     less: ['./assets/css/global.less'],
   },
-
+  // rootDir: __dirname,
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 

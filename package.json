@@ -11,7 +11,9 @@
     "lint": "yarn lint:js",
     "login":"tcb login",
     "deploy":"tcb hosting:deploy ./dist -e leunghardware-0gbvro1hb327ca22",
-    "pm2":"pm2 start npm --name my-nuxt -- run start"
+    "pm2":"pm2 start npm --name my-nuxt -- run start",
+    "buildStart":"node ./node_modules/nuxt/bin/nuxt.js",
+    "buildStart2":"nuxt start&&pm2 start ./node_modules/nuxt/bin/nuxt.js"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
