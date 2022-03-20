@@ -2,8 +2,8 @@
   <div class="contact">
     <div class="theme-title title-pos mb20">-企业动态-</div>
     <div class="new-desc">
-      深圳市北富联机电有限公司成立于广东深圳市宝安区，是工业高精密紧固件的供应商，主要代理美国品牌McMaster-carr，WMBerg，HeliCoil，Recoil螺纹护套等等。有着稳定的国外供应商，能快速完成交货任务。我们承诺：以最快的交期，优质的服务，优良的质量和合理的价格，成为你最值得信赖的供应商。如果你有其它的需求,请随时联系我。If
-      you have any other needs, please feel free to contact me 。
+      深圳市北富联机电有限公司是一家工业高精密紧固件供应商，主要代理MCMASTER,，Wmberg销钉，Helicoil螺套，Keenserts插销螺套，Recoil螺纹护套，Kato自攻螺套等五金紧固件及机电配件产品。深圳北富联有着稳定的国外供应商，能快速完成供货需求。我们承诺：以最快的交期，合理的价格，优良的质量和优质的服务，成为你最值得信赖的五金机电供应商。如果你有其他需求，请随时联系我们！If
+      you have any other needs, please feel free to contact us.
     </div>
     <div v-for="(item, index) in newList" :key="index" class="news-item">
       <nuxt-link
@@ -64,17 +64,17 @@ export default {
     },
   },
   mounted() {
-    seo()
+    // seo()
     // 统计脚本
     // eslint-disable-next-line no-var
-    var _hmt = _hmt || []
-    ;(function () {
-      const hm = document.createElement('script')
-      hm.src = 'https://hm.baidu.com/hm.js?72df00f71260cd01bb2b8b9dd44ef549'
-      const s = document.getElementsByTagName('script')[0]
-      s.parentNode.insertBefore(hm, s)
-    })()
-    this._initLA()
+    // var _hmt = _hmt || []
+    // ;(function () {
+    //   const hm = document.createElement('script')
+    //   hm.src = 'https://hm.baidu.com/hm.js?72df00f71260cd01bb2b8b9dd44ef549'
+    //   const s = document.getElementsByTagName('script')[0]
+    //   s.parentNode.insertBefore(hm, s)
+    // })()
+    // this._initLA()
     this.getNews()
   },
   head() {

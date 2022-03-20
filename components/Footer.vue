@@ -1,17 +1,74 @@
 <template>
   <div class="footer">
-    <div class="footer-contact">
-      <div class="footer-about">
+    <div class="footer-contact col-12">
+      <div class="footer-about col-12 col-lg-3">
         <h1>关于我们</h1>
         <div>
-          深圳市北富联机电有限公司（www.northfull.com）是一家工业高精密紧固件销售、服务为一体的专业公司，为客户提供高品质五金紧固件工业服务商！
+          深圳市北富联机电有限公司是一家集销售、服务为一体的高精密五金紧固件公司，为客户提供高品质欧美紧固件工业服务商！
         </div>
         <div class="mt30">
-          北富联机电主要代理McMASTER-CARR、Helicoil螺套、Berg定位销、Keensert插销螺套、Recoil螺纹护套、Kato螺套、Ensat螺套及配套机电工具等。提供美国标准ANSI（M）、ASME（M）、ASTM（M）、ISO国际标准、DIN德国标准、JIS日本标准等。
-          本公司以“用心服务，客户为核心”为宗旨，坚持以用户的要求为中心，提供高效服务，为客户解决问题。北富联机电是您值得信赖的合作伙伴！
+          深圳北富联提供美式标准ANSI、ASME、ASTM、ISO、DIN、JIS等标准紧固件。
+          北富联公司以“用心服务，客户为核心”为宗旨，坚持以客户的要求为中心，提供高效服务，为客户解决问题！
         </div>
       </div>
-      <div>
+      <div class="mid col-12 col-lg-1">
+        <h1>产品中心</h1>
+        <div>
+          <nuxt-link
+            :to="{
+              path: `/mcmastercarr`,
+            }"
+          >
+            McMaster
+          </nuxt-link>
+        </div>
+        <div>
+          <nuxt-link
+            :to="{
+              path: `/helicoil`,
+            }"
+          >
+            Helicoil
+          </nuxt-link>
+        </div>
+        <div>
+          <nuxt-link
+            :to="{
+              path: `/berg`,
+            }"
+          >
+            Berg
+          </nuxt-link>
+        </div>
+        <div>
+          <nuxt-link
+            :to="{
+              path: `/recoil`,
+            }"
+          >
+            Rceoil
+          </nuxt-link>
+        </div>
+        <div>
+          <nuxt-link
+            :to="{
+              path: `/kato`,
+            }"
+          >
+            Kato
+          </nuxt-link>
+        </div>
+        <div>
+          <nuxt-link
+            :to="{
+              path: `/ensat`,
+            }"
+          >
+            Ensat
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
         <h1>联系我们</h1>
         <div>
           <a-icon type="phone" class="icon" width="32" height=" 32" />：{{
@@ -66,7 +123,7 @@ export default {
         phone: '131 8972 9968',
         email: 'northfull@foxmail.com',
         name: '深圳市北富联机电有限公司',
-        weixinImg: require('@/assets/img/weixin.png'),
+        weixinImg: require('@/assets/img/fourth/weixin.png'),
       }),
     }
   },
@@ -74,6 +131,14 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.mid {
+  margin-right: 30px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
 .footer {
   min-height: 225px;
   background: #2e2e2e;
@@ -83,13 +148,16 @@ export default {
   justify-content: center;
   &-contact {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    // align-items: flex-start;
+    // justify-content: center;
   }
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 240px;
   }
   h1 {
     color: #ffffff;
@@ -98,7 +166,7 @@ export default {
     margin-top: 40px;
   }
   &-about {
-    width: 40%;
+    // width: 40%;
     min-height: 260px;
     border-bottom: 1px solid #4d4d4d;
     margin-bottom: 20px;

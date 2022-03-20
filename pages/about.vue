@@ -181,12 +181,12 @@ export default {
   height: 600px;
   border-radius: 20px;
   // border: 1px solid red;
-  margin: -140px auto 100px auto;
+  margin: -60px auto 100px auto;
 }
 .banner {
   z-index: -1;
   width: 100%;
-  background: url('~@/assets/img/third/banner/banner_detail.jpg');
+  background: url('~@/assets/img/fourth/banner1.jpg');
   height: 400px;
 }
 </style>

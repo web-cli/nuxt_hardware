@@ -1,5 +1,5 @@
 <template>
-  <div class="solute">
+  <div class="solute d-none d-lg-block">
     <div class="theme-title solute-title">解决方案</div>
     <div class="sub-title">OUR SOLUTION</div>
     <div class="solute-list">

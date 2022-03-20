@@ -6,11 +6,11 @@ const layoutMockJson = [
     url: 'mcmastercarr',
     logo: require('@/assets/img/third/product-type/mcmastercarr.png'),
     detail:
-      'McMaster-Carr是来自美国的一家五金工具以及配件出产商，主要出产以及销售各类五金产品，销售各种mcmaster中国代理五金紧固件，涵盖的领域十分广泛。我司（深圳市北富联机电有限公司）主要销售不同材质高强度标准紧固件等，如圆柱销、螺丝、螺母、垫片等',
+      'McMaster-carr中国代理是 深圳市北富联机电有限公司的主营品牌，其使用领域较为广泛，mcmastercarr官网有DIN, AMSE, ASTM, JIS, ISO, Mil.Spec., CSA, FDA Compliant等标准。有低强度到高强度的各种高精密五金紧固件，如内六角螺钉、六角头螺钉、销钉、自攻螺丝、机米螺丝、弹簧柱塞、吊环、轴肩螺丝、螺母、螺套、铆钉、垫圈垫片、轴承、弹簧标准紧固件。',
     productList: [
       {
         img: require('@/assets/img/second/luosi-1.png'),
-        name: '内六角螺丝详情',
+        name: 'mcmaster内六角螺丝',
         alt: '北富联的六角螺丝',
         key: '1',
         hasDetai: true, // 是否有详情
@@ -272,12 +272,12 @@ const layoutMockJson = [
       },
       {
         img: require('@/assets/img/second/luosi-5.png'),
-        name: '自攻螺钉（木螺钉和干式墙螺钉）',
-        alt: '北富联的自攻螺钉（木螺钉和干式墙螺钉',
+        name: '自攻螺丝',
+        alt: '北富联的自攻螺钉',
         hasDetai: true, // 是否有详情
         key: '5',
         expand: {
-          title: '自攻螺钉（木螺钉和干式墙螺钉）系列',
+          title: '自攻螺丝系列',
           subList: [
             {
               img: require('@/assets/img/third/5.png'),
@@ -640,7 +640,7 @@ const layoutMockJson = [
         },
       },
       {
-        img: require('@/assets/img/third/16.png'),
+        img: require('@/assets/img/fourth/qita.png'),
         name: '其他',
         alt: '北富联的其他',
         hasDetai: true, // 是否有详情
@@ -649,11 +649,11 @@ const layoutMockJson = [
           title: '其他系列',
           subList: [
             {
-              img: require('@/assets/img/second/berg9.jpg'),
+              img: require('@/assets/img/fourth/qita.png'),
               name: '其他',
               alt: 'BERG其他-northfull.com',
               desc:
-                '生产范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙',
+                'Mcmaster产品：轴承、方形螺钉、五角螺钉、T型螺钉、杆端、梯形螺栓、钉子、管道、管接头、塑料网、振动器、过滤网等mcmaster官网五金紧固件。\n mcmaster范围：公制：M1.2 ~ M42；美制: #2 ~ 1/4材质：合金钢 不锈钢 A2, A4 (SUS304, 316)碳钢 镀锌, 镀镍 铝 铜 尼龙等',
             },
           ],
         },
@@ -731,28 +731,28 @@ const layoutMockJson = [
           ],
         },
         detailList: [
-          {
-            title: '规格：',
-            list: [
-              'Helicoil螺纹护套螺纹规格： helicoil 螺套按螺纹规格可分为公制（粗牙和细牙）、统一粗牙螺套（UNC）和统一细牙螺套（UNF），另外还有英国标准（粗牙BSW和细牙BSF）和管螺纹（G）规格的螺纹护套',
-              'Helicoil 螺纹护套长度规格：通常螺套的长度按安装在其内的螺栓的公称直径d的倍数选择，每种螺套有1d，1.5d，2d，2.5d，3d长度。例如：M6，长1.5d的螺套，安装后可形成M6，长度为9mm的内螺纹孔',
-            ],
-          },
-          {
-            title: '分类：',
-            list: [
-              'Helicoil螺套按其自身结构可分为：普通型（Free Running）和锁紧型（Screw Lock），锁紧型螺套是在螺套的中间通过一圈或多圈多边形线圈来实现对安装在其中的螺栓产生夹持作用，起到防松的效果。附加的防松垫片等就没有必要了，这样可以降低成本并确保简化装配',
-            ],
-          },
-          {
-            title: '标准：',
-            list: [
-              '化学成分和物理性能符合AS7245，ASME SA-497，AS7246标准。',
-              '符合军事标准MS21208，NASM21209，NASM122076至NASM12275，NASM124651至NASM124850，MS9018和 军事规格NASM8846。',
-              '符合航空标准MA3279，MA3280，MA3281，MA3329，MA3330，MA3331，MA1565',
-              '符合ISO9001-ISO/TS 16949标准。',
-            ],
-          },
+          // {
+          //   title: '规格：',
+          //   list: [
+          //     'Helicoil螺纹护套螺纹规格： helicoil 螺套按螺纹规格可分为公制（粗牙和细牙）、统一粗牙螺套（UNC）和统一细牙螺套（UNF），另外还有英国标准（粗牙BSW和细牙BSF）和管螺纹（G）规格的螺纹护套',
+          //     'Helicoil 螺纹护套长度规格：通常螺套的长度按安装在其内的螺栓的公称直径d的倍数选择，每种螺套有1d，1.5d，2d，2.5d，3d长度。例如：M6，长1.5d的螺套，安装后可形成M6，长度为9mm的内螺纹孔',
+          //   ],
+          // },
+          // {
+          //   title: '分类：',
+          //   list: [
+          //     'Helicoil螺套按其自身结构可分为：普通型（Free Running）和锁紧型（Screw Lock），锁紧型螺套是在螺套的中间通过一圈或多圈多边形线圈来实现对安装在其中的螺栓产生夹持作用，起到防松的效果。附加的防松垫片等就没有必要了，这样可以降低成本并确保简化装配',
+          //   ],
+          // },
+          // {
+          //   title: '标准：',
+          //   list: [
+          //     '化学成分和物理性能符合AS7245，ASME SA-497，AS7246标准。',
+          //     '符合军事标准MS21208，NASM21209，NASM122076至NASM12275，NASM124651至NASM124850，MS9018和 军事规格NASM8846。',
+          //     '符合航空标准MA3279，MA3280，MA3281，MA3329，MA3330，MA3331，MA1565',
+          //     '符合ISO9001-ISO/TS 16949标准。',
+          //   ],
+          // },
         ],
       },
       {
@@ -774,28 +774,28 @@ const layoutMockJson = [
           ],
         },
         detailList: [
-          {
-            title: '规格：',
-            list: [
-              'Helicoil螺纹护套螺纹规格： helicoil 螺套按螺纹规格可分为公制（粗牙和细牙）、统一粗牙螺套（UNC）和统一细牙螺套（UNF），另外还有英国标准（粗牙BSW和细牙BSF）和管螺纹（G）规格的螺纹护套',
-              'Helicoil 螺纹护套长度规格：通常螺套的长度按安装在其内的螺栓的公称直径d的倍数选择，每种螺套有1d，1.5d，2d，2.5d，3d长度。例如：M6，长1.5d的螺套，安装后可形成M6，长度为9mm的内螺纹孔',
-            ],
-          },
-          {
-            title: '分类：',
-            list: [
-              'Helicoil螺套按其自身结构可分为：普通型（Free Running）和锁紧型（Screw Lock），锁紧型螺套是在螺套的中间通过一圈或多圈多边形线圈来实现对安装在其中的螺栓产生夹持作用，起到防松的效果。附加的防松垫片等就没有必要了，这样可以降低成本并确保简化装配',
-            ],
-          },
-          {
-            title: '标准：',
-            list: [
-              '化学成分和物理性能符合AS7245，ASME SA-497，AS7246标准。',
-              '符合军事标准MS21208，NASM21209，NASM122076至NASM12275，NASM124651至NASM124850，MS9018和 军事规格NASM8846。',
-              '符合航空标准MA3279，MA3280，MA3281，MA3329，MA3330，MA3331，MA1565',
-              '符合ISO9001-ISO/TS 16949标准。',
-            ],
-          },
+          // {
+          //   title: '规格：',
+          //   list: [
+          //     'Helicoil螺纹护套螺纹规格： helicoil 螺套按螺纹规格可分为公制（粗牙和细牙）、统一粗牙螺套（UNC）和统一细牙螺套（UNF），另外还有英国标准（粗牙BSW和细牙BSF）和管螺纹（G）规格的螺纹护套',
+          //     'Helicoil 螺纹护套长度规格：通常螺套的长度按安装在其内的螺栓的公称直径d的倍数选择，每种螺套有1d，1.5d，2d，2.5d，3d长度。例如：M6，长1.5d的螺套，安装后可形成M6，长度为9mm的内螺纹孔',
+          //   ],
+          // },
+          // {
+          //   title: '分类：',
+          //   list: [
+          //     'Helicoil螺套按其自身结构可分为：普通型（Free Running）和锁紧型（Screw Lock），锁紧型螺套是在螺套的中间通过一圈或多圈多边形线圈来实现对安装在其中的螺栓产生夹持作用，起到防松的效果。附加的防松垫片等就没有必要了，这样可以降低成本并确保简化装配',
+          //   ],
+          // },
+          // {
+          //   title: '标准：',
+          //   list: [
+          //     '化学成分和物理性能符合AS7245，ASME SA-497，AS7246标准。',
+          //     '符合军事标准MS21208，NASM21209，NASM122076至NASM12275，NASM124651至NASM124850，MS9018和 军事规格NASM8846。',
+          //     '符合航空标准MA3279，MA3280，MA3281，MA3329，MA3330，MA3331，MA1565',
+          //     '符合ISO9001-ISO/TS 16949标准。',
+          //   ],
+          // },
         ],
       },
       {
@@ -1060,106 +1060,106 @@ const layoutMockJson = [
     detail:
       'Kato工业五金紧固件固有多种自攻螺套、不锈钢螺套、无尾螺套、有尾螺套等，型号和材质较多，具体KATO精密五金紧固件请咨询深圳市北富联机电客服。',
     productList: [
-      {
-        img: require('@/assets/img/third/luowenhutao.png'),
-        name: 'KATO钢丝螺套',
-        alt: 'KATO钢丝螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 7,
-        expand: {
-          title: 'KATO钢丝螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/luowenhutao.png'),
-              name: 'KATO钢丝螺套',
-              alt: 'KATO钢丝螺套-northfull.com',
-              desc:
-                '工业高精密紧固件KATO钢丝螺套广泛应用于航空和军事行业，可提供高强度的KATO内置螺纹。',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/luowenhutao.png'),
-        name: 'KATO不锈钢螺套',
-        alt: 'KATO不锈钢螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 6,
-        expand: {
-          title: 'KATO不锈钢螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/luowenhutao.png'),
-              name: 'KATO不锈钢螺套',
-              alt: 'KATO不锈钢螺套-northfull.com',
-              desc:
-                'KATO螺纹护套采用不锈钢材质，可以抵抗化学防腐蚀性，不容易生锈。',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/wuweiluotao.png'),
-        name: 'KATO无尾螺套',
-        alt: 'KATO无尾螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 3,
-        expand: {
-          title: 'KATO无尾螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/wuweiluotao.png'),
-              name: 'KATO无尾螺套',
-              alt: 'KATO无尾螺套-northfull.com',
-              desc:
-                'KATO无尾螺套是没有安装柄钢丝螺套，安装过程中没有方向性要求，安装非常方便。KATO无尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。 ',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/youweiluotao.png'),
-        name: 'KATO有尾螺套',
-        alt: 'KATO有尾螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 4,
-        expand: {
-          title: 'KATO有尾螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/youweiluotao.png'),
-              name: 'KATO有尾螺套',
-              alt: 'KATO有尾螺套-northfull.com',
-              desc:
-                'KATO有尾螺套相对于无尾螺套是多了一条“尾巴”，KATO有尾螺纹护套安装非常方便。KATO有尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/luowenhutao.png'),
-        name: 'KATO螺纹护套',
-        alt: 'KATO螺纹护套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 5,
-        expand: {
-          title: 'KATO螺纹护套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/luowenhutao.png'),
-              name: 'KATO螺纹护套',
-              alt: 'KATO螺纹护套-northfull.com',
-              desc:
-                'KATO螺纹护套适用于螺纹连接，具有结构性良好，方便使用的功能，螺套安装于螺孔或者螺母中，可以减轻螺纹牙因为受力不均匀和抵抗冲击震动的效果，很大程度提高了螺纹的使用寿命，减少螺纹的抗腐蚀性和磨损程度，helicoil螺套多应用于航空行业、国防行业、汽车工业、机电设备行业等',
-            },
-          ],
-        },
-        detailList: [],
-      },
+      // {
+      //   img: require('@/assets/img/third/luowenhutao.png'),
+      //   name: 'KATO钢丝螺套',
+      //   alt: 'KATO钢丝螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 7,
+      //   expand: {
+      //     title: 'KATO钢丝螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/luowenhutao.png'),
+      //         name: 'KATO钢丝螺套',
+      //         alt: 'KATO钢丝螺套-northfull.com',
+      //         desc:
+      //           '工业高精密紧固件KATO钢丝螺套广泛应用于航空和军事行业，可提供高强度的KATO内置螺纹。',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/luowenhutao.png'),
+      //   name: 'KATO不锈钢螺套',
+      //   alt: 'KATO不锈钢螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 6,
+      //   expand: {
+      //     title: 'KATO不锈钢螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/luowenhutao.png'),
+      //         name: 'KATO不锈钢螺套',
+      //         alt: 'KATO不锈钢螺套-northfull.com',
+      //         desc:
+      //           'KATO螺纹护套采用不锈钢材质，可以抵抗化学防腐蚀性，不容易生锈。',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/wuweiluotao.png'),
+      //   name: 'KATO无尾螺套',
+      //   alt: 'KATO无尾螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 3,
+      //   expand: {
+      //     title: 'KATO无尾螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/wuweiluotao.png'),
+      //         name: 'KATO无尾螺套',
+      //         alt: 'KATO无尾螺套-northfull.com',
+      //         desc:
+      //           'KATO无尾螺套是没有安装柄钢丝螺套，安装过程中没有方向性要求，安装非常方便。KATO无尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。 ',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/youweiluotao.png'),
+      //   name: 'KATO有尾螺套',
+      //   alt: 'KATO有尾螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 4,
+      //   expand: {
+      //     title: 'KATO有尾螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/youweiluotao.png'),
+      //         name: 'KATO有尾螺套',
+      //         alt: 'KATO有尾螺套-northfull.com',
+      //         desc:
+      //           'KATO有尾螺套相对于无尾螺套是多了一条“尾巴”，KATO有尾螺纹护套安装非常方便。KATO有尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/luowenhutao.png'),
+      //   name: 'KATO螺纹护套',
+      //   alt: 'KATO螺纹护套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 5,
+      //   expand: {
+      //     title: 'KATO螺纹护套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/luowenhutao.png'),
+      //         name: 'KATO螺纹护套',
+      //         alt: 'KATO螺纹护套-northfull.com',
+      //         desc:
+      //           'KATO螺纹护套适用于螺纹连接，具有结构性良好，方便使用的功能，螺套安装于螺孔或者螺母中，可以减轻螺纹牙因为受力不均匀和抵抗冲击震动的效果，很大程度提高了螺纹的使用寿命，减少螺纹的抗腐蚀性和磨损程度，helicoil螺套多应用于航空行业、国防行业、汽车工业、机电设备行业等',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
     ],
   },
   {
@@ -1335,7 +1335,8 @@ const layoutMockJson = [
               img: require('@/assets/img/third/berg1.png'),
               name: '定位销',
               alt: '北富联机电berg定位销高精密紧固件',
-              desc: '无',
+              desc:
+                'Berg是全球微型精密机械零件的领先制造商。我们深圳市北富联机电有限公司公司主要销售WMBerg任何材质的圆柱销。BERG圆柱销属于BERG定位销，用于固定零件之间的相对位置，Berg销钉是组合加工和装配时候的重要辅助零件。',
             },
           ],
         },
@@ -1346,6 +1347,9 @@ const layoutMockJson = [
               '计量单位选择：英制、公制',
               '类型：CLEVIS，COTTER/DOWEL，GROOVED，SPIRAL，TAPER，SPRING',
               '材料：302不锈钢，303不锈钢，416不锈钢，420不锈钢，碳素钢;直径：0.031英寸-0.4999英寸',
+              '直径大小：0.031英寸-0.4999英寸；0.8mm-12mm',
+              'Berg定位销作用：主要做紧固作用，是较为常用的一种五金紧固件',
+              '应用场景：工业、汽车、航空、固体照明、家具、云计算、消费电子等',
             ],
           },
         ],

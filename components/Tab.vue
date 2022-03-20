@@ -70,22 +70,31 @@ export default {
           },
         ],
       },
-      tabList: [],
+      tabList: [
+        {
+          img: require('@/assets/img/fourth/banner1.jpg'),
+          link: '',
+        },
+        {
+          img: require('@/assets/img/fourth/banner2.jpg'),
+          link: '',
+        },
+      ],
       isShow: false,
     }
   },
   watch: {
-    $route: {
-      handler(val) {
-        this.tabList = this.carouselObj[val.name] || this.carouselObj.product
-        console.log(1008, val)
-      },
-    },
+    // $route: {
+    //   handler(val) {
+    //     this.tabList = this.carouselObj[val.name] || this.carouselObj.product
+    //     console.log(1008, val)
+    //   },
+    // },
   },
   mounted() {
-    this.tabList =
-      this.carouselObj[this.$route.name] || this.carouselObj.product
-    console.log(this.$route, 99)
+    // this.tabList =
+    //   this.carouselObj[this.$route.name] || this.carouselObj.product
+    // console.log(this.$route, 99)
     this.isShow = true
   },
 }
@@ -94,9 +103,9 @@ export default {
 /* For demo */
 .ant-carousel >>> .slick-slide {
   text-align: center;
-  height: 350px;
-  line-height: 160px;
-  background: #364d79;
+  /* max-height: 300px; */
+  /* line-height: 160px; */
+  /* background: #364d79; */
   overflow: hidden;
 }
 
@@ -128,7 +137,7 @@ export default {
 }
 img {
   width: 100%;
-  height: 350px;
+  /* height: 300px; */
   /* height: 450px; */
   /* height: 160px; */
 }
@@ -136,7 +145,7 @@ img {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  height: 350px;
+  /* height: 350px; */
   width: 100%;
   /* min-height: 100px; */
 }

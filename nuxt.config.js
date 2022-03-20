@@ -39,7 +39,13 @@ export default {
           'mcmaster中国代理 ,berg定位销,helicoil螺套,keensert插销螺套，mcmastercarr螺丝,深圳市北富联机电有限公司,北富联,mcmaster,mcmaster carr官网,helicoil钢丝螺套,mcmaster内六角螺钉,麦克马斯特mcmaster, 高端五金件,kato自攻螺套,mcmaster亚洲代理,helicoil螺纹护套',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/nf.png' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/nf.png' },
+      {
+        rel: 'stylesheet',
+        href: '/bootstrap.min.css',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

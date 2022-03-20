@@ -6,11 +6,9 @@
         alt="北富联logo"
         class="logo"
       /> -->
-      -关于我们-
+      -Kato螺纹护套型号大全-
     </div>
-    <div class="contact-desc">
-      深圳市北富联机电有限公司成立于广东深圳市宝安区，是工业高精密紧固件的供应商，主要代理美国品牌McMaster-carr，Keensert插销螺套，HeliCoil螺套，Berg定位销，Recoil螺纹护套及其机电工具等。有着稳定的国外供应商，能快速完成交货任务。我们承诺：以最快的交期，优质的服务，优良的质量和合理的价格，成为你最值得信赖的供应商。如果你有其它的需求，请随时联系我们，我们将竭诚为你提供优质的五金紧固件和服务。
-    </div>
+
     <div class="contact-desc">
       <div><a-icon type="team" class="icon" /> Lisa Leung</div>
       <div><a-icon type="mail" class="icon" /> northfull@foxmail.com</div>
@@ -55,19 +53,20 @@ export default {
   },
   head() {
     return {
-      title: '联系北富联机电拨打13189729968,微信：beifulian',
+      title:
+        'Kato螺纹护套型号大全-kato螺套-kato钢丝螺套-kato钢丝螺套代理-kato代理-北富联机电',
       meta: [
         {
-          hid: 'description',
+          hid: 'Kato-description',
           name: 'description',
           content:
-            'mcmaster五金,berg定位销,keensert插销螺套可拨打13189729968或微信WX:beifulian',
+            '深圳市北富联机电有限公司负责Kato中国代理的高精密标准紧固件,Kato紧固件,Kato代理五金紧固件,Kato螺丝螺母,Kato圆柱销等,是一家可以快速供货的Kato代理商.',
         },
         {
-          hid: 'keywords',
+          hid: 'Kato-keywords',
           name: 'keywords',
           content:
-            '北富联,深圳北富联机电,深圳市北富联机电有限公司,northfull,beifulian,13189729968,北富联机电微信',
+            'Kato中国代理,Kato螺母,Kato螺丝,Kato螺钉,Kato圆柱销,Kato销,Kato代理,Kato中国总代理,Kato供应商,Kato供应商,北富联机电,深圳北富联,Kato中国官网,Kato官网,五金紧固件,高精密工业紧固件，高品质工业紧固件',
         },
       ],
     }

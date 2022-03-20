@@ -1,10 +1,14 @@
 <template>
   <div class="contact">
     <div class="theme-title title-pos">产品中心</div>
-    <div class="product-list">
-      <div v-for="item in productTypeList" :key="item.url" class="product-item">
-        <nuxt-link :to="{ name: item.url }">
-          <img :src="item.img" alt="" />
+    <div class="product-list col-11 pl2 pr2">
+      <div
+        v-for="item in productTypeList"
+        :key="item.url"
+        class="product-item col-lg-4 col-11"
+      >
+        <nuxt-link :to="{ name: item.url }" class="col-lg-3 col-11">
+          <img :src="item.img" alt="" class="col-lg-3 col-11" />
         </nuxt-link>
       </div>
     </div>
@@ -72,21 +76,28 @@ export default {
 
 <style lang="less" scoped>
 .contact {
+  // width: 100%;
 }
 .product-list {
-  width: 1100px;
+  // width: 1100px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  // align-items: center;
   margin: 0 auto;
+  // padding: 0 60px;
   flex-wrap: wrap;
   border-bottom: 2px solid #f2f2f2;
   .product-item {
+    margin: 0 0.2%;
     margin-bottom: 80px;
+
+    // width: 30%;
   }
   img {
-    width: 300px;
-    height: 120px;
+    width: 100%;
+    // width: 90%;
+    // width: 300px;
+    // height: 120px;
   }
 }
 </style>

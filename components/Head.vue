@@ -1,6 +1,6 @@
 <template>
   <div class="top">
-    <div class="phone">
+    <div class="phone col-xl-12 col-lg-12">
       <a-icon type="phone" class="icon" width="32" height=" 32" />：{{
         `131 8972 9968`
       }}
@@ -8,7 +8,7 @@
 
     <div class="title">
       <div class="name"></div>
-      <div class="tab header">
+      <div class="tab header d-none d-lg-block">
         <a-menu mode="horizontal" :selectable="false">
           <a-menu-item v-for="target in tabList" :key="target.key">
             <NuxtLink :to="{ name: target.link }" target="_self">
@@ -84,8 +84,11 @@ export default {
   font-size: 22px;
   font-weight: bold;
   background: #ffffff;
-  text-align: center;
+  // text-align: center;
+  align-items: center;
   color: #001578;
+  display: flex;
+  justify-content: center;
   // padding-top: 6px;
   // color: #333333;
 }
