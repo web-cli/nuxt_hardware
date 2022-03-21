@@ -123,7 +123,7 @@ export default {
         phone: '131 8972 9968',
         email: 'northfull@foxmail.com',
         name: '深圳市北富联机电有限公司',
-        weixinImg: require('@/assets/img/fourth/weixin.png'),
+        weixinImg: require('@/assets/img/fourth/weixin.jpeg'),
       }),
     }
   },
@@ -156,8 +156,8 @@ export default {
   }
 
   img {
-    width: 200px;
-    height: 240px;
+    width: 120px;
+    height: 120px;
   }
   h1 {
     color: #ffffff;

@@ -23,7 +23,7 @@
       <div class="tips">欢迎添加我的微信～期待你的到来</div>
       <div>
         <img
-          src="@/assets/img/fourth/weixin.png"
+          src="@/assets/img/fourth/weixin.jpeg"
           alt="深圳市北富联机电有限公司"
         />
       </div>
@@ -98,8 +98,8 @@ export default {
     flex-direction: column;
     align-items: center;
     img {
-      width: 200px;
-      height: 260px;
+      width: 120px;
+      height: 120px;
       margin-left: 20px;
       margin: 0 auto;
     }

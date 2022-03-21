@@ -21,7 +21,7 @@
       <div class="tips">欢迎添加我的微信～期待你的到来</div>
       <div>
         <img
-          src="@/assets/img/fourth/weixin.png"
+          src="@/assets/img/fourth/weixin.jpeg"
           alt="深圳市北富联机电有限公司"
         />
       </div>
