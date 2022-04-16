@@ -70,7 +70,7 @@ export default {
   head() {
     return {
       title:
-        '深圳市北富联机电有限公司www.northfull.com是一家工业高精密紧固件公司',
+        '深圳市北富联机电有限公司-northfull公司简介-高精密紧固件-标准件供应商-高端五金',
       meta: [
         {
           hid: 'description',

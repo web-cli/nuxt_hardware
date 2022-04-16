@@ -50,6 +50,11 @@ export default {
           img: require('@/assets/img/third/product-type/berg.png'),
           url: 'berg',
         },
+        {
+          img: require('@/assets/img/third/product-type/keensert.jpeg'),
+          url: 'keensert',
+        },
+        {},
       ],
     }
   },

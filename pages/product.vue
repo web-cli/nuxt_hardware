@@ -19,7 +19,8 @@ export default {
   },
   head() {
     return {
-      title: '北富联代理mcmaster中国代理,berg销钉,helicoil螺套高精密紧固件',
+      title:
+        'mcmaster-carr中国代理_berg销钉_helcoil螺套_keensert插销螺套_北富联机电_recoil螺套_高端紧固件_麦克马斯特',
       meta: [
         {
           hid: 'description',

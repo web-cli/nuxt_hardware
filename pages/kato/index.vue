@@ -15,7 +15,7 @@ export default {
   head() {
     return {
       title:
-        'kato螺纹护套-kato螺套-kato钢丝螺套-kato钢丝螺套代理-kato代理-北富联机电',
+        'kato自攻螺套 _kato螺纹护套_kato螺套_kato钢丝螺套_ kato代理商-北富联机电',
       meta: [
         {
           hid: 'Kato-description',

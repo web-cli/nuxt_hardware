@@ -57,7 +57,8 @@ export default {
   },
   head() {
     return {
-      title: 'mcmaster中国代理,berg,helicoil,keensert插销螺套的行业应用',
+      title:
+        '北富联机电行业应用_标准件应用_高端紧固件_mcmaster_wmberg_北富联官网_欧美紧固件',
       meta: [
         {
           hid: 'description',

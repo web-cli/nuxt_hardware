@@ -80,7 +80,7 @@ export default {
   head() {
     return {
       title:
-        '深圳北富联提供mcmaster中国,wmberg,helicoil螺套等五金紧固件最新资讯',
+        '深圳北富联提供mcmaster中国代理,wmberg,helicoil螺套,keensert插销螺套新闻资讯',
       meta: [
         {
           hid: 'description',

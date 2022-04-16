@@ -86,9 +86,35 @@
           <div v-else-if="selectedTarget.key === '6'">
             Berg是全球微型精密机械零件的领先制造商。我们深圳市北富联机电有限公司公司主要销售WMBerg任何材质的圆柱销。BERG圆柱销属于BERG定位销，用于固定零件之间的相对位置，Berg销钉是组合加工和装配时候的重要辅助零件。
             <p class="p2">
-              <a href="/kato.pdf" download="北富联berg型号.pdf" target="_blank">
+              <a href="/berg.pdf" download="北富联berg型号.pdf" target="_blank">
                 berg型号大全,欢迎各位来咨询北富联客服哦～
               </a>
+            </p>
+          </div>
+          <div v-else-if="selectedTarget.key === '7'">
+            深圳市北富联机电有限公司主营keensert插销螺套，Keensert插销螺套在市面上广泛使用。KeensertS®螺纹嵌件是防止螺纹在机械或精密工程，航空和军工等领域被剥离的完美解决方案。KeensertS®由不锈钢碳钢、不锈钢、镍、青铜等材质制成。Keenserts插销螺套非常耐用，可承受许多松动和拧紧循环，无需拆线。Keensert螺套可以容易地用于轻金属，钢或铸铁的应用。Keenserts螺套还可用作对昂贵部件中的受损螺纹的简单且有效的替换。
+            <div>
+              <img :src="key6Img" alt="" />
+            </div>
+            <p class="p2">Keensert插销螺套材质主要有：</p>
+            <div>碳钢carbon steel</div>
+            <div>不锈钢stainless steel</div>
+            <div>青铜bronze</div>
+            <div>镍Nitronic 60</div>
+            <p class="p2">Keensert插销螺套分类：</p>
+            <div>
+              1、按Thread Types螺纹型号可分：Metric公制、UNC粗牙、UNF细牙。
+            </div>
+            <div>
+              2、按Insert Types螺套型号可分：Miniature轻型、Lightweight
+              (Thinwall)薄壁型、Heavy Duty重型、Extra Heavy Duty特重型。
+            </div>
+            <p class="p2">Keensert插销螺套表面处理主要有以下三种形式：</p>
+            <div>镀银silver plate</div>
+            <div>镀镉cadmium plate</div>
+            <div>干燥膜润滑剂dry film lubricant</div>
+            <p class="p2">
+              深圳市北富联机电有限公司具有keensert插销螺套的全型号，具体请咨询。
             </p>
           </div>
           <div v-else>
@@ -102,6 +128,7 @@
             class="product-item"
           >
             <nuxt-link
+              v-if="+selectedTarget.key !== 2"
               :to="{
                 path: `/${
                   $route.name === 'product' ? 'mcmastercarr' : $route.name
@@ -111,7 +138,7 @@
             >
               <img :src="target.img" :alt="target.alt" />
             </nuxt-link>
-
+            <img v-else :src="target.img" :alt="target.alt" />
             <p>{{ target.name }}</p>
           </div>
         </div>
@@ -137,6 +164,7 @@ export default {
       isSub: false,
       subObj: {},
       moreDetail: [],
+      key6Img: require('@/assets/img/third/product-type/WechatIMG301.jpeg'),
     }
   },
   computed: {

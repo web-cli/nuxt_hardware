@@ -13,12 +13,12 @@
     </div>
     <div class="contact-desc">
       <div><a-icon type="team" class="icon" /> Lisa Leung</div>
-      <div><a-icon type="mail" class="icon" /> northfull@foxmail.com</div>
+      <div><a-icon type="mail" class="icon" /> sales@northfull.com</div>
       <div><a-icon type="phone" class="icon" />131 8972 9968</div>
       <div><a-icon type="qq" class="icon" />318203871</div>
       <div>
         <a-icon type="link" class="icon" />
-        <a href="https://www.northfull.com">官网链接</a>
+        <a href="/">www.northfull.com</a>
       </div>
       <div class="tips">欢迎添加我的微信～期待你的到来</div>
       <div>
@@ -55,7 +55,8 @@ export default {
   },
   head() {
     return {
-      title: '联系北富联机电拨打13189729968,微信：beifulian',
+      title:
+        '深圳北富联机电_北富联机电_微信：beifulian_深圳市北富联机电有限公司',
       meta: [
         {
           hid: 'description',

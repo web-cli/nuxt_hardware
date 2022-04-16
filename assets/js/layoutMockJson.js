@@ -1171,146 +1171,146 @@ const layoutMockJson = [
     detail:
       'Ensat螺纹护套具有多种型号，有碳钢、不锈钢等材质的Ensat螺套，螺套具有很好的紧固作用，具有超强的硬度，更多Ensat螺套请详细咨询客服。',
     productList: [
-      {
-        img: require('@/assets/img/third/zigongluotao1.png'),
-        name: 'Ensat自攻螺套',
-        alt: 'Ensat自攻螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 1,
-        expand: {
-          title: 'Ensat自攻螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/zigongluotao1.png'),
-              name: 'Ensat自攻螺套',
-              alt: 'Ensat自攻螺套-northfull.com',
-              desc:
-                'Ensat自攻螺套采用自攻镶嵌件，带一字槽和内外螺纹的自攻镶嵌，Ensat自攻螺纹受用较广。产品型号较多，M2-M30不等；材质有碳钢、不锈钢，硬度超强；多种自攻螺套镶嵌规格可选，更多内容尚未展示，有需要请联系我们北富联机电有限公司。',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/chaxiaoluotao.png'),
-        name: 'Ensat插销螺套',
-        alt: 'Ensat插销螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 2,
-        expand: {
-          title: 'Ensat插销螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/chaxiaoluotao.png'),
-              name: 'Ensat插销螺套',
-              alt: 'Ensat插销螺套-northfull.com',
-              desc:
-                '插销螺套对腐蚀、丝滑的螺纹孔可以快速有效的修复，使用和安装都很简单。Ensat插销螺套与其他螺纹护套相对比，具有更强劲的坚固作用，特别是军工、铁路机车、航天等领域对于内螺纹强度较高的产品上。',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/wuweiluotao.png'),
-        name: 'Ensat无尾螺套',
-        alt: 'Ensat无尾螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 3,
-        expand: {
-          title: 'Ensat无尾螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/wuweiluotao.png'),
-              name: 'Ensat无尾螺套',
-              alt: 'Ensat无尾螺套-northfull.com',
-              desc:
-                'Ensat无尾螺套是没有安装柄钢丝螺套，安装过程中没有方向性要求，安装非常方便。Ensat无尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。 ',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/youweiluotao.png'),
-        name: 'Ensat有尾螺套',
-        alt: 'Ensat有尾螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 4,
-        expand: {
-          title: 'Ensat有尾螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/youweiluotao.png'),
-              name: 'Ensat有尾螺套',
-              alt: 'Ensat有尾螺套-northfull.com',
-              desc:
-                'Ensat有尾螺套相对于无尾螺套是多了一条“尾巴”，Ensat有尾螺纹护套安装非常方便。Ensat有尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/luowenhutao.png'),
-        name: 'Ensat螺纹护套',
-        alt: 'Ensat螺纹护套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 5,
-        expand: {
-          title: 'Ensat螺纹护套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/luowenhutao.png'),
-              name: 'Ensat螺纹护套',
-              alt: 'Ensat螺纹护套-northfull.com',
-              desc:
-                'Ensat螺纹护套适用于螺纹连接，具有结构性良好，方便使用的功能，螺套安装于螺孔或者螺母中，可以减轻螺纹牙因为受力不均匀和抵抗冲击震动的效果，很大程度提高了螺纹的使用寿命，减少螺纹的抗腐蚀性和磨损程度，helicoil螺套多应用于航空行业、国防行业、汽车工业、机电设备行业等',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/luowenhutao.png'),
-        name: 'Ensat不锈钢螺套',
-        alt: 'Ensat不锈钢螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 6,
-        expand: {
-          title: 'Ensat不锈钢螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/luowenhutao.png'),
-              name: 'Ensat不锈钢螺套',
-              alt: 'Ensat不锈钢螺套-northfull.com',
-              desc:
-                'Ensat螺纹护套采用不锈钢材质，可以抵抗化学防腐蚀性，不容易生锈。',
-            },
-          ],
-        },
-        detailList: [],
-      },
-      {
-        img: require('@/assets/img/third/luowenhutao.png'),
-        name: 'Ensat钢丝螺套',
-        alt: 'Ensat钢丝螺套-northfull.com',
-        hasDetai: true, // 是否有详情
-        key: 7,
-        expand: {
-          title: 'Ensat钢丝螺套系列',
-          subList: [
-            {
-              img: require('@/assets/img/third/luowenhutao.png'),
-              name: 'Ensat钢丝螺套',
-              alt: 'Ensat钢丝螺套-northfull.com',
-              desc:
-                '工业高精密紧固件Ensat钢丝螺套广泛应用于航空和军事行业，可提供高强度的Ensat内置螺纹。',
-            },
-          ],
-        },
-        detailList: [],
-      },
+      // {
+      //   img: require('@/assets/img/third/zigongluotao1.png'),
+      //   name: 'Ensat自攻螺套',
+      //   alt: 'Ensat自攻螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 1,
+      //   expand: {
+      //     title: 'Ensat自攻螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/zigongluotao1.png'),
+      //         name: 'Ensat自攻螺套',
+      //         alt: 'Ensat自攻螺套-northfull.com',
+      //         desc:
+      //           'Ensat自攻螺套采用自攻镶嵌件，带一字槽和内外螺纹的自攻镶嵌，Ensat自攻螺纹受用较广。产品型号较多，M2-M30不等；材质有碳钢、不锈钢，硬度超强；多种自攻螺套镶嵌规格可选，更多内容尚未展示，有需要请联系我们北富联机电有限公司。',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/chaxiaoluotao.png'),
+      //   name: 'Ensat插销螺套',
+      //   alt: 'Ensat插销螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 2,
+      //   expand: {
+      //     title: 'Ensat插销螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/chaxiaoluotao.png'),
+      //         name: 'Ensat插销螺套',
+      //         alt: 'Ensat插销螺套-northfull.com',
+      //         desc:
+      //           '插销螺套对腐蚀、丝滑的螺纹孔可以快速有效的修复，使用和安装都很简单。Ensat插销螺套与其他螺纹护套相对比，具有更强劲的坚固作用，特别是军工、铁路机车、航天等领域对于内螺纹强度较高的产品上。',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/wuweiluotao.png'),
+      //   name: 'Ensat无尾螺套',
+      //   alt: 'Ensat无尾螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 3,
+      //   expand: {
+      //     title: 'Ensat无尾螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/wuweiluotao.png'),
+      //         name: 'Ensat无尾螺套',
+      //         alt: 'Ensat无尾螺套-northfull.com',
+      //         desc:
+      //           'Ensat无尾螺套是没有安装柄钢丝螺套，安装过程中没有方向性要求，安装非常方便。Ensat无尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。 ',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/youweiluotao.png'),
+      //   name: 'Ensat有尾螺套',
+      //   alt: 'Ensat有尾螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 4,
+      //   expand: {
+      //     title: 'Ensat有尾螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/youweiluotao.png'),
+      //         name: 'Ensat有尾螺套',
+      //         alt: 'Ensat有尾螺套-northfull.com',
+      //         desc:
+      //           'Ensat有尾螺套相对于无尾螺套是多了一条“尾巴”，Ensat有尾螺纹护套安装非常方便。Ensat有尾螺套具有多种尺寸可以选择，满足无尾螺套的需求。',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/luowenhutao.png'),
+      //   name: 'Ensat螺纹护套',
+      //   alt: 'Ensat螺纹护套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 5,
+      //   expand: {
+      //     title: 'Ensat螺纹护套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/luowenhutao.png'),
+      //         name: 'Ensat螺纹护套',
+      //         alt: 'Ensat螺纹护套-northfull.com',
+      //         desc:
+      //           'Ensat螺纹护套适用于螺纹连接，具有结构性良好，方便使用的功能，螺套安装于螺孔或者螺母中，可以减轻螺纹牙因为受力不均匀和抵抗冲击震动的效果，很大程度提高了螺纹的使用寿命，减少螺纹的抗腐蚀性和磨损程度，helicoil螺套多应用于航空行业、国防行业、汽车工业、机电设备行业等',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/luowenhutao.png'),
+      //   name: 'Ensat不锈钢螺套',
+      //   alt: 'Ensat不锈钢螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 6,
+      //   expand: {
+      //     title: 'Ensat不锈钢螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/luowenhutao.png'),
+      //         name: 'Ensat不锈钢螺套',
+      //         alt: 'Ensat不锈钢螺套-northfull.com',
+      //         desc:
+      //           'Ensat螺纹护套采用不锈钢材质，可以抵抗化学防腐蚀性，不容易生锈。',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
+      // {
+      //   img: require('@/assets/img/third/luowenhutao.png'),
+      //   name: 'Ensat钢丝螺套',
+      //   alt: 'Ensat钢丝螺套-northfull.com',
+      //   hasDetai: true, // 是否有详情
+      //   key: 7,
+      //   expand: {
+      //     title: 'Ensat钢丝螺套系列',
+      //     subList: [
+      //       {
+      //         img: require('@/assets/img/third/luowenhutao.png'),
+      //         name: 'Ensat钢丝螺套',
+      //         alt: 'Ensat钢丝螺套-northfull.com',
+      //         desc:
+      //           '工业高精密紧固件Ensat钢丝螺套广泛应用于航空和军事行业，可提供高强度的Ensat内置螺纹。',
+      //       },
+      //     ],
+      //   },
+      //   detailList: [],
+      // },
     ],
   },
   {
@@ -1473,6 +1473,15 @@ const layoutMockJson = [
         ],
       },
     ],
+  },
+  {
+    title: 'Keensert',
+    key: '7',
+    type: 'appstore',
+    url: 'keensert',
+    logo: require('@/assets/img/third/product-type/keensert.jpeg'),
+    detail: '',
+    productList: [],
   },
 ]
 

@@ -14,6 +14,8 @@ export default {
   },
   head() {
     return {
+      title:
+        'mcmaster-carr官网_ mcmaster标准件_mcmaster中国代理_mcmaster代理商_mcmaster螺丝螺钉_麦克马斯特',
       meta: [
         {
           hid: 'mcmastercarr-description',
