@@ -13,6 +13,7 @@
       <div><a-icon type="team" class="icon" /> Lisa Leung</div>
       <div><a-icon type="mail" class="icon" /> sales@northfull.com</div>
       <div><a-icon type="phone" class="icon" />131 8972 9968</div>
+      <div><a-icon type="phone" class="icon" />0775-23309243</div>
       <div><a-icon type="qq" class="icon" />318203871</div>
       <div>
         <a-icon type="link" class="icon" />

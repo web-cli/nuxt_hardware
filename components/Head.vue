@@ -1,9 +1,11 @@
 <template>
   <div class="top">
-    <div class="phone col-xl-12 col-lg-12">
-      <a-icon type="phone" class="icon" width="32" height=" 32" />：{{
-        `131 8972 9968`
-      }}
+    <div class="phone col-xl-12 col-lg-12 phone-wrap">
+      <a-icon type="phone" class="icon" width="32" height=" 32" />
+      <div class="phone-class">
+        <div>0755-23309243</div>
+        <div>131 8972 9968</div>
+      </div>
     </div>
 
     <div class="title">
@@ -80,6 +82,23 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.phone-wrap {
+  display: flex;
+  align-items: flex-start !important;
+  padding-top: 10px;
+  padding-right: 250px;
+  i {
+    padding-top: 4px;
+  }
+}
+.phone-class {
+  font-size: 18px !important;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .phone {
   font-size: 22px;
   font-weight: bold;
@@ -88,14 +107,14 @@ export default {
   align-items: center;
   color: #001578;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   // padding-top: 6px;
   // color: #333333;
 }
 .top {
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 140px;
   width: 100%;
   position: fixed;
   top: 0;

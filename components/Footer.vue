@@ -75,7 +75,11 @@
             footerDetail.phone
           }}
         </div>
+        <div class="mtb20">
+          <a-icon type="phone" class="icon" />：0755-23309243
+        </div>
         <div class="mtb20"><a-icon type="qq" class="icon" />：318203871</div>
+
         <div class="mtb20">企业邮箱：{{ footerDetail.email }}</div>
 
         <div><img :src="footerDetail.weixinImg" alt="" /></div>
@@ -121,6 +125,7 @@ export default {
     return {
       footerDetail: Object.freeze({
         phone: '131 8972 9968',
+        phone2: '0755-23309423',
         email: 'sales@northfull.com',
         name: '深圳市北富联机电有限公司',
         weixinImg: require('@/assets/img/fourth/weixin.jpeg'),
