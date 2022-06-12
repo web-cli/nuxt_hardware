@@ -13,27 +13,37 @@ LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
 // eslint-disable-next-line no-undef
 </script>
 <script lang="javascript">
-import {seo} from '@/static/js/common'
+import { seo } from '@/static/js/common'
 export default {
   data () {
     return {}
   },
-  methods:{
-    _initLA(){
+  methods: {
+    _initLA () {
       window.LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
+    },
+    kefuSofe () {
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3795098a979a9086f2824d5c6f46b1d3";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+
     }
   },
-  watch:{
-     $route: {
-        handler: function(val, oldVal){
-          setTimeout(()=>{
-           seo()
-           this._initLA()
-          },300)
-        },
-        // 深度观察监听
-        deep: true
-      }
+  watch: {
+    $route: {
+      handler: function (val, oldVal) {
+        setTimeout(() => {
+          seo()
+          this._initLA()
+        }, 300)
+      },
+      // 深度观察监听
+      deep: true
+    }
   },
   mounted () {
     // 统计脚本
@@ -45,6 +55,8 @@ export default {
       const s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
+    this.kefuSofe()
+
   },
 }
 </script>
