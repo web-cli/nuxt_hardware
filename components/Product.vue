@@ -117,8 +117,8 @@
               深圳市北富联机电有限公司具有keensert插销螺套的全型号，具体请咨询。
             </p>
           </div>
-          <div v-else>
-            {{ selectedTarget.detail }}
+          <div v-else v-html="selectedTarget.detail">
+            <!-- {{ selectedTarget.detail }} -->
           </div>
         </div>
         <div class="product-list">

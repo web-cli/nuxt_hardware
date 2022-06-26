@@ -12,14 +12,14 @@
       深圳市北富联机电有限公司成立于广东深圳市宝安区，是工业高精密紧固件的供应商，主要代理美国品牌McMaster-carr，Keensert插销螺套，HeliCoil螺套，Berg定位销，Recoil螺纹护套及其机电工具等。有着稳定的国外供应商，能快速完成交货任务。我们承诺：以最快的交期，优质的服务，优良的质量和合理的价格，成为你最值得信赖的供应商。如果你有其它的需求，请随时联系我们，我们将竭诚为你提供优质的五金紧固件和服务。
     </div>
     <div class="contact-desc">
-      <div><a-icon type="team" class="icon" /> Lisa Leung</div>
+      <div><a-icon type="team" class="icon" /> Amy（梁小姐）</div>
       <div><a-icon type="mail" class="icon" /> sales@northfull.com</div>
       <div><a-icon type="phone" class="icon" />131 8972 9968</div>
       <div><a-icon type="phone" class="icon" />0755-23309243</div>
       <div><a-icon type="qq" class="icon" />318203871</div>
       <div>
         <a-icon type="link" class="icon" />
-        <a href="/">www.northfull.com</a>
+        <a href="/">北富联机电</a>
       </div>
       <div class="tips">欢迎添加我的微信～期待你的到来</div>
       <div>

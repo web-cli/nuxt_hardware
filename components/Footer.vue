@@ -67,6 +67,15 @@
             Ensat
           </nuxt-link>
         </div>
+        <div>
+          <nuxt-link
+            :to="{
+              path: `/keensert`,
+            }"
+          >
+            Keensert
+          </nuxt-link>
+        </div>
       </div>
       <div class="col-12 col-lg-3">
         <h1>联系我们</h1>

@@ -6,7 +6,7 @@ const layoutMockJson = [
     url: 'mcmastercarr',
     logo: require('@/assets/img/third/product-type/mcmastercarr.png'),
     detail:
-      'McMaster-carr中国代理是 深圳市北富联机电有限公司的主营品牌，其使用领域较为广泛，mcmastercarr官网有DIN, AMSE, ASTM, JIS, ISO, Mil.Spec., CSA, FDA Compliant等标准。有低强度到高强度的各种高精密五金紧固件，如内六角螺钉、六角头螺钉、销钉、自攻螺丝、机米螺丝、弹簧柱塞、吊环、轴肩螺丝、螺母、螺套、铆钉、垫圈垫片、轴承、弹簧标准紧固件。',
+      'McMaster-carr中国代理是 深圳市北富联机电有限公司的主营品牌，其使用领域较为广泛，<span class="font-tips">快速交货，价格有优势， 原装进口mcmaster紧固，</span>mcmastercarr官网有DIN, AMSE, ASTM, JIS, ISO, Mil.Spec., CSA, FDA Compliant等标准。有低强度到高强度的各种高精密五金紧固件，如内六角螺钉、六角头螺钉、销钉、自攻螺丝、机米螺丝、弹簧柱塞、吊环、轴肩螺丝、螺母、螺套、铆钉、垫圈垫片、轴承、弹簧标准紧固件。',
     productList: [
       {
         img: require('@/assets/img/second/luosi-1.png'),
