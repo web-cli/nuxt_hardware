@@ -13,7 +13,7 @@ LA.init({ id: 'JbzX32k5xqOUNWdg', ck: 'JbzX32k5xqOUNWdg' })
 // eslint-disable-next-line no-undef
 </script>
 <script lang="javascript">
-import { seo } from '@/static/js/common'
+import { seo , trackReport } from '@/static/js/common'
 export default {
   data () {
     return {}
@@ -38,6 +38,7 @@ export default {
       handler: function (val, oldVal) {
         setTimeout(() => {
           seo()
+          trackReport()
           this._initLA()
         }, 300)
       },
@@ -55,8 +56,9 @@ export default {
       const s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
+    seo()
     this.kefuSofe()
-
+    trackReport()
   },
 }
 </script>

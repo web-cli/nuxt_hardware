@@ -75,7 +75,7 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.defaultFormatter": "HookyQR.beautify"
     },
     "[html]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"

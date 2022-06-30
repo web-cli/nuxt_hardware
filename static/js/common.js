@@ -9,3 +9,16 @@ export function seo() {
   const s = document.getElementsByTagName('script')[0]
   s.parentNode.insertBefore(bp, s)
 }
+export const trackReport = () => {
+  console.log('report ')
+  window._agl &&
+    window._agl.push([
+      'track',
+      [
+        'success',
+        {
+          t: 3,
+        },
+      ],
+    ])
+}

@@ -8,13 +8,16 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title:
-      'mcmaster中国代理 _berg定位销_helicoil螺套_keensert螺纹护套_mcmastercarr螺丝_深圳市北富联机电有限公司',
+      'mcmaster中国代理 _berg定位销_helicoil螺套_keensert插销螺套_mcmaster carr官网_深圳市北富联机电有限公司',
     script: [
       { src: '//js.users.51.la/21052033.js' },
       {
         src: '//sdk.51.la/js-sdk-pro.min.js',
         charset: 'UTF-8',
         id: 'LA_COLLECT" ',
+      },
+      {
+        src: '/js/baidu.js',
       },
     ],
     meta: [
