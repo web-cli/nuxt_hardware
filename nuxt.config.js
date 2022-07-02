@@ -17,7 +17,7 @@ export default {
         id: 'LA_COLLECT" ',
       },
       {
-        src: '/js/baidu.js',
+        src: '/js/trackInit.js',
       },
     ],
     meta: [
