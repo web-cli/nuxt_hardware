@@ -9,7 +9,7 @@
       <nuxt-link
         :to="{
           path: '/news/detail',
-          query: { id: String(item.id) },
+          query: { id: String(item.id || item._id) },
         }"
       >
         <div class="item-title">
