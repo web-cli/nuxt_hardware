@@ -5,8 +5,151 @@ const layoutMockJson = [
     type: 'appstore',
     url: 'mcmastercarr',
     logo: require('@/assets/img/third/product-type/mcmastercarr.png'),
-    detail:
-      'McMaster-carr中国代理是 深圳市北富联机电有限公司的主营品牌，其使用领域较为广泛，<span class="font-tips">快速交货，价格有优势， 原装进口mcmaster紧固，</span>mcmastercarr官网有DIN, AMSE, ASTM, JIS, ISO, Mil.Spec., CSA, FDA Compliant等标准。有低强度到高强度的各种高精密五金紧固件，如内六角螺钉、六角头螺钉、销钉、自攻螺丝、机米螺丝、弹簧柱塞、吊环、轴肩螺丝、螺母、螺套、铆钉、垫圈垫片、轴承、弹簧标准紧固件。',
+    detail: `<span class="font-tips">McMaster-Carr</span>拥有超过 570,000 种产品，可以说得上是全球最全的五金紧固件采购平台。<span class="font-tips">美国McMaster-Carr Supply Company</span>是世界上最大的高精密五金紧固件公司，在mcmaste-carr官网总可以找到你需要的各种紧固件，有句话广为流传“在mcmastercarr总可以找到你在亚马逊找不到的东西”。<br /> MCMASTER-CARR涉及的行业主要有：航空领域、机械设备、军工领域、电子、汽车行业、医疗行业、食品领域、化工领域等等。小到零点几毫米的零件，大的数十米，甚至上百上千米的零件都可以在mcmaster-carr上购买的到。<br />深圳市北富联机电有限公司主营mcmaster-carr的各种产品，主要有mcmaster-carr密封圈、mcmaster-carr弹簧、mcmaster螺丝、mcmaster螺钉、mcmaster-carr内六角螺钉、外六角头螺钉、mcmaster销钉、自攻螺丝、机米螺丝、弹簧柱塞、吊环、轴肩螺丝、螺母、helical螺套、铆钉、垫圈垫片、轴承、mcmaster-carr标准紧固件。深圳市北富联机电有限公司提供mcmaster-carr官网的一系列五金紧固件、机械、电气、管道和公用设施硬件，深圳市北富联机电有限公司销售的MCMASTER-CARR产品价格美丽，交期快！最快可2-3周交货！<br /><span class="font-tips"> 美国MCMASTER-CARR部分产品介绍：</span><br/><span class="font-tips"> 1.mcmaster-carr各种材质、强度、螺纹大小、尺寸的内六角螺丝、mcmaster-carr内六角螺钉。</span>Mcmaster内六角螺钉是使用最广泛的一种螺钉，由于内六角螺丝相比其他的螺钉具有更加紧固的作用，紧固效果很明显，再加上易于安装。而且耐腐蚀性，麦克马斯特官网上具有多种材质可以选择，可以满足在各种高端行业的应用。以下是mcmaster-carr官网上的部分mcmaster内六角螺钉产品的部分型号：
+      91251A059  91251A109  91251A747  91864A021  90044A252	  91274A056  92562A119  92610A845  91670A542  90605A127	 92579A101  92423A433	  90346A111  95868A294  91221A214  97695A109  99477A460  98885A119  93465A334	 98511A211  93615A410	  92855A402  96970A127  90666A014  90357A117  91223A224	 91223A448  90332A132	  93705A624  90343A125  90074A109  98201A411  92235A509  96209A413  91205A110  90152A153  90117A188
+      Black-Oxide Alloy Steel Socket Head Screw 0-80 Thread Size, 3/8" Long 91864A003
+      Brass Socket Head Screw M3 x 0.50 mm Thread, 6 mm Long 90349A102
+      High-Strength 316 Stainless Steel Socket Head Screw 6-32 Thread Size, 3/8" Long 90346A115
+      High-Strength A286 Stainless Steel Socket Head Screw 10-32 Thread Size, 1/2" Long 92423A505
+      18-8 Stainless Steel Thread-Locking Socket Head Screw 8-32 Thread Size, 5/8" Long 93705A201
+      91864A003 Black-Oxide Alloy Steel Socket Head Screw 0-80 Thread Size, 3/8" Long ASTM A574  91864A006 91251A195 90044A241 18-8 Stainless Steel Thread-Locking Socket Head Screw M3 x 0.5 mm Thread, 4 mm Long 93705A862  93705A804 93705A845 92290A011 Super-Corrosion-Resistant 316 Stainless Steel Socket Head Screw M3 x 0.5 mm Thread, 6 mm Long 92290A844
+      温馨提示：MCMASTER内六角螺钉我司均有销售，备有现货，详情请咨询深圳市北富联机电客服。<br /><span class="font-tips"> 2.mcmaster-carr官网的各种螺丝螺钉、组合螺钉。shoulder screws, rounded head screws, hex head screw, flat head screws, set screw, tapping screw</span>
+      分类：美制INCH、公制Metric<br/>Mcmaster carr螺钉的材质主要有：不锈钢（18-8 stainless steel、316 stainless steel、A286 stainless steel、316 stainless steel）、钢steel、塑料plastic、titanium、铝aluminum
+      螺纹分类：全螺纹和部分螺纹两种
+      Mcmastercarr螺钉强度：低的可以很低，高的会超过100，000psi
+      头部类型：Asymmetrical、Drilled Spanner、Hex、JIS、One Way、Phillips、Slotted、Tamper-Resistant 、Hex、Tamper-Resistant Torx、Tonx 、Torx Plus、Tri-Groove、Wrench Flats<br/>Mcmaster carr螺钉的材质主要有：不锈钢（18-8 stainless steel、316 stainless steel、A286 stainless steel、316 stainless steel）、钢steel、塑料plastic、titanium、铝aluminum
+      螺纹分类：全螺纹和部分螺纹两种
+      Mcmastercarr螺钉强度：低的可以很低，高的会超过100，000psi
+      头部类型：Asymmetrical、Drilled Spanner、Hex、JIS、One Way、Phillips、Slotted、Tamper-Resistant 、Hex、Tamper-Resistant Torx、Tonx 、Torx Plus、Tri-Groove、Wrench Flats<br/>长度及螺纹大小：螺纹规格有小有大，各种尺寸都可购买，详情咨询北富联机电。<br/>
+      <span class="font-tips"> 3.Mcmaster-carr密封件O RINGS</span><br/>
+      MCMASTER-CARR官网上的密封件种类很多，有各种密封圈、密封条、密封泡沫等。Oil-Resistant O-Rings	Chemical-Resistant O-Rings	Water- and Steam-Resistant O-Rings	High-Vacuum Fluoroelastomer O-Rings	High-Temperature O-Rings	O-Ring Backup Rings	Oil-Resistant O-Ring Cord Stock	Chemical-Resistant O-Ring Cord Stock	High-Temperature O-Ring Cord Stock	Water- and Steam-Resistant O-Ring Cord Stock	O-Ring Assortments	Piston Seals	Packing Seals	Rotary Shaft Seals
+      <br/>
+      Dual-Purpose Rod and Piston Seals	Rod Seals	Wear Rings 密封圈可减少物品之间的摩擦，使得更加紧固，而且mcmaster-carr密封圈抗腐蚀能力强，不容易老化。
+      <br/>
+      9452K126	9452K127	9452K128	9452K129	9452K131	9452K132  9751K112	9751K113	9751K114	9751K115  90025K631  90025K632  4061T148	4061T149	4061T15 5308T251  5308T252 1174N505	1174N506	1174N507  1174N508	1174N509  1201T298 1163N105  11 63N106 1284N128  1284N129 1284N13  1284N131 1185N115 1185N116  9263K783  9263K784  9263K785  9555K27 1307N219  1307N22  1307N23  1176N76  1176N77  1176N78  1176N52 1201T291 1201T292  1201T293  1201T294  1169N43  1169N44  1320N89  1320N91  1108T122  3642N19  3642N21  1280N22 9568K656  9568K658  1163N139 9557K408  9557K409  9561K43  5233T293  5233T296  5233T297 1173N605  1173N606  1289N231  1289N232  5155N19  3356N15  1526N15  1526N16 9505K82  9505K83 1430K59  1187N16  96505K47  5229T57  1203N23  1193N13  3286T19  1209N7  9864K33  1995N32  9422K26  9441K12  94695K91  1199N19  1199N317 2122N21  1670N21  12945K54  9316K26  5154T306  5154T29
+      <br/>
+      Oil-Resistant Soft Buna-N O-Rings 1/16 Fractional Width, Dash Number 019 2418T125
+X-Profile Oil-Resistant Buna-N O-Ring 1/16 Fractional Width, Dash Number 019 0025K361
+<br/>
+Square-Profile Oil-Resistant Buna-N O-Ring 1/16 Fractional Width, Dash Number 030 4061T135
+Oil-Resistant Hard Buna-N O-Ring 1/16 Fractional Width, Dash Number 020  5308T129
+Oil-Resistant Buna-N O-Ring 1/16 Fractional Width, Dash Number 049 9452K314
+<br/>
+Clean Room Viton® Fluoroelastomer O-Ring Chemical-Resistant, High-Purity, Dash Number 021 1163N121<br/>
+Chemical-Resistant Viton® Fluoroelastomer O-Ring Brown, 1/16 Fractional Width, Dash Number 021 5267T33<br/>
+Soft Viton® Fluoroelastomer O-Ring Chemical-Resistant, 1/16 Fractional Width, Dash Number 016 1284N117<br/>
+Chemical-Resistant Viton® Fluoroelastomer O-Ring 1/16 Fractional Width, Dash Number 018 9464K72<br/>
+Clean Room Viton® Fluoroelastomer O-Ring Chemical-Resistant, High-Purity, Dash Number 011 1163N109<br/>
+Metal Detector Grade Fluoroelastomer O-Ring Chemical-Resistant, 1/16 Fractional Width, Dash Number 018 1320N27<br/>
+Ultra-Chemical-Resistant Aflas O-Ring 3/16 Fractional Width, Dash Number 330 5240T185<br/>
+Ultra-Chemical-Resistant Kalrez 6230 O-Ring  High-Purity, 3/32 Fractional Width, Dash Number 111 1285N38<br/>
+Water- and Steam-Resistant EPDM O-Ring 1/8 Fractional Width, Dash Number 226 9557K76<br/>
+High-Temperature High-Purity Silicone O-Ring 1/16 Fractional Width, Dash Number 012  9396K17<br/>
+High-Temperature Silicone O-Ring 3 mm Wide, 12 mm ID 5233T768<br/>
+High-Temperature Soft Silicone O-Ring 1/16 Fractional Width, Dash Number 015  1173N015<br/>
+Water- and Steam-Resistant High-Temperature EPDM O-Ring 1/8 Fractional Width, Dash Number 217 <br/>
+Polyurethane Rubber Rod-Sealing Wiper Meets ISO 6195 Type C, for 2" Rod Diameter 1737N22<br/>
+Polyurethane Rod Seal for 1-1/4" Rod Diameter, 1.250" ID x 1.500" OD x 0.188" Wide 1995N43<br/>
+High-Speed Rotary Shaft Seal for 2" Shaft Diameter 2122N22<br/>
+Spring-Loaded Rotary Shaft Seal for 3/4" Shaft Diameter and 1.375" Bore Diameter 5154T16<br/>
+Spring-Loaded Rotary Shaft Seal with Wiper Lip for 1-1/4" Shaft Diameter and 1-3/4" Diameter x 0.262" Wide Bore 1199N69<br/>
+密封件O RINGS材质主要是：Aluminum	Aramid Fiber	Aramid Fiber/PTFE Fiber	Blend	Carbon Fiber	Copper	ePTFE Fiber	Fabric	Foam	Graphite	Graphite Fiber	Iron	L eather	Plastic	PTFE Fiber	Rubber	Stainless Steel	Steel	Synthetic Fiber 
+MCMASTER-CARR官网密封件O rings的标准：ASTM D2000, SAE AS568, SAE J200 3-A Certified 18-03, ASTM D2000, FDA Compliant 21 CFR 177.2600, ISO 10993, USP VI Certified, DIN 3760, ISO 6194
+O RINGS颜色：黑色、白色、红色、蓝色、灰色、蓝色、橙色、绿色、黄色......
+<br/>
+MCMASTER密封件尺寸：长度、宽度、厚度等都有，详情请咨询深圳市北富联机电有限公司13189729968
+<br/>
+<span class="font-tips">4.mcmaster-carr螺母NUTS</span><br/>
+Mcmaster-carr官网的螺纹主要有：六角螺母、尼龙螺母、法兰螺母、拇指螺母、thumb螺母、长螺母、方形螺母、密封螺母、压铆螺母、一字圆槽螺母、焊接螺母、铆螺母、螺母适配器、面板螺母等。一般来说，螺母都会和螺丝搭配使用。
+91835A490 91835A721  90818A101	 90818A101	  90818A102  95185A200 90591A154  97700A270  97700A270  95505A623  90593A010  94150A358 	92233A212   94812A700  90381A109  96315A118  90730A512  95036A024		90565A345 90630A170   90630A216  97260A108  94645A310  93625A114  93625A120  94407A114  94627A150  91581A325  90633A006  90675A265  90328A101 96278A007 94820A470 	97190A010 92092A027  	94205A260  	95856A245  94758A035   94758A035  99904A138  93298A125  90949A211   93033A211 1319N17  	90104A006   93590A312  93020A791   91034A414  90264A117   93350A551   90866A130 98952A105 	92700A215  93655A378  92319A883  95783A022  91125A433 		 92902A650  92001A349  91833A148  92088A154  99937A104	  92741A110  91725A140  91339A135  90215A029 92066A111  95105A132	 97467A724  93669A220  93484A302 90720A480   93482A711  94020A379 91115A203 91115A146  91298A290  98010A450 	93322A422  91299A130	 91299A130	  93655A422  91197A350  93620A129  93620A757
+90372A332	
+<br/>
+High-Strength Steel Nylon-Insert Locknut Grade 8, 1 1/2"-6 Thread Size, 2-25/64" Wide 90630A213<br/>
+18-8 Stainless Steel Nylon-Insert Locknut 3/8"-16 Thread Size 91831A127<br/>
+Low-Strength Steel Thin Nylon-Insert Locknut Zinc-Plated, 3/8"-24 Thread Size 90566A220<br/>
+Steel Flex-Top Locknut for Heavy Vibration Cadmium-Plated, 5/8"-11 Thread Size 4820A252<br/>
+High-Strength Steel Distorted-Thread Flange Locknut Black-Phosphate, 1/2"-13 Thread Size 90949A033<br/>
+Zinc-Plated Steel Press-Fit Nut for Sheet Metal 8-32 Thread Size, for 0.09" Minimum Panel Thickness 95185A171<br/>
+Zinc-Plated Steel Press-Fit Nut for Sheet Metal M5 x 0.8 Thread Size, for 1.4 mm Minimum Panel Thickness 95185A640<br/>
+18-8 Stainless Steel Press-Fit Nut for Sheet Metal 10-24 Thread Size, for 0.056" Minimum Panel Thickness 96439A430<br/>
+18-8 Stainless Steel Press-Fit Nut for Sheet Metal M3 x 0.50 Thread Size, for 1.40 mm Minimum Panel Thickness 96439A530<br/>
+18-8 Stainless Steel Press-Fit Nut for Soft Metal and Plastic 6-32 Thread Size 94648A330<br/>
+Medium-Strength Steel Hex Nut Grade 5, Zinc-Plated, 7/16"-20 Thread Size 95462A520<br/>
+Zinc-Plated Steel Hex Nut Medium-Strength, Class 8, M30 x 3.5 mm Thread 90591A240<br/>
+316 Stainless Steel Hex Nut Super-Corrosion-Resistant, M3 x 0.5 mm Thread 94150A325<br/>
+Nylon Hex Nut 6-32 Thread Size 94812A300<br/>
+18-8 Stainless Steel Thin Hex Nuts Black-Oxide, M3 x 0.50 mm Thread 96315A113<br/>
+18-8 Stainless Steel Coupling Nut M33 x 3.5 mm Thread 93590A336<br/>
+Zinc-Plated Steel Coupling Nut Low-Strength, 5/8"-11 Thread Size, 1-1/16" Wide 90264A231<br/>
+Zinc-Plated Steel Wing Nut 7/16"-14 Thread Size 90866A150<br/>
+18-8 Stainless Steel Knurled-Head Thumb Nut Black Oxide, 1/4"-20 Thread, 3/4" Collar Height, 1" Head Diameter 92088A156<br/>
+18-8 Stainless Steel Knurled-Head Thumb Nut 10-24 Thread Size 91833A125<br/>
+ Alloy Steel Socket Nut 8-32 Thread Size 92066A009<br/>
+316 Stainless Steel Male-Female Threaded Hex Standoff 1/4" Hex, 5/8" Long 91197A310<br/>
+Male-Female Threaded Hex Standoff Aluminum, 1/2" Hex Size, 1-1/2" Long, 10-32 Thread Size 93505A189<br/>
+Aluminum Male-Female Threaded Hex Standoff 10mm Hex, 20mm Long, M5 x 0.80 mm Thread 98952A423<br/>
+Female Threaded Hex Standoff 18-8 Stainless Steel, 3/16" Hex, 15/32" Long, 4-40 Thread 91115A514<br/>
+Male-Female Threaded Hex Standoff 18-8 Stainless Steel, 1/4" Hex, 9/32" Long, 6-32 to 6-32 Thread 91075A477<br/>
+Male-Female Threaded Hex Standoff Zinc-Plated Brass, 1/4" Hex, 1-1/4" Long, 8-32 Thread 92700A457<br/>
+mcmaster-carr螺母材质：铝、黄铜、青铜、碳纤维、陶瓷制品、铜、玻璃纤维、泡沫、铁、镍、塑料、橡皮、不锈钢、钢、钛、锌等材料。<br/>
+Locking Type：Nylon Insert ，Serrations，Distorted，Lock Washer，Flex-Top，Cotter Pin ，Steel Insert，Spring-Stop,Two-Piece Clamp, Thread Locker.<br/>
+MCMASTER螺母分类：公制螺母、美标螺母。<br/>
+MCMASTER-CARR螺母种类繁多，麦克马斯特螺母尺寸也很多，强度也是具有多种可供选择，可以满足在不同行业上的使用需求，低至日常生活中，高至航空、军工等领域都可以用得到。材质也有各种各样的，具有很好的抗腐蚀性效果，可满足绝大多数的工业需求。
+<br/>
+<span class="font-tips">5.mcmaster-carr弹簧SPRINGS</span>
+<br/>
+弹簧在各类机械行业中应用很广泛，弹簧是利用弹簧的弹性来工作的机械零件，<br/>
+Mcmaster carr弹簧类型：Compression Springs、Extension Springs、Torsion Springs、Disc Springs、Die Springs <br/>
+9657K633 9434K31 8969T118 9435K35 8969T5 	3492N39 3492N45 9001T42 9657K253 94125K612 	94125K22	<br/>
+Compression Spring 0.25" Long, 0.180" OD, 0.152" ID 9657K604<br/>
+Corrosion-Resistant Compression Springs 0.1" Long, 0.04" OD, 0.031" ID 1807N109<br/>
+Corrosion-Resistant Precision Compression Springs 1.5" Long, 0.12" OD, 0.076" ID, 302 Stainless Steel 9002T415<br/>
+Precision Compression Spring 0.563" Long, 0.24" OD, 0.196" ID 9001T19<br/>
+5108N062 5108N 9535K31 1942N15 9271K701 9271K702 9271K268  7383N778 7383N789 9628K12 7383N83 7383N636 3114T67 4992N101 4992N103 7749N003 7749N004 4992N895<br/>
+9432K48 9432K131 9432K151 7383N653 7383N664 7383N675 9432K164 3114T7 9432K65 7383N715 7383N727 7383N74 7383N75<br/>
+302 Stainless Steel Torsion Spring 270 Degree Left-Hand Wound, 1.086" OD 9287K202<br/>
+Torsion Spring 90 Degree Right-Hand Wound, 0.408" OD 9271K47 9271K658<br/>
+Music Wire Steel Extension Spring with Hook Ends 0.25" Long, 0.063" OD, 0.011" Wire Diameter 7383N131<br/>
+End Type: Closed and	Ground	Closed	Loop	Hook	Open	Straight Cut	Elongated Hook	Open and	Ground	Double Loop	Straight Wire	Swivel Hook	Carabiner	Plain	Side Loop	Straight Wire	with Double	Loop
+Deflection Angle:  90° 120° 180° 225° 270° 315° 360°<br/>
+mcmaster-carr弹簧springs材质：Aluminum、Brass、Bronze、Cobalt-Nickel Alloy、lron、Nickel、Plastic、Polyester/Rubber、Blend、Rubber、Stainless Steel、Steel、Zinc<br/>
+Mcmaster springs型号规格：mcmaster-carr产品规格，具体可咨询北富联机电。<br/>
+
+<span class="font-tips">6.Mcmaster-carr垫圈WASHER</span><br/>
+Mcmastercarr垫圈的等级：Grade2、Grade8、Grade9、Grade8.8、Grade10.9等。<br/>
+Tooth location style: External, Internal, Internal External<br/>
+垫圈硬度：Durometer40A-Durometer75A, Brinell32-120, Durometer43D-83D, Rockwell B35-Rockwell B91, Rockwell C20-Rockwell C77, Rockwell M70-Rockwell M115,  Rockwell R50-Rockwell R120<br/>
+MCMASTER-CARR垫圈规格：垫圈的尺寸大小有多种多样、厚度也各不相同，具有多种选择。<br/>
+
+<span class="font-tips">7.Mcmaster-carr销钉PINS</span><br/>
+销钉简介：mcmaster-carr销钉也叫做mcmaster-carr销子。销钉一般分为：圆柱销dowel pins（常规圆柱销、塑料圆柱销、超小圆柱销、超大尺寸圆柱销、）、圆锥销、圆头全槽定位销、全槽定位销、半槽定位销、带槽口的半槽定位销、（半）滚花定位销、U型销、可调节U型销、快速释放销、T型手柄销、强力固定快拆销、锁定快速释放销、开口销Cotter Pins、弹簧销（开槽弹簧销Slotted Spring Pins、抗震开槽弹簧销Vibration-Resistant Slotted Spring Pins、卷制弹簧销Coiled Spring Pins、重型卷制弹簧销Heavy Duty Coiled Spring Pins等）、固定销Captive Pins、定制别针销等。<br/>
+
+销钉在日常生活中使用很广泛，在工业上使用特别多。通常用于精确限制零件位置和与固定坐标间的相互连接，一般用于配合两个零部件中使用。销钉还有另外一个重要功能，对于较易损坏件容易更换和安装。如果没有销钉，很难找出固定的位置，销钉在工业上占据着非常重要的作用。<br/>
+
+以下是mcmaster-carr部分销钉的型号，更多可具体咨询深圳市北富联机电有限公司：<br/>
+98381A417	 97395A277  90145A130	98380A188  91595A141 97325A110  91585A129  93600A234  98380A134  93600A234  97155A319  91962A210  92078A219  98105A211  99010A334  98385A242  98912A560 	98312A115 	99585A500  91958A118	 97175A332 97355A314  97360A160  98432A353  92330A411  98400A248 5430N116  98400A340 5429N114  98400A125  98108A270  97352A280	98400A366  98388A328  98388A314  98306A842  98340A150  98306A951  96969A150  96973A180
+97245A156	 94380A717  92390A158  92390A158  93131A420  90378A630  92056A193 98330A235  92735A219  93890A565  93460A020  95165A034  92384A536  92385A037  92851A415  98400A241  5430N124<br/>
+Dowel Pin 4037, 4140 Alloy Steel, 1/4" Diameter, 2-1/4" Long 98381A551<br/>
+Dowel Pin 4140 Alloy Steel, 7/16" Diameter, 1-5/8" Long 98381A700<br/>
+18-8 Stainless Steel Dowel Pin 1/16" Diameter, 5/8" Long 90145A421<br/>
+Dowel Pin 316 Stainless Steel, 1/16" Diameter, 1-1/8" Long 97395A265<br/>
+316 Stainless Steel Dowel Pin 1.5mm Diameter, 12mm Long 93600A088<br/>
+Undersized Dowel Pin 18-8 Stainless Steel, 3/16" Diameter, 5/8" Long 98105A061<br/>
+Undersized Dowel Pin 18-8 Stainless Steel, 8 mm Diameter, 20 mm Long 97049A124<br/>
+Pull-Out Dowel Pin Black-Oxide Alloy Steel, 5/16" Diameter, 1" Long 97175A718<br/>
+12L13 Carbon Steel Full-Groove Dowel Pins Zinc-Plated, 3 mm Diameter, 12 mm Long 5429N119<br/>
+Flat-Vent Pull-Out Dowel Pin 1050-1095 Spring Steel, 8 mm Diameter, 36 mm Long 98432A282<br/>
+Pin for Shear Hubs 1/2" Diameter, 1-5/8" Long, 11/32" Groove Diameter 96985A360<br/>
+1004-1045 Carbon Steel Clevis Pin 3/8" Diameter, 1" Usable Length 98306A271<br/>
+18-8 Stainless Steel Precision Clevis Pin 1/8" Diameter, 9/16" Usable Length 90378A113<br/>
+Clevis Pin with Retaining Ring Groove Zinc-Plated Steel, 6 mm Diameter, 18 mm Usable Length 92735A131<br/>
+Headless Clevis Pin with Retaining Ring Groove Zinc-Plated 1215 Carbon Steel, 3/16" Diameter, 3/4" Usable Length 93890A552<br/>
+Quarter-Groove Dowel Pins, 5/32" Diameter, 3/4" Long 98400A007<br/>
+材质：18-8不锈钢、316不锈钢、416不锈钢、铝、铜、steel、镍、钛等。<br/>
+mcmastercarr定位销尺寸规格：北富联机电可购买mcmastercarr销钉，由于规格型号尺寸较多，不便一一罗列，具体可咨询深圳市北富联机电有限公司。<br/>
+<br/>
+<span class="font-tips">McMaster-Carr是深圳市北富联机电有限公司的主营品牌，北富联机电凭借“快速交货，价格好”的优势，被越来越多的用户所选择。mcmaster-carr产品均是原装进口，mcmastercarr官网有DIN, AMSE, ASTM, JIS, ISO, Mil.Spec., CSA, FDA Compliant等标准。有低强度到高强度的各种高精密五金紧固件，如MCMASTER-CARR内六角螺钉、六角头螺钉、销钉、自攻螺丝、机米螺丝、弹簧柱塞、吊环、轴肩螺丝、螺母、螺套、铆钉、垫圈垫片、轴承、密封圈、弹簧标准紧固件等。</span>
+      `,
     productList: [
       {
         img: require('@/assets/img/second/luosi-1.png'),

@@ -7,7 +7,10 @@
     </div>
     <div v-for="(item, index) in newList" :key="index" class="news-item">
       <nuxt-link
-        :to="{ path: '/news/detail', query: { id: item.id || item._id } }"
+        :to="{
+          path: '/news/detail',
+          query: { id: String(item.id) },
+        }"
       >
         <div class="item-title">
           {{ item.title }}

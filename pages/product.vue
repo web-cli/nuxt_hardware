@@ -20,7 +20,7 @@ export default {
   head() {
     return {
       title:
-        'mcmaster-carr中国代理_berg销钉_helcoil螺套_keensert插销螺套_北富联机电_recoil螺套_高端紧固件_麦克马斯特',
+        'mcamster, mcmaster-carr, mcmaster官网, helicoil螺套, berg定位销, keensert插销螺套,麦克马斯特, 北富联机电',
       meta: [
         {
           hid: 'description',

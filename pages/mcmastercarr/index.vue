@@ -15,19 +15,19 @@ export default {
   head() {
     return {
       title:
-        'mcmaster-carr官网_ mcmaster标准件_mcmaster中国代理_mcmaster代理商_mcmaster螺丝螺钉_麦克马斯特',
+        'mcmaster, mcmaster-carr, mcmaster官网, 麦克马斯特, mcmaster中国代理, mcmaster-carr官网, mcmaster-carr',
       meta: [
         {
           hid: 'mcmastercarr-description',
           name: 'description',
           content:
-            '深圳市北富联机电有限公司负责mcmastercarr中国代理的高精密标准紧固件,mcmastercarr紧固件,mcmastercarr代理五金紧固件,mcmastercarr螺丝螺母,mcmastercarr圆柱销等,是一家可以快速供货的mcmastercarr代理商.',
+            '深圳市北富联机电有限公司是mcmaster-carr中国代理,麦克马斯特,mcmaster, mcmaster-carr, mcmaster官网, mcmaster-carr官网, mcmastercarr, mcmaster carr官网, mcmaster代理, mcmastercarr螺丝, 91292A,mcmastercarr, mcmaster-carr中国区总代理商,价格美丽,快速交货',
         },
         {
           hid: 'mcmastercarr-keywords',
           name: 'keywords',
           content:
-            'mcmastercarr中国代理,mcmastercarr螺母,mcmastercarr螺丝,mcmastercarr螺钉,mcmastercarr圆柱销,mcmastercarr销,mcmastercarr代理,mcmastercarr中国总代理,mcmastercarr供应商,mcmastercarr供应商,北富联机电,深圳北富联,mcmastercarr中国官网,mcmastercarr官网,五金紧固件,高精密工业紧固件，高品质工业紧固件',
+            '麦克马斯特,mcmaster, mcmaster-carr, mcmaster官网, mcmaster-carr官网, mcmastercarr, mcmaster carr官网, mcmaster代理, mcmastercarr螺丝, 深圳市北富联机电有限公司, 北富联机电,美国mcmaster, 91292A, 92290A, 90037A, 90666A112, 90608A,98164A, 945000A, 9452K, 2418T',
         },
       ],
     }

@@ -26,6 +26,10 @@ export default {
         },
         {
           img: require('@/assets/img/third/solute_3.png'),
+          name: '行业动态',
+        },
+        {
+          img: require('@/assets/img/third/solute_3.png'),
           name: '电子行业方案',
         },
         {

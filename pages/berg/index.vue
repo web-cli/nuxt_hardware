@@ -14,19 +14,20 @@ export default {
   },
   head() {
     return {
-      title: 'berg定位销-berg中国代理-berg销-工业高精密紧固件供应商-美国berg',
+      title:
+        'berg定位销_WM BERG_berg_圆柱销_berg中国代理_美国W.M. BERG_定位销_berg销钉_销钉_BERG_深圳北富联机电有限公司',
       meta: [
         {
           hid: 'berg-description',
           name: 'description',
           content:
-            '深圳市北富联机电有限公司是工业高精密紧固件的供应商，主要代理美国品牌mcmaster,Berg,berg定位销,berg中国代理,berg销,Berg总代理，以最快的交期，优质的服务，优良的质量和合理的价格，成为您最值得信赖的供应商.',
+            'Berg定位销全型号尺寸在深圳北富联机电有限公司都有, berg销钉,berg圆柱销,416定位销,303不锈钢销,碳钢销钉,berg中国代理,北富联机电长期供应WM BERG定位销，价格实惠，交期快！',
         },
         {
           hid: 'berg-keywords',
           name: 'keywords',
           content:
-            'berg定位销,berg中国代理,berg销,工业高精密紧固件供应商,美国berg精密配件,紧固件供应商,高精密紧固件,机电紧固件,北富联机电,深圳北berg定位销,berg中国代理,berg销,工业高精密紧固件供应商,美国berg精密配件,紧固件供应商,高精密紧固件,机电紧固件,北富联机电,深圳北',
+            'berg定位销, WM BERG, berg, 圆柱销, berg中国代理, 美国W.M. BERG, 定位销, berg销钉, 销钉, berg进口, 深圳北富联机电有限公司,北富联机电, 深圳北富联机电, 北富联, wmBerg, berg销, 欧美销钉,美标销钉, 美标定位销, 美国berg, 高精密销钉, 工业销钉, 美国进口圆柱销, 美国进口定位销, wm berg,berg销钉,berg圆柱销,416定位销,303不锈钢销,碳钢销钉,berg中国代理',
         },
       ],
     }
