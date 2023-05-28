@@ -122,6 +122,28 @@
             粤公网安备 44030602005168号
           </p></a
         >
+        <a
+          target="_blank"
+          href="https://beian.miit.gov.cn/"
+          style="
+            display: inline-block;
+            text-decoration: none;
+            height: 20px;
+            line-height: 20px;
+          "
+        >
+          <p
+            style="
+              float: left;
+              height: 20px;
+              line-height: 20px;
+              margin: 0px 0px 0px 5px;
+              color: #939393;
+            "
+          >
+            粤ICP备2020124264号-1
+          </p></a
+        >
       </div>
       <p class="bottom">版权所有:{{ footerDetail.name }}</p>
     </div>
