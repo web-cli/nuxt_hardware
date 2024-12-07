@@ -15,7 +15,7 @@ export default {
   head() {
     return {
       title:
-        'mcmaster, mcmaster-carr, mcmaster官网, 麦克马斯特, mcmaster中国代理, mcmaster-carr官网, mcmaster-carr',
+        'mcmaster, mcmaster-carr, mcmaster官网, 麦克马斯特, mcmaster中国代理, mcmaster-carr官网, mcmaster-carr 中国代理,北富联机电',
       meta: [
         {
           hid: 'mcmastercarr-description',

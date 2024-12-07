@@ -8,7 +8,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title:
-      'mcmaster-carr, mcmaster, mcmaster官网, 麦克马斯特, mcmaster中国代理, mcmaster-carr官网, mcmaster-carr中国代理',
+      'mcmaster-carr,mcmaster官网, 麦克马斯特, mcmaster中国代理, mcmaster-carr官网, mcmaster-carr中国代理,北富联机电',
     script: [
       { src: '//js.users.51.la/21052033.js' },
       {
