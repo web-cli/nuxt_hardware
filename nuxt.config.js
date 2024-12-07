@@ -1,6 +1,6 @@
 export default {
   server: {
-    // 配置Nuxt服务器
+    // 配置Nuxt服务器2
     port: 3000, // default: 3000
     host: '0.0.0.0', // default: localhost
     timing: false,
